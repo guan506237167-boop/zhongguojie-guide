@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Chinese Knot Guide logo</title>
+  <desc id="desc">A red Chinese knot style logo with looped cord.</desc>
+  <rect width="64" height="64" rx="14" fill="#a83228"/>
+  <path d="M32 10c6 0 10 4 10 10 0 4-2 7-5 9 4 2 7 6 7 11 0 7-5 12-12 12s-12-5-12-12c0-5 3-9 7-11-3-2-5-5-5-9 0-6 4-10 10-10Z" fill="none" stroke="#fff2d8" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M16 32h32M32 16v34" stroke="#ffd38a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M23 51l-4 7M32 52v8M41 51l4 7" stroke="#ffd38a" stroke-width="3" stroke-linecap="round"/>
+</svg>
