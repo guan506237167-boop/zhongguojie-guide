@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">Chinese knot tutorial and meaning illustration</title>
+  <desc id="desc">A clean Chinese knot craft illustration with red cord loops, guide cards, and small supply details.</desc>
+  <rect width="760" height="520" rx="28" fill="#fff8ec"/>
+  <circle cx="138" cy="106" r="58" fill="#f6e2ca"/>
+  <circle cx="620" cy="398" r="76" fill="#e8f0df"/>
+  <path d="M382 72c54 0 92 37 92 86 0 32-17 59-42 75 34 17 56 51 56 91 0 67-46 112-106 112s-106-45-106-112c0-40 22-74 56-91-25-16-42-43-42-75 0-49 38-86 92-86Z" fill="none" stroke="#a83228" stroke-width="28" stroke-linejoin="round"/>
+  <path d="M198 254h368M382 102v310" stroke="#d8a14b" stroke-width="18" stroke-linecap="round"/>
+  <path d="M308 428l-34 56M382 432v62M456 428l34 56" stroke="#a83228" stroke-width="14" stroke-linecap="round"/>
+  <path d="M310 156c34-30 110-30 144 0M306 326c42 33 110 33 152 0" fill="none" stroke="#fff0d8" stroke-width="11" stroke-linecap="round"/>
+  <rect x="42" y="318" width="192" height="118" rx="16" fill="#fffdf8" stroke="#e2d3be"/>
+  <text x="66" y="358" fill="#286b61" font-family="Arial, sans-serif" font-size="20" font-weight="700">Tutorial</text>
+  <text x="66" y="390" fill="#5f5448" font-family="Arial, sans-serif" font-size="16">Cord control</text>
+  <text x="66" y="416" fill="#5f5448" font-family="Arial, sans-serif" font-size="16">Loop tension</text>
+  <rect x="528" y="72" width="188" height="126" rx="16" fill="#fffdf8" stroke="#e2d3be"/>
+  <text x="552" y="112" fill="#a83228" font-family="Arial, sans-serif" font-size="20" font-weight="700">Meaning</text>
+  <text x="552" y="144" fill="#5f5448" font-family="Arial, sans-serif" font-size="16">Luck</text>
+  <text x="552" y="170" fill="#5f5448" font-family="Arial, sans-serif" font-size="16">Continuity</text>
+</svg>
