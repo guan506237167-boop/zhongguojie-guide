@@ -207,7 +207,7 @@ function pageLayout({ title, description, path, h1, intro, body, faqs = [], page
     <nav class="footer-nav" aria-label="Footer navigation">
       <div><span>Learn</span><a href="/chinese-knot-tutorial/">Tutorial</a><a href="/how-to-tie-chinese-knot/">How to tie</a><a href="/types-of-chinese-knots/">Types</a></div>
       <div><span>Meaning</span><a href="/chinese-knot-meaning/">Meaning</a><a href="/endless-knot-meaning/">Endless knot</a><a href="/pan-chang-knot/">Pan Chang knot</a></div>
-      <div><span>Site</span><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
+      <div><span>Site</span><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/chinese-knot-faq/">FAQ</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
     </nav>
   </footer>
   <script src="/toolkit.js?v=${SITE.assetVersion}" defer></script>
@@ -305,7 +305,7 @@ function supportArticle({ title, description, path, h1, intro, answer, details, 
 
 function knotPage(item) {
   return pageLayout({
-    title: `${item.name}: Meaning, Tutorial Notes, Uses, and Beginner Tips`,
+    title: `${item.name}: Meaning, Tutorial Notes, Uses, and Tips`,
     description: `Learn the ${item.name}, including meaning, common uses, difficulty, tutorial notes, and when to use it in Chinese knot crafts.`,
     path: `/knots/${item.slug}/`,
     h1: item.name,
@@ -459,7 +459,6 @@ async function buildSeoReport() {
   const rows = reports.map((item) => `<tr><td><a href="${item.path}">${item.path}</a></td><td>${item.score}</td><td>${item.titleLength}</td><td>${item.descriptionLength}</td><td>${item.wordCount}</td><td>${item.h1}/${item.h2}</td><td>${item.faqs}</td><td>${escapeHtml(item.issues.join("; ") || "None")}</td></tr>`).join("");
   await mkdir("dist/admin", { recursive: true });
   await writeFile("dist/admin/seo-report.json", JSON.stringify({ generatedAt: new Date().toISOString(), totals, reports }, null, 2), "utf8");
-  await writePage("/admin/seo-report/", `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Pre-Publish SEO Check</title><meta name="robots" content="noindex,nofollow"><meta name="description" content="Internal publishing QA report for Chinese Knot Guide pages."><link rel="canonical" href="${absolute("/admin/seo-report/")}"><link rel="stylesheet" href="/styles.css?v=${SITE.assetVersion}"></head><body class="seo-report-page"><main><section class="content-section report-hero"><p class="eyebrow">Publishing QA</p><h1>Pre-Publish SEO Check</h1><p>Internal checks for title, description, headings, FAQ, canonical, schema, sitemap, internal links, images, and content depth.</p><div class="report-summary"><div><strong>${totals.average}</strong><span>Average score</span></div><div><strong>${totals.pages}</strong><span>Pages</span></div><div><strong>${totals.pass}</strong><span>Pass</span></div><div><strong>${totals.review}</strong><span>Review</span></div><div><strong>${totals.fix}</strong><span>Fix</span></div></div></section><section class="content-section"><div class="table-wrap"><table class="seo-table"><thead><tr><th>URL</th><th>Score</th><th>Title</th><th>Description</th><th>Words</th><th>H1/H2</th><th>FAQ</th><th>Issues</th></tr></thead><tbody>${rows}</tbody></table></div></section></main></body></html>`);
 }
 
 function auditPage(page, html, sitemap) {
