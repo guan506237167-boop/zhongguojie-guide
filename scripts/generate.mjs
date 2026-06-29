@@ -8,7 +8,7 @@ const SITE = {
   assetVersion: "20260628-images-01"
 };
 
-const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID || "";
+const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID || "G-51HDB530HD";
 const keywordRows = parseCsv(await readFile("docs/keyword-library/chinese-knot-keyword-library.csv", "utf8"));
 const tutorialKeywords = keywordRows.filter((row) => row.category === "tutorial-diy").slice(0, 18);
 const meaningKeywords = keywordRows.filter((row) => row.category === "meaning-symbolism").slice(0, 16);
