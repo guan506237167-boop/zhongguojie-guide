@@ -36,7 +36,9 @@ const guides = [
   { title: "Chinese Knot Bracelet", path: "/chinese-knot-bracelet/", category: "Craft Ideas", description: "Bracelet ideas, gift positioning, and tutorial paths." },
   { title: "Chinese Knot Keychain", path: "/chinese-knot-keychain/", category: "Craft Ideas", description: "Small product and DIY ideas for keychain-style knots." },
   { title: "Chinese Lucky Knot", path: "/chinese-lucky-knot/", category: "Meanings", description: "Good luck knot meaning, common uses, tutorial notes, and gift or decor ideas." },
-  { title: "Double Coin Knot", path: "/double-coin-knot/", category: "Knot Types", description: "Double coin knot meaning, uses, beginner practice notes, and bracelet or charm ideas." }
+  { title: "Double Coin Knot", path: "/double-coin-knot/", category: "Knot Types", description: "Double coin knot meaning, uses, beginner practice notes, and bracelet or charm ideas." },
+  { title: "How to Make a Chinese Knot", path: "/how-to-make-chinese-knot/", category: "Tutorials", description: "A practical beginner guide to setup, cord choice, knot practice order, and clean finishing." },
+  { title: "Pan Chang Knot Tutorial", path: "/pan-chang-knot-tutorial/", category: "Tutorials", description: "A tutorial-focused Pan Chang guide for loop control, tightening, meaning, and practice mistakes." }
 ];
 
 const pages = [];
@@ -419,6 +421,34 @@ await writePage("/chinese-knot-keychain/", supportArticle({ title: "Chinese Knot
 await writePage("/chinese-lucky-knot/", supportArticle({ title: "Chinese Lucky Knot: Meaning, Tutorial Notes, and Gift Use", description: "Learn Chinese lucky knot meaning, common uses, beginner tutorial notes, red cord symbolism, and gift or decor ideas.", path: "/chinese-lucky-knot/", h1: "Chinese Lucky Knot", intro: "The Chinese lucky knot is a strong beginner and gift topic because it connects simple knotting with auspicious visual meaning.", answer: "A Chinese lucky knot is usually used as a decorative symbol of blessing, celebration, and good wishes. It often appears in red cord decor, festival ornaments, bracelets, keychains, and small gift items.", details: ["The meaning is symbolic. A lucky knot expresses a wish or cultural image rather than guaranteeing a real-world outcome.", "For beginners, the best lucky knot project is small, symmetrical, and made with medium cord so the final shape looks clean."], related: [guides[0], guides[2], guides[3], guides[8]] }));
 
 await writePage("/double-coin-knot/", supportArticle({ title: "Double Coin Knot: Meaning, Tutorial Notes, and Craft Uses", description: "Learn double coin knot meaning, beginner tutorial notes, bracelet and charm uses, and why the coin-like shape matters.", path: "/double-coin-knot/", h1: "Double Coin Knot", intro: "The double coin knot is useful for learners because it has a clear shape, compact size, and strong symbolic association.", answer: "A double coin knot is a decorative Chinese knot with a coin-like visual form. It is often connected with wealth symbolism and is used in bracelets, charms, keychains, and decorative cords.", details: ["The knot is beginner-friendly compared with larger symbolic patterns, but clean tightening still matters because uneven loops make the coin shape harder to see.", "This page works as both a knot type guide and a future product bridge for bracelets, charms, cord kits, and small handmade gifts."], related: [guides[3], guides[2], guides[8], guides[9]] }));
+
+await writePage("/how-to-make-chinese-knot/", supportArticle({
+  title: "How to Make a Chinese Knot: Beginner Setup, Cord, and Practice Order",
+  description: "Learn how to make a Chinese knot with beginner setup, cord choice, first knot sequence, tightening tips, and common mistakes.",
+  path: "/how-to-make-chinese-knot/",
+  h1: "How to Make a Chinese Knot",
+  intro: "Chinese knotting becomes easier when the first project is small, the cord is visible, and the tightening process is controlled.",
+  answer: "To make a Chinese knot, choose medium cord, secure a simple starting loop, follow one knot pattern slowly, and tighten each loop evenly before adding tassels, beads, or decorative ends.",
+  details: [
+    "Beginners should start with a good luck knot, button knot, or small bracelet knot before trying larger symbolic patterns.",
+    "The most common mistake is pulling one loop too tight too early. Keep the structure loose enough to adjust, then tighten gradually from the center outward."
+  ],
+  related: [guides[0], guides[1], guides[7], guides[10]]
+}));
+
+await writePage("/pan-chang-knot-tutorial/", supportArticle({
+  title: "Pan Chang Knot Tutorial: Meaning, Setup, Loop Control, and Practice Tips",
+  description: "Follow a Pan Chang knot tutorial path with setup notes, loop control, tightening tips, symbolic meaning, and beginner mistakes.",
+  path: "/pan-chang-knot-tutorial/",
+  h1: "Pan Chang Knot Tutorial",
+  intro: "The Pan Chang knot is visually strong, but it needs cleaner loop control than the smallest beginner knots.",
+  answer: "A Pan Chang knot tutorial should focus on laying out even loops first, keeping the pattern flat, and tightening gradually so the endless-knot shape remains balanced.",
+  details: [
+    "Use a flat surface and medium cord for practice. Very soft or slippery cord makes the loop structure harder to control.",
+    "If the finished knot looks uneven, loosen it slightly and rebalance the corners before the final tightening step."
+  ],
+  related: [guides[6], guides[4], guides[3], guides[12]]
+}));
 
 for (const knot of knots) {
   await writePage(`/knots/${knot.slug}/`, knotPage(knot));

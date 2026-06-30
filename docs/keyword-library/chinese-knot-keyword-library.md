@@ -69,11 +69,11 @@
 | chinese knot tutorial | 1300 | LOW | informational | step guide / visual tutorial | P1 |
 | how to tie chinese knot | 320 | LOW | informational | step guide / visual tutorial | P1 |
 | how to make a chinese knot | 320 | LOW | informational | step guide / visual tutorial | P1 |
-| how to make chinese knot | 320 | LOW | informational | step guide / visual tutorial | P1 |
+| how to make chinese knot | 320 | LOW | informational | published article 2026-07-01 | P1 |
 | how to make a chinese button knot | 320 | LOW | informational | step guide / visual tutorial | P1 |
 | chinese lucky knot tutorial | 170 | LOW | informational | step guide / visual tutorial | P1 |
 | step by step chinese knots | 140 | LOW | informational | step guide / visual tutorial | P1 |
-| pan chang knot tutorial | 90 | LOW | informational | step guide / visual tutorial | P1 |
+| pan chang knot tutorial | 90 | LOW | informational | published article 2026-07-01 | P1 |
 | chinese knot bracelet tutorial | 90 | LOW | commercial | step guide / visual tutorial | P1 |
 | chinese knot how to | 70 | LOW | informational | step guide / visual tutorial | P1 |
 | chinese button knot tutorial | 70 | LOW | informational | step guide / visual tutorial | P1 |
