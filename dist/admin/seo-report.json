@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T03:44:47.822Z",
+  "generatedAt": "2026-06-30T05:19:07.801Z",
   "totals": {
     "average": 99,
     "pages": 23,
@@ -13,9 +13,9 @@
       "score": 100,
       "titleLength": 68,
       "descriptionLength": 112,
-      "wordCount": 477,
+      "wordCount": 532,
       "h1": 1,
-      "h2": 5,
+      "h2": 6,
       "faqs": 0,
       "issues": []
     },

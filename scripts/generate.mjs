@@ -347,6 +347,7 @@ await writePage("/", pageLayout({
     </div>
   </section>
   <section class="knot-stats" aria-label="Chinese knot guide strengths"><div><strong>Tutorials</strong><span>step-by-step learning</span></div><div><strong>Meanings</strong><span>symbol and color notes</span></div><div><strong>Products</strong><span>bracelet and gift paths</span></div><div><strong>Supplies</strong><span>cord and material choices</span></div></section>
+  <section class="knot-section knot-finder"><div class="section-heading"><p class="eyebrow">Quick Advisor</p><h2>Find your first Chinese knot path</h2></div><p>Choose the reason you are here and your current skill level. The site will send you to the most useful starting page.</p><form class="calculator-form" data-knot-form><label>Goal<select name="goal"><option value="learn">Learn to tie knots</option><option value="meaning">Understand meanings</option><option value="bracelet">Make bracelet or keychain gifts</option><option value="supplies">Choose cord and supplies</option></select></label><label>Skill level<select name="skill"><option value="beginner">Beginner</option><option value="ready">Ready for harder patterns</option></select></label><button type="submit">Find path</button></form><div class="result-card" data-knot-result hidden></div></section>
   <section class="knot-section tutorial-showcase"><div class="section-heading"><p class="eyebrow">Learn First</p><h2>Choose a practical tutorial path</h2></div><div class="tutorial-grid"><a href="/chinese-knot-tutorial/"><img src="/assets/knot-beginner-tutorial.webp" alt="Simple red Chinese good luck knot on a wooden practice board for beginner tutorials"><span>01</span><strong>Beginner tutorial</strong><small>Start with cord control, simple shapes, and clean tightening.</small></a><a href="/how-to-tie-chinese-knot/"><img src="/assets/knot-tying-steps.webp" alt="Red cord Chinese knot in an early tying stage with pins on a wooden board"><span>02</span><strong>How to tie</strong><small>Follow the setup and tension rules before complex patterns.</small></a><a href="/chinese-knot-cord/"><img src="/assets/knot-cord-materials.webp" alt="Organized silk cords, beads, and tassels for choosing Chinese knot materials"><span>03</span><strong>Choose cord</strong><small>Pick the right thickness, color, and finish for the project.</small></a></div></section>
   <section class="knot-section knot-product-zone"><div class="section-heading"><p class="eyebrow">Gift & Product Paths</p><h2>Build future product pages from clear use cases</h2></div><div class="product-grid"><a href="/chinese-knot-bracelet/"><img src="/assets/knot-bracelet-gifts.webp" alt="Red Chinese knot bracelets and gift box arranged as premium handmade gifts"><span>Bracelet</span><strong>Adjustable red cord bracelets</strong><p>Small gift items, symbolic color, and beginner-friendly designs.</p></a><a href="/chinese-knot-keychain/"><img src="/assets/knot-keychain-charms.webp" alt="Chinese knot keychain charms with tassels and metal rings on warm wood"><span>Keychain</span><strong>Lightweight charms and souvenirs</strong><p>Good for affiliate products, craft kits, and cultural gift guides.</p></a><a href="/chinese-knot-meaning/"><img src="/assets/knot-decor-ornaments.webp" alt="Red Chinese knot hanging ornaments in an elegant warm traditional interior"><span>Decor</span><strong>Festival hanging ornaments</strong><p>Meaning-led pages for home decor, Lunar New Year, and gifting.</p></a></div></section>
   <section class="knot-section"><div class="section-heading"><p class="eyebrow">Knot Types</p><h2>Common Chinese knots to learn first</h2></div>${knotCards()}</section>
@@ -514,9 +515,9 @@ body:not(.page-home):not(.page-guides):not(.seo-report-page) .page-hero .intro{c
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .page-hero .eyebrow{background:rgba(196,30,58,.18);border-color:rgba(212,175,55,.34);color:#ffd580}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-shell{max-width:1180px;gap:34px;margin-bottom:38px}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main{display:grid;gap:24px;min-width:0}
-body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.content-section{width:100%;max-width:none!important;margin:0!important;padding:26px 30px!important;border-radius:10px;background:rgba(255,255,255,.055)!important;border:1px solid rgba(196,30,58,.2)!important;box-shadow:0 16px 42px rgba(0,0,0,.18)!important}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.content-section{width:100%;max-width:none!important;margin:0!important;padding:34px 40px!important;border-radius:10px;background:rgba(255,255,255,.075)!important;border:1px solid rgba(196,30,58,.24)!important;box-shadow:0 16px 42px rgba(0,0,0,.18)!important}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.article-body{background:rgba(255,255,255,.05)!important}
-body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-body p{max-width:none;margin:0 0 15px;color:rgba(245,230,211,.76)}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-body p{max-width:none;margin:0 0 15px;color:#f7e8d2}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-body p:last-child{margin-bottom:0}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .lead-answer{font-size:17px;line-height:1.78;color:#fff1d8}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.split{padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;gap:18px}
@@ -524,7 +525,10 @@ body:not(.page-home):not(.page-guides):not(.seo-report-page) .split>div,.sidebar
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .split>div{padding:24px}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .fact-card span,.sidebar-link-list span{color:rgba(245,230,211,.68)}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search{align-items:center}
-body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search h2{color:#f5e6d3}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search h2{color:#f5e6d3;font-size:clamp(28px,2.3vw,34px);line-height:1.08;white-space:nowrap}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search{grid-template-columns:minmax(380px,1.08fr) minmax(340px,.92fr);gap:18px;padding:28px 32px!important;overflow:hidden}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .site-search-form{grid-template-columns:minmax(0,1fr) minmax(96px,auto);gap:14px}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .site-search-form input{max-width:320px}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .site-search-form input{border-color:rgba(245,230,211,.18);background:rgba(255,248,236,.96)}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-sidebar{gap:22px;top:104px}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .sidebar-card{padding:22px}
@@ -535,10 +539,22 @@ body:not(.page-home):not(.page-guides):not(.seo-report-page) .sidebar-link-list 
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-category{background:rgba(255,255,255,.04);border-color:rgba(196,30,58,.2)}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-category summary{background:rgba(255,255,255,.055);color:#fff1d8}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-grid{background:rgba(0,0,0,.1);padding:18px}
-body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-item{border-color:rgba(245,230,211,.12);background:rgba(255,255,255,.04)}
-body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-item h3{background:rgba(255,255,255,.055);border-color:rgba(245,230,211,.12);color:#fff1d8}
-body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-item p{background:rgba(0,0,0,.08);color:rgba(245,230,211,.7);border-left-color:rgba(212,175,55,.35)}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-list h2{color:#fff4df}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-item{border-color:rgba(245,230,211,.2);background:rgba(255,255,255,.07)}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-item h3{background:rgba(255,255,255,.08);border-color:rgba(245,230,211,.18);color:#fff4df}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-item p{background:rgba(0,0,0,.12);color:#f4ddc0;border-left-color:rgba(212,175,55,.48)}
+.page-guides .article-search{grid-template-columns:minmax(440px,1fr) minmax(420px,.9fr);gap:38px;align-items:center!important;padding:34px clamp(34px,4.8vw,64px)!important;background:#fffdf8!important;color:#211d18!important}
+.page-guides .article-search h2{color:#211d18!important;font-size:clamp(28px,2.5vw,36px);line-height:1.1;margin-top:12px!important}
+.page-guides .article-search .site-search-form label{color:#5f3d32}
+.page-guides .content-section:not(.article-search){padding:34px clamp(34px,4.8vw,64px)!important;background:#fffdf8!important;color:#211d18!important}
+.page-guides .section-heading{margin-bottom:20px}
+.page-guides .section-heading h2{color:#211d18!important}
+.page-guides .guide-card{padding:22px 24px;gap:10px;background:#fffaf2!important;border-color:#e2cfc2!important;color:#211d18!important;box-shadow:0 12px 28px rgba(70,20,18,.08)!important}
+.page-guides .guide-card span{color:#a86a1f!important}
+.page-guides .guide-card strong{color:#251b18!important}
+.page-guides .guide-card p{color:#6a5148!important}
 @media(max-width:980px){.knot-hero{grid-template-columns:1fr;min-height:auto;padding:52px 22px 74px}.knot-hero-visual{min-height:420px}.knot-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.tutorial-grid,.product-grid{grid-template-columns:1fr}.animal-grid,.guide-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:640px){.knot-hero-copy h2{font-size:38px}.knot-hero-visual{min-height:330px}.knot-float-card{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;margin:10px;justify-self:start;align-self:end}.knot-stats,.animal-grid,.guide-grid{grid-template-columns:1fr}.knot-actions{display:grid}.knot-actions .button-link{width:100%}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.content-section{padding:20px!important}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-shell{gap:22px}}
+@media(max-width:980px){body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search{grid-template-columns:1fr}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search h2{white-space:normal}.page-guides .article-search{grid-template-columns:1fr}}
+@media(max-width:640px){.knot-hero-copy h2{font-size:38px}.knot-hero-visual{min-height:330px}.knot-float-card{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;margin:10px;justify-self:start;align-self:end}.knot-stats,.animal-grid,.guide-grid{grid-template-columns:1fr}.knot-actions{display:grid}.knot-actions .button-link{width:100%}.page-guides .content-section:not(.article-search){padding:24px!important}.page-guides .guide-card{padding:20px!important}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.content-section{padding:24px!important}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-shell{gap:22px}}
 `;
 }
