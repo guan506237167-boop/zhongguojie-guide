@@ -524,11 +524,10 @@ body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.spli
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .split>div,.sidebar-card{background:rgba(255,255,255,.055);border-color:rgba(196,30,58,.2);color:#f5e6d3;box-shadow:0 14px 34px rgba(0,0,0,.16)}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .split>div{padding:24px}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .fact-card span,.sidebar-link-list span{color:rgba(245,230,211,.68)}
-body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search{align-items:center}
-body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search h2{color:#f5e6d3;font-size:clamp(28px,2.3vw,34px);line-height:1.08;white-space:nowrap}
-body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search{grid-template-columns:minmax(380px,1.08fr) minmax(340px,.92fr);gap:18px;padding:28px 32px!important;overflow:hidden}
-body:not(.page-home):not(.page-guides):not(.seo-report-page) .site-search-form{grid-template-columns:minmax(0,1fr) minmax(96px,auto);gap:14px}
-body:not(.page-home):not(.page-guides):not(.seo-report-page) .site-search-form input{max-width:320px}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search{grid-template-columns:1fr;align-items:start;gap:18px;padding:28px 32px!important;overflow:visible}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search h2{color:#f5e6d3;font-size:clamp(24px,2vw,30px);line-height:1.16;white-space:normal}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .site-search-form{grid-template-columns:minmax(0,320px) minmax(96px,auto);justify-content:start;gap:12px;max-width:460px}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .site-search-form input{max-width:none}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .site-search-form input{border-color:rgba(245,230,211,.18);background:rgba(255,248,236,.96)}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-sidebar{gap:22px;top:104px}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .sidebar-card{padding:22px}
