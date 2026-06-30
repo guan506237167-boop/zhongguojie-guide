@@ -58,6 +58,12 @@ body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-item p{backgro
 .page-guides .guide-card span{color:#a86a1f!important}
 .page-guides .guide-card strong{color:#251b18!important}
 .page-guides .guide-card p{color:#6a5148!important}
+.page-guides .table-wrap{border:1px solid #e0cab8;border-radius:8px;background:#fffaf2;overflow:auto}
+.page-guides .content-section table{background:#fffaf2!important;color:#2a1d18!important;border-collapse:separate;border-spacing:0}
+.page-guides .content-section th{background:#4a0f12!important;color:#fff4df!important;border-bottom:1px solid #6a2524}
+.page-guides .content-section td{color:#463129!important;border-bottom:1px solid #e5d2bf;background:#fffaf2!important}
+.page-guides .content-section tbody tr:nth-child(even) td{background:#fbf1e6!important}
+.page-guides .content-section td:not(:last-child),.page-guides .content-section th:not(:last-child){border-right:1px solid #ead8c7}
 @media(max-width:980px){.knot-hero{grid-template-columns:1fr;min-height:auto;padding:52px 22px 74px}.knot-hero-visual{min-height:420px}.knot-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.tutorial-grid,.product-grid{grid-template-columns:1fr}.animal-grid,.guide-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:980px){body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search{grid-template-columns:1fr}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search h2{white-space:normal}.page-guides .article-search{grid-template-columns:1fr}}
 @media(max-width:640px){.knot-hero-copy h2{font-size:38px}.knot-hero-visual{min-height:330px}.knot-float-card{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;margin:10px;justify-self:start;align-self:end}.knot-stats,.animal-grid,.guide-grid{grid-template-columns:1fr}.knot-actions{display:grid}.knot-actions .button-link{width:100%}.page-guides .content-section:not(.article-search){padding:24px!important}.page-guides .guide-card{padding:20px!important}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.content-section{padding:24px!important}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-shell{gap:22px}}
