@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-30T05:19:07.801Z",
+  "generatedAt": "2026-06-30T09:35:17.029Z",
   "totals": {
     "average": 99,
-    "pages": 23,
-    "pass": 23,
+    "pages": 25,
+    "pass": 25,
     "review": 0,
     "fix": 0
   },
@@ -24,7 +24,7 @@
       "score": 100,
       "titleLength": 65,
       "descriptionLength": 134,
-      "wordCount": 365,
+      "wordCount": 400,
       "h1": 1,
       "h2": 3,
       "faqs": 0,
@@ -135,6 +135,28 @@
       "titleLength": 66,
       "descriptionLength": 126,
       "wordCount": 417,
+      "h1": 1,
+      "h2": 4,
+      "faqs": 6,
+      "issues": []
+    },
+    {
+      "path": "/chinese-lucky-knot/",
+      "score": 100,
+      "titleLength": 57,
+      "descriptionLength": 116,
+      "wordCount": 434,
+      "h1": 1,
+      "h2": 4,
+      "faqs": 6,
+      "issues": []
+    },
+    {
+      "path": "/double-coin-knot/",
+      "score": 100,
+      "titleLength": 57,
+      "descriptionLength": 118,
+      "wordCount": 439,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
