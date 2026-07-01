@@ -38,7 +38,9 @@ const guides = [
   { title: "Chinese Lucky Knot", path: "/chinese-lucky-knot/", category: "Meanings", description: "Good luck knot meaning, common uses, tutorial notes, and gift or decor ideas." },
   { title: "Double Coin Knot", path: "/double-coin-knot/", category: "Knot Types", description: "Double coin knot meaning, uses, beginner practice notes, and bracelet or charm ideas." },
   { title: "How to Make a Chinese Knot", path: "/how-to-make-chinese-knot/", category: "Tutorials", description: "A practical beginner guide to setup, cord choice, knot practice order, and clean finishing." },
-  { title: "Pan Chang Knot Tutorial", path: "/pan-chang-knot-tutorial/", category: "Tutorials", description: "A tutorial-focused Pan Chang guide for loop control, tightening, meaning, and practice mistakes." }
+  { title: "Pan Chang Knot Tutorial", path: "/pan-chang-knot-tutorial/", category: "Tutorials", description: "A tutorial-focused Pan Chang guide for loop control, tightening, meaning, and practice mistakes." },
+  { title: "Chinese Knot Ornament", path: "/chinese-knot-ornament/", category: "Gift & Decor", description: "A decor and gift guide for Chinese knot ornaments, hanging styles, meanings, and product selection." },
+  { title: "Chinese Knot Necklace", path: "/chinese-knot-necklace/", category: "Gift & Decor", description: "A guide to Chinese knot necklaces, cord choices, pendants, meaning notes, and gift positioning." }
 ];
 
 const pages = [];
@@ -448,6 +450,36 @@ await writePage("/pan-chang-knot-tutorial/", supportArticle({
     "If the finished knot looks uneven, loosen it slightly and rebalance the corners before the final tightening step."
   ],
   related: [guides[6], guides[4], guides[3], guides[12]]
+}));
+
+await writePage("/chinese-knot-ornament/", supportArticle({
+  title: "Chinese Knot Ornament: Meaning, Decor Uses, Gift Ideas, and Buying Notes",
+  description: "Learn how Chinese knot ornaments are used for decor, gifts, festive hanging, symbolic meaning, and product selection.",
+  path: "/chinese-knot-ornament/",
+  h1: "Chinese Knot Ornament",
+  intro: "Chinese knot ornaments are one of the clearest product paths because they combine visual culture, home decor, festival use, and gift intent.",
+  answer: "A Chinese knot ornament is usually a decorative hanging piece made from red or colored cord, often used for doors, walls, cars, festival displays, gift packaging, and symbolic decor. The best choice depends on size, cord quality, tassel finish, hanging location, and whether the design is meant for everyday decor or a specific celebration.",
+  details: [
+    "For home decor, check whether the ornament is large enough for the wall or door but not so heavy that it pulls the cord out of shape. Clean tassels and even knot tension matter more than extra decoration.",
+    "For gifts, boxed presentation, color balance, and clear symbolism are more important than complicated knot structure. Red is common, but gold accents, jade-like beads, and wood details can change the tone.",
+    "For future product pages, this topic can support hanging ornaments, festival decorations, car charms, wall decor, and handmade gift recommendations."
+  ],
+  related: [guides[2], guides[3], guides[10], guides[13]].filter(Boolean)
+}));
+
+await writePage("/chinese-knot-necklace/", supportArticle({
+  title: "Chinese Knot Necklace: Cord, Pendant, Meaning, and Gift Buying Guide",
+  description: "Learn how Chinese knot necklaces use cord, pendants, adjustable knots, symbolic meanings, and gift-focused design choices.",
+  path: "/chinese-knot-necklace/",
+  h1: "Chinese Knot Necklace",
+  intro: "Chinese knot necklaces connect craft learning with lightweight product intent, especially around cords, pendants, gifts, and symbolic designs.",
+  answer: "A Chinese knot necklace usually combines decorative cord knots with a pendant, bead, charm, or adjustable closure. Buyers should compare cord comfort, necklace length, pendant weight, knot security, color symbolism, and whether the style fits daily wear or gift presentation.",
+  details: [
+    "For wearing comfort, soft cord and smooth finishing matter. A beautiful knot can still fail as a necklace if the cord scratches the skin or the pendant pulls the knot off center.",
+    "For gift use, choose a design with clear meaning but avoid exaggerated claims. Knot symbolism can express wishes, continuity, blessing, or connection, but it should not be presented as a guaranteed outcome.",
+    "For monetization later, necklace pages can connect to pendant products, cord supplies, bracelet sets, keychain designs, and gift guides."
+  ],
+  related: [guides[8], guides[7], guides[9], guides[14]].filter(Boolean)
 }));
 
 for (const knot of knots) {

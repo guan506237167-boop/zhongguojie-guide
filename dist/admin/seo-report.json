@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-30T22:56:59.933Z",
+  "generatedAt": "2026-07-01T23:13:48.881Z",
   "totals": {
     "average": 99,
-    "pages": 27,
-    "pass": 27,
+    "pages": 29,
+    "pass": 29,
     "review": 0,
     "fix": 0
   },
@@ -24,7 +24,7 @@
       "score": 100,
       "titleLength": 65,
       "descriptionLength": 134,
-      "wordCount": 439,
+      "wordCount": 483,
       "h1": 1,
       "h2": 3,
       "faqs": 0,
@@ -179,6 +179,28 @@
       "titleLength": 72,
       "descriptionLength": 127,
       "wordCount": 440,
+      "h1": 1,
+      "h2": 4,
+      "faqs": 6,
+      "issues": []
+    },
+    {
+      "path": "/chinese-knot-ornament/",
+      "score": 100,
+      "titleLength": 72,
+      "descriptionLength": 117,
+      "wordCount": 518,
+      "h1": 1,
+      "h2": 4,
+      "faqs": 6,
+      "issues": []
+    },
+    {
+      "path": "/chinese-knot-necklace/",
+      "score": 100,
+      "titleLength": 68,
+      "descriptionLength": 122,
+      "wordCount": 487,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
