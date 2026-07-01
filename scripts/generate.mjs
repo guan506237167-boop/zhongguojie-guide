@@ -295,7 +295,11 @@ function adSlot(position) {
   return `<aside class="ad-slot" data-ad-position="${position}" aria-label="Advertisement area">Advertisement</aside>`;
 }
 
-function supportArticle({ title, description, path, h1, intro, answer, details, related }) {
+function articleSections(sections = []) {
+  return sections.map((section) => `<section class="content-section article-body"><h2>${escapeHtml(section.title)}</h2>${section.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}</section>`).join("");
+}
+
+function supportArticle({ title, description, path, h1, intro, answer, details, sections = [], related }) {
   return pageLayout({
     title,
     description,
@@ -305,7 +309,7 @@ function supportArticle({ title, description, path, h1, intro, answer, details, 
     heroLabel: "Chinese knot guide",
     faqs: standardFaqs(),
     articleSidebar: true,
-    body: `${articleSearchBlock()}<section class="content-section article-body"><p class="lead-answer">${escapeHtml(answer)}</p>${details.map((item) => `<p>${escapeHtml(item)}</p>`).join("")}</section>${relatedGuidesBlock("Related Chinese knot guides", related)}${faqBlock(standardFaqs())}`
+    body: `${articleSearchBlock()}<section class="content-section article-body"><p class="lead-answer">${escapeHtml(answer)}</p>${details.map((item) => `<p>${escapeHtml(item)}</p>`).join("")}</section>${articleSections(sections)}${relatedGuidesBlock("Related Chinese knot guides", related)}${faqBlock(standardFaqs())}`
   });
 }
 
@@ -464,6 +468,36 @@ await writePage("/chinese-knot-ornament/", supportArticle({
     "For gifts, boxed presentation, color balance, and clear symbolism are more important than complicated knot structure. Red is common, but gold accents, jade-like beads, and wood details can change the tone.",
     "For future product pages, this topic can support hanging ornaments, festival decorations, car charms, wall decor, and handmade gift recommendations."
   ],
+  sections: [
+    {
+      title: "Where Chinese knot ornaments are used",
+      paragraphs: [
+        "Chinese knot ornaments are most often used as hanging decor for doors, walls, entryways, cars, gift packaging, festival displays, and small ceremonial settings. The item is simple, but the use case changes what size and style make sense. A wall ornament needs enough visual weight to be seen from a distance. A car charm should be lighter and shorter. A gift-package knot should look neat without overwhelming the box.",
+        "For home decor, placement matters more than adding more decorations. A clean red knot can look strong on a plain door or warm wooden wall, while an oversized tassel may look messy in a small room. If the page later recommends products, it should separate wall ornaments, car ornaments, and gift ornaments instead of treating every hanging knot as the same product."
+      ]
+    },
+    {
+      title: "Meaning and color notes",
+      paragraphs: [
+        "Many Chinese knot ornaments are associated with blessing, reunion, good wishes, celebration, or continuity. Red is the most common color because it fits festive and auspicious visual language. Gold accents can make the ornament feel more ceremonial or gift-ready. Some designs add beads, coins, tassels, jade-like pieces, or character plaques, but the meaning depends on the whole design rather than one decoration.",
+        "The wording should stay careful. A Chinese knot ornament can express a wish or cultural symbol, but it should not be described as guaranteeing luck, money, marriage, health, or protection. This is especially important if the site later adds affiliate products. Honest symbolic language is stronger than exaggerated claims."
+      ]
+    },
+    {
+      title: "How to choose a better ornament",
+      paragraphs: [
+        "A better ornament usually has even knot tension, clean cord finishing, straight tassels, balanced proportions, and a secure hanging loop. Photos should show the full length, not only a cropped close-up. If a product image hides the top loop or bottom tassel, it is harder to judge how the piece will look when hung.",
+        "Size is the most common buying mistake. Small ornaments can disappear on a door, while large ones can look crowded in a narrow hallway. For a wall or entryway, check full dimensions. For a car or small cabinet, check weight and length. For gifting, packaging and finish quality may matter as much as the knot type."
+      ]
+    },
+    {
+      title: "Product paths for future recommendations",
+      paragraphs: [
+        "This topic has clear commercial paths because ornaments are visual, giftable, and lightweight. The site can later build product blocks for festival hanging knots, car charms, wall decor, handmade ornaments, DIY kits, and boxed gifts. Each path should have its own comparison rules, because a car charm and a large wall knot do not solve the same problem.",
+        "For now, the article should prepare users to judge products before affiliate links are added. The key filters are use location, size, cord quality, tassel finish, color balance, and whether the design matches everyday decor or a specific celebration."
+      ]
+    }
+  ],
   related: [guides[2], guides[3], guides[10], guides[13]].filter(Boolean)
 }));
 
@@ -478,6 +512,36 @@ await writePage("/chinese-knot-necklace/", supportArticle({
     "For wearing comfort, soft cord and smooth finishing matter. A beautiful knot can still fail as a necklace if the cord scratches the skin or the pendant pulls the knot off center.",
     "For gift use, choose a design with clear meaning but avoid exaggerated claims. Knot symbolism can express wishes, continuity, blessing, or connection, but it should not be presented as a guaranteed outcome.",
     "For monetization later, necklace pages can connect to pendant products, cord supplies, bracelet sets, keychain designs, and gift guides."
+  ],
+  sections: [
+    {
+      title: "What makes a Chinese knot necklace different",
+      paragraphs: [
+        "A Chinese knot necklace is not only a pendant on a cord. The knot, cord color, adjustable closure, pendant weight, and finishing method all affect how the necklace looks and wears. Some designs use the knot as the main visual feature. Others use the knot to frame a pendant, bead, jade-like piece, coin charm, or symbolic ornament.",
+        "This makes the topic useful for both craft learners and buyers. A learner wants to know which knot and cord are manageable. A buyer wants to know whether the necklace will sit correctly, feel comfortable, and hold up during daily use. A good article needs to address both sides instead of only describing the symbolism."
+      ]
+    },
+    {
+      title: "Cord, pendant, and comfort checks",
+      paragraphs: [
+        "Cord quality is the first practical check. A necklace cord touches the skin, bends often, and carries pendant weight, so it should feel smooth without being too slippery. If the cord is too stiff, the necklace may not drape naturally. If it is too thin, the pendant may pull the knot out of shape. Adjustable closures should move smoothly but still hold their position.",
+        "Pendant weight is the second check. A heavy pendant can make the knot sit off center or pull the necklace forward. A very light charm may work better for casual daily wear, while a heavier pendant may need a thicker cord and stronger knot structure. Product pages should show the necklace on a person or include dimensions so buyers can judge scale."
+      ]
+    },
+    {
+      title: "Meaning and gift positioning",
+      paragraphs: [
+        "Chinese knot necklaces are often chosen as small symbolic gifts. Depending on the design, they may suggest connection, continuity, blessing, protection as a visual wish, or festive style. The safest gift copy explains the cultural association without turning symbolism into a promise. This keeps the article trustworthy and avoids exaggerated product claims.",
+        "For gifting, presentation matters. A simple box, clean card, or short explanation of the knot meaning can make the necklace easier to give. Color also changes the mood: red feels festive and traditional, black can feel more understated, gold accents can feel formal, and natural wood or stone pendants can feel calmer."
+      ]
+    },
+    {
+      title: "Future product recommendation structure",
+      paragraphs: [
+        "This topic can later support several product groups: pendant necklaces, adjustable cord necklaces, bracelet-and-necklace sets, DIY cord supplies, charm kits, and gift boxes. Those should not all be mixed into one generic product list. A buyer looking for a finished necklace has different needs from a crafter looking for cord and findings.",
+        "Before adding affiliate products, the page should keep the buying criteria visible: cord comfort, knot security, pendant weight, adjustable length, color meaning, and gift presentation. That makes the page useful even before product blocks are added and gives a clear framework for future monetization."
+      ]
+    }
   ],
   related: [guides[8], guides[7], guides[9], guides[14]].filter(Boolean)
 }));
