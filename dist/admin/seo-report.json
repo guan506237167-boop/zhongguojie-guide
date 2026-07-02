@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-02T01:52:04.504Z",
+  "generatedAt": "2026-07-02T03:20:17.199Z",
   "totals": {
-    "average": 92,
+    "average": 99,
     "pages": 29,
-    "pass": 23,
+    "pass": 29,
     "review": 0,
-    "fix": 6
+    "fix": 0
   },
   "reports": [
     {
@@ -208,81 +208,69 @@
     },
     {
       "path": "/knots/good-luck-knot/",
-      "score": 69,
+      "score": 100,
       "titleLength": 55,
       "descriptionLength": 128,
-      "wordCount": 623,
+      "wordCount": 1049,
       "h1": 1,
-      "h2": 6,
+      "h2": 8,
       "faqs": 6,
-      "issues": [
-        "thin content: under 1000 words"
-      ]
+      "issues": []
     },
     {
       "path": "/knots/button-knot/",
-      "score": 69,
+      "score": 100,
       "titleLength": 60,
       "descriptionLength": 133,
-      "wordCount": 619,
+      "wordCount": 1045,
       "h1": 1,
-      "h2": 6,
+      "h2": 8,
       "faqs": 6,
-      "issues": [
-        "thin content: under 1000 words"
-      ]
+      "issues": []
     },
     {
       "path": "/knots/pan-chang-knot/",
-      "score": 69,
+      "score": 100,
       "titleLength": 55,
       "descriptionLength": 128,
-      "wordCount": 620,
+      "wordCount": 1046,
       "h1": 1,
-      "h2": 6,
+      "h2": 8,
       "faqs": 6,
-      "issues": [
-        "thin content: under 1000 words"
-      ]
+      "issues": []
     },
     {
       "path": "/knots/double-coin-knot/",
-      "score": 69,
+      "score": 100,
       "titleLength": 57,
       "descriptionLength": 130,
-      "wordCount": 598,
+      "wordCount": 1024,
       "h1": 1,
-      "h2": 6,
+      "h2": 8,
       "faqs": 6,
-      "issues": [
-        "thin content: under 1000 words"
-      ]
+      "issues": []
     },
     {
       "path": "/knots/endless-knot/",
-      "score": 69,
+      "score": 100,
       "titleLength": 53,
       "descriptionLength": 126,
-      "wordCount": 591,
+      "wordCount": 1015,
       "h1": 1,
-      "h2": 6,
+      "h2": 8,
       "faqs": 6,
-      "issues": [
-        "thin content: under 1000 words"
-      ]
+      "issues": []
     },
     {
       "path": "/knots/bracelet-knot/",
-      "score": 69,
+      "score": 100,
       "titleLength": 62,
       "descriptionLength": 135,
-      "wordCount": 614,
+      "wordCount": 1040,
       "h1": 1,
-      "h2": 6,
+      "h2": 8,
       "faqs": 6,
-      "issues": [
-        "thin content: under 1000 words"
-      ]
+      "issues": []
     },
     {
       "path": "/chinese-knot-faq/",
