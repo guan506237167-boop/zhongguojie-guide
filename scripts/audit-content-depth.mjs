@@ -3,6 +3,11 @@ import { join } from "node:path";
 
 const minimumWords = 1000;
 const pages = [
+  "/chinese-knot-tutorial/",
+  "/chinese-knot-meaning/",
+  "/types-of-chinese-knots/",
+  "/chinese-knot-cord/",
+  "/chinese-knot-bracelet/",
   "/chinese-knot-ornament/",
   "/chinese-knot-necklace/"
 ];
