@@ -40,7 +40,8 @@ const guides = [
   { title: "How to Make a Chinese Knot", path: "/how-to-make-chinese-knot/", category: "Tutorials", description: "A practical beginner guide to setup, cord choice, knot practice order, and clean finishing." },
   { title: "Pan Chang Knot Tutorial", path: "/pan-chang-knot-tutorial/", category: "Tutorials", description: "A tutorial-focused Pan Chang guide for loop control, tightening, meaning, and practice mistakes." },
   { title: "Chinese Knot Ornament", path: "/chinese-knot-ornament/", category: "Gift & Decor", description: "A decor and gift guide for Chinese knot ornaments, hanging styles, meanings, and product selection." },
-  { title: "Chinese Knot Necklace", path: "/chinese-knot-necklace/", category: "Gift & Decor", description: "A guide to Chinese knot necklaces, cord choices, pendants, meaning notes, and gift positioning." }
+  { title: "Chinese Knot Necklace", path: "/chinese-knot-necklace/", category: "Gift & Decor", description: "A guide to Chinese knot necklaces, cord choices, pendants, meaning notes, and gift positioning." },
+  { title: "Chinese Knot Jewelry", path: "/chinese-knot-jewelry/", category: "Jewelry Guides", description: "A guide to Chinese knot jewelry, including bracelets, necklaces, charms, cord choices, meanings, and gift buying checks." }
 ];
 
 const pages = [];
@@ -560,6 +561,34 @@ await writePage("/chinese-knot-necklace/", supportArticle({
   related: [guides[8], guides[7], guides[9], guides[14]].filter(Boolean)
 }));
 
+await writePage("/chinese-knot-jewelry/", supportArticle({
+  title: "Chinese Knot Jewelry: Bracelets, Necklaces, Charms, Meaning, and Buying Guide",
+  description: "Learn how Chinese knot jewelry works across bracelets, necklaces, charms, cord choices, symbolic meanings, and gift-focused buying checks.",
+  path: "/chinese-knot-jewelry/",
+  h1: "Chinese Knot Jewelry",
+  intro: "Chinese knot jewelry connects traditional knot symbolism with wearable products such as bracelets, necklaces, pendants, and small charms.",
+  answer: "Chinese knot jewelry usually uses decorative cord knots in bracelets, necklaces, pendants, keychain charms, or small gift pieces. The best choice depends on cord comfort, knot security, pendant weight, color symbolism, finishing quality, and whether the item is meant for daily wear or symbolic gifting.",
+  details: [
+    "A wearable Chinese knot item needs stricter quality checks than a wall ornament because it touches the skin, moves with the body, and may carry a pendant or charm.",
+    "Meaning should be described as symbolic and cultural. A bracelet or necklace can express good wishes, continuity, blessing, or connection, but product copy should not claim guaranteed luck, protection, wealth, or relationship outcomes.",
+    "For future monetization, this page can support bracelets, necklaces, charm sets, cord supplies, DIY kits, and gift bundles without mixing every product into one vague recommendation."
+  ],
+  sections: [
+    { title: "Main types of Chinese knot jewelry", paragraphs: [
+      "The most common Chinese knot jewelry categories are bracelets, necklaces, pendants, keychain charms, and adjustable cord pieces. Bracelets are usually the easiest entry point because they are small, giftable, and can use simple knots with color symbolism. Necklaces need more attention to pendant weight and cord comfort. Charms and keychains can use stronger cord and metal hardware because they do not touch the skin as much.",
+      "A useful jewelry guide should separate finished products from DIY supplies. A buyer looking for a finished bracelet needs fit, comfort, packaging, and durability. A crafter looking for supplies needs cord thickness, color, tools, beads, findings, and tutorial difficulty. Mixing those intents too early makes the page less useful."
+    ]},
+    { title: "Cord comfort and knot security", paragraphs: [
+      "Cord is the foundation of Chinese knot jewelry. For bracelets and necklaces, the cord should feel smooth, flexible, and strong enough to hold its shape. If the cord is too stiff, the item may not sit naturally. If it is too thin, the knot may look weak or fail under tension. Adjustable closures should slide smoothly but still stay in place during wear.",
+      "Knot security is equally important. A decorative knot can look good in a product photo but loosen after repeated handling. Check the back side, cord ends, closure, and whether the knot remains centered when worn. A good listing should show these details instead of only showing a front-facing close-up."
+    ]},
+    { title: "Buying checklist for bracelets and necklaces", paragraphs: [
+      "For bracelets, check adjustable range, cord softness, knot size, whether the ends are sealed cleanly, and whether the bracelet can handle repeated tightening. For necklaces, check pendant weight, cord length, skin comfort, closure design, and whether the knot sits centered when worn. For charms, check hardware strength and whether the cord is thick enough for bags, keys, or daily movement.",
+      "Packaging matters for gifts, but it should not hide weak construction. A nice box does not compensate for frayed cord, uneven knots, vague material descriptions, or photos that hide the back side. Future affiliate product blocks should use this checklist before recommending any item."
+    ]}
+  ],
+  related: [guides[8], guides[15], guides[9], guides[7], guides[2]].filter(Boolean)
+}));
 for (const knot of knots) {
   await writePage(`/knots/${knot.slug}/`, knotPage(knot));
 }

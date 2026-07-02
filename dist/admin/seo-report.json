@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-02T03:31:04.652Z",
+  "generatedAt": "2026-07-02T23:30:48.682Z",
   "totals": {
     "average": 99,
-    "pages": 29,
-    "pass": 29,
+    "pages": 30,
+    "pass": 30,
     "review": 0,
     "fix": 0
   },
@@ -24,7 +24,7 @@
       "score": 100,
       "titleLength": 65,
       "descriptionLength": 134,
-      "wordCount": 483,
+      "wordCount": 507,
       "h1": 1,
       "h2": 3,
       "faqs": 0,
@@ -203,6 +203,17 @@
       "wordCount": 1662,
       "h1": 1,
       "h2": 11,
+      "faqs": 6,
+      "issues": []
+    },
+    {
+      "path": "/chinese-knot-jewelry/",
+      "score": 100,
+      "titleLength": 77,
+      "descriptionLength": 138,
+      "wordCount": 1446,
+      "h1": 1,
+      "h2": 9,
       "faqs": 6,
       "issues": []
     },
