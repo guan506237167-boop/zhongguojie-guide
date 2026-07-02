@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-02T23:30:48.682Z",
+  "generatedAt": "2026-07-02T23:45:11.815Z",
   "totals": {
     "average": 99,
-    "pages": 30,
-    "pass": 30,
+    "pages": 31,
+    "pass": 31,
     "review": 0,
     "fix": 0
   },
@@ -24,7 +24,7 @@
       "score": 100,
       "titleLength": 65,
       "descriptionLength": 134,
-      "wordCount": 507,
+      "wordCount": 530,
       "h1": 1,
       "h2": 3,
       "faqs": 0,
@@ -212,6 +212,17 @@
       "titleLength": 77,
       "descriptionLength": 138,
       "wordCount": 1446,
+      "h1": 1,
+      "h2": 9,
+      "faqs": 6,
+      "issues": []
+    },
+    {
+      "path": "/red-chinese-knot/",
+      "score": 100,
+      "titleLength": 61,
+      "descriptionLength": 125,
+      "wordCount": 1439,
       "h1": 1,
       "h2": 9,
       "faqs": 6,

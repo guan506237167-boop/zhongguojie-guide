@@ -41,7 +41,8 @@ const guides = [
   { title: "Pan Chang Knot Tutorial", path: "/pan-chang-knot-tutorial/", category: "Tutorials", description: "A tutorial-focused Pan Chang guide for loop control, tightening, meaning, and practice mistakes." },
   { title: "Chinese Knot Ornament", path: "/chinese-knot-ornament/", category: "Gift & Decor", description: "A decor and gift guide for Chinese knot ornaments, hanging styles, meanings, and product selection." },
   { title: "Chinese Knot Necklace", path: "/chinese-knot-necklace/", category: "Gift & Decor", description: "A guide to Chinese knot necklaces, cord choices, pendants, meaning notes, and gift positioning." },
-  { title: "Chinese Knot Jewelry", path: "/chinese-knot-jewelry/", category: "Jewelry Guides", description: "A guide to Chinese knot jewelry, including bracelets, necklaces, charms, cord choices, meanings, and gift buying checks." }
+  { title: "Chinese Knot Jewelry", path: "/chinese-knot-jewelry/", category: "Jewelry Guides", description: "A guide to Chinese knot jewelry, including bracelets, necklaces, charms, cord choices, meanings, and gift buying checks." },
+  { title: "Red Chinese Knot", path: "/red-chinese-knot/", category: "Meaning Guides", description: "A guide to red Chinese knot meaning, decor use, gift positioning, color symbolism, and buying checks." }
 ];
 
 const pages = [];
@@ -589,6 +590,35 @@ await writePage("/chinese-knot-jewelry/", supportArticle({
   ],
   related: [guides[8], guides[15], guides[9], guides[7], guides[2]].filter(Boolean)
 }));
+await writePage("/red-chinese-knot/", supportArticle({
+  title: "Red Chinese Knot Meaning, Decor Use, Gifts, and Buying Checks",
+  description: "Learn what a red Chinese knot means, where it is used, how to choose decor or gift pieces, and what quality details to check.",
+  path: "/red-chinese-knot/",
+  h1: "Red Chinese Knot",
+  intro: "A red Chinese knot is one of the most recognizable Chinese decorative symbols because red cord connects strongly with celebration, blessing, and festive display.",
+  answer: "A red Chinese knot usually represents good wishes, celebration, continuity, and auspicious decoration in a cultural or symbolic sense. It is commonly used for home decor, festivals, gifts, car ornaments, wall hangings, bracelets, keychains, and holiday displays, but the meaning should be described as symbolism rather than a guaranteed result.",
+  details: [
+    "Red is the most common color for Chinese knot products because it is visually festive and strongly associated with celebration in Chinese cultural settings.",
+    "The best red knot product depends on use case: wall decor needs scale and tassel quality, jewelry needs comfort and closure security, and keychains need durable cord and hardware.",
+    "This page can support future product blocks for red wall knots, red bracelets, lucky knot charms, festival decorations, and small gift items."
+  ],
+  sections: [
+    { title: "What red adds to Chinese knot symbolism", paragraphs: [
+      "Chinese knot meaning comes from structure, use, and color together. The knot form can suggest continuity, connection, balance, or blessing, while red changes the emotional tone. A red knot feels more festive and ceremonial than a neutral cord knot. That is why red knots often appear during holidays, weddings, New Year displays, shop decorations, and gift packaging.",
+      "The safest explanation is cultural rather than absolute. A red Chinese knot can express a wish for good fortune, happiness, harmony, or celebration, but it should not be written as if it guarantees luck or protection. This distinction is important for trustworthy SEO content and later product recommendations."
+    ]},
+    { title: "Where red Chinese knots are used", paragraphs: [
+      "Large red knots are often used as wall hangings, door decorations, festival ornaments, or room accents. Smaller red knots can appear as bracelets, necklaces, charms, keychains, bag pendants, car ornaments, or DIY craft pieces. The same color can work across many formats, but each format has different quality requirements.",
+      "A wall hanging should have balanced proportions, even loops, clean tassels, and a hanging method that keeps it straight. A wearable knot should have soft cord, sealed ends, and a comfortable closure. A keychain or bag charm should use stronger cord and hardware because it receives more friction. Separating these uses keeps the page practical."
+    ]},
+    { title: "Buying checklist for red Chinese knot products", paragraphs: [
+      "Before buying a red Chinese knot, check the size, cord material, color depth, loop symmetry, tassel finish, hardware, and whether the product photo shows the full piece. A small ornament photographed close up may look impressive online but appear tiny on a door or wall. A bright red bracelet may look festive but feel stiff if the cord is poor quality.",
+      "Gift buyers should also check packaging and wording. A short meaning card can make the gift easier to understand, but exaggerated claims should be avoided. For affiliate content later, product blocks should explain why a piece is recommended for decor, jewelry, festival use, or gifting instead of simply listing red knot products together."
+    ]}
+  ],
+  related: [guides[2], guides[8], guides[15], guides[7], guides[9]].filter(Boolean)
+}));
+
 for (const knot of knots) {
   await writePage(`/knots/${knot.slug}/`, knotPage(knot));
 }
