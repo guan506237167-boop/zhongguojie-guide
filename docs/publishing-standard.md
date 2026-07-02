@@ -47,9 +47,9 @@ Do not publish a new Chinese knot article as a short placeholder.
 
 | Page type | Minimum visible words | Target words |
 |---|---:|---:|
-| New tutorial/meaning guide | 800 | 900-1300 |
-| Product or gift guide | 800 | 1000-1400 |
-| Knot type profile | 700 | 850-1100 |
+| New tutorial/meaning guide | 1000 | 1000-1400 |
+| Product or gift guide | 1000 | 1000-1500 |
+| Knot type profile | 1000 | 1000-1300 |
 | FAQ/support page | Not forced | Judge by task completeness |
 
 Every content page must include a direct answer block, material or use-case notes, meaning boundaries, common mistakes, related guides, and page-specific FAQ. Existing short knot pages should be treated as rewrite candidates, not as the quality benchmark.

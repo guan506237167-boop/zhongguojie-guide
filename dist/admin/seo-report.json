@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-01T23:44:26.058Z",
+  "generatedAt": "2026-07-02T00:25:02.413Z",
   "totals": {
-    "average": 99,
+    "average": 78,
     "pages": 29,
-    "pass": 29,
+    "pass": 9,
     "review": 0,
-    "fix": 0
+    "fix": 20
   },
   "reports": [
     {
@@ -32,166 +32,194 @@
     },
     {
       "path": "/chinese-knot-tutorial/",
-      "score": 100,
+      "score": 69,
       "titleLength": 60,
       "descriptionLength": 120,
       "wordCount": 435,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/how-to-tie-chinese-knot/",
-      "score": 100,
+      "score": 69,
       "titleLength": 67,
       "descriptionLength": 127,
       "wordCount": 439,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/chinese-knot-meaning/",
-      "score": 100,
+      "score": 69,
       "titleLength": 63,
       "descriptionLength": 130,
       "wordCount": 433,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/types-of-chinese-knots/",
-      "score": 100,
+      "score": 69,
       "titleLength": 62,
       "descriptionLength": 115,
       "wordCount": 565,
       "h1": 1,
       "h2": 5,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/endless-knot-meaning/",
-      "score": 100,
+      "score": 69,
       "titleLength": 59,
       "descriptionLength": 117,
       "wordCount": 423,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/chinese-button-knot/",
-      "score": 100,
+      "score": 69,
       "titleLength": 67,
       "descriptionLength": 125,
       "wordCount": 420,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/pan-chang-knot/",
-      "score": 100,
+      "score": 69,
       "titleLength": 57,
       "descriptionLength": 125,
       "wordCount": 418,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/chinese-knot-cord/",
-      "score": 100,
+      "score": 69,
       "titleLength": 65,
       "descriptionLength": 133,
       "wordCount": 427,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/chinese-knot-bracelet/",
-      "score": 100,
+      "score": 69,
       "titleLength": 66,
       "descriptionLength": 125,
       "wordCount": 421,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/chinese-knot-keychain/",
-      "score": 100,
+      "score": 69,
       "titleLength": 66,
       "descriptionLength": 126,
       "wordCount": 417,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/chinese-lucky-knot/",
-      "score": 100,
+      "score": 69,
       "titleLength": 57,
       "descriptionLength": 116,
       "wordCount": 434,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/double-coin-knot/",
-      "score": 100,
+      "score": 69,
       "titleLength": 57,
       "descriptionLength": 118,
       "wordCount": 439,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/how-to-make-chinese-knot/",
-      "score": 100,
+      "score": 69,
       "titleLength": 68,
       "descriptionLength": 125,
       "wordCount": 446,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/pan-chang-knot-tutorial/",
-      "score": 100,
+      "score": 69,
       "titleLength": 72,
       "descriptionLength": 127,
       "wordCount": 440,
       "h1": 1,
       "h2": 4,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/chinese-knot-ornament/",
       "score": 100,
       "titleLength": 72,
       "descriptionLength": 117,
-      "wordCount": 988,
+      "wordCount": 1114,
       "h1": 1,
-      "h2": 8,
+      "h2": 9,
       "faqs": 6,
       "issues": []
     },
@@ -200,77 +228,89 @@
       "score": 100,
       "titleLength": 68,
       "descriptionLength": 122,
-      "wordCount": 945,
+      "wordCount": 1072,
       "h1": 1,
-      "h2": 8,
+      "h2": 9,
       "faqs": 6,
       "issues": []
     },
     {
       "path": "/knots/good-luck-knot/",
-      "score": 100,
+      "score": 69,
       "titleLength": 55,
       "descriptionLength": 128,
       "wordCount": 471,
       "h1": 1,
       "h2": 5,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/knots/button-knot/",
-      "score": 100,
+      "score": 69,
       "titleLength": 60,
       "descriptionLength": 133,
       "wordCount": 467,
       "h1": 1,
       "h2": 5,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/knots/pan-chang-knot/",
-      "score": 100,
+      "score": 69,
       "titleLength": 55,
       "descriptionLength": 128,
       "wordCount": 468,
       "h1": 1,
       "h2": 5,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/knots/double-coin-knot/",
-      "score": 100,
+      "score": 69,
       "titleLength": 57,
       "descriptionLength": 130,
       "wordCount": 446,
       "h1": 1,
       "h2": 5,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/knots/endless-knot/",
-      "score": 100,
+      "score": 69,
       "titleLength": 53,
       "descriptionLength": 126,
       "wordCount": 440,
       "h1": 1,
       "h2": 5,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/knots/bracelet-knot/",
-      "score": 100,
+      "score": 69,
       "titleLength": 62,
       "descriptionLength": 135,
       "wordCount": 462,
       "h1": 1,
       "h2": 5,
       "faqs": 6,
-      "issues": []
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     },
     {
       "path": "/chinese-knot-faq/",
@@ -293,7 +333,7 @@
       "h2": 2,
       "faqs": 0,
       "issues": [
-        "thin content"
+        "thin support content"
       ]
     },
     {
@@ -306,7 +346,7 @@
       "h2": 2,
       "faqs": 0,
       "issues": [
-        "thin content"
+        "thin support content"
       ]
     },
     {
@@ -319,7 +359,7 @@
       "h2": 3,
       "faqs": 0,
       "issues": [
-        "thin content"
+        "thin support content"
       ]
     },
     {
@@ -332,7 +372,7 @@
       "h2": 3,
       "faqs": 0,
       "issues": [
-        "thin content"
+        "thin support content"
       ]
     }
   ]

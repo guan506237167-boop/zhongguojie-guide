@@ -496,6 +496,13 @@ await writePage("/chinese-knot-ornament/", supportArticle({
         "This topic has clear commercial paths because ornaments are visual, giftable, and lightweight. The site can later build product blocks for festival hanging knots, car charms, wall decor, handmade ornaments, DIY kits, and boxed gifts. Each path should have its own comparison rules, because a car charm and a large wall knot do not solve the same problem.",
         "For now, the article should prepare users to judge products before affiliate links are added. The key filters are use location, size, cord quality, tassel finish, color balance, and whether the design matches everyday decor or a specific celebration."
       ]
+    },
+    {
+      title: "How to judge quality from product photos",
+      paragraphs: [
+        "Because many ornaments are bought online, the product photos need to show more than a bright red front view. Look for clear images of the hanging loop, knot body, tassel ends, back side, and full length. A photo with only a close crop may hide uneven cord tension, loose threads, or a weak connector between the knot and tassel.",
+        "A strong ornament listing should also make scale obvious. Dimensions, door or wall examples, and close-up finishing shots help buyers understand whether the piece is suitable for a festival doorway, a small cabinet, a car mirror, or a gift box. Without that context, a decorative knot can look attractive online but feel too small or too crowded in real use."
+      ]
     }
   ],
   related: [guides[2], guides[3], guides[10], guides[13]].filter(Boolean)
@@ -540,6 +547,13 @@ await writePage("/chinese-knot-necklace/", supportArticle({
       paragraphs: [
         "This topic can later support several product groups: pendant necklaces, adjustable cord necklaces, bracelet-and-necklace sets, DIY cord supplies, charm kits, and gift boxes. Those should not all be mixed into one generic product list. A buyer looking for a finished necklace has different needs from a crafter looking for cord and findings.",
         "Before adding affiliate products, the page should keep the buying criteria visible: cord comfort, knot security, pendant weight, adjustable length, color meaning, and gift presentation. That makes the page useful even before product blocks are added and gives a clear framework for future monetization."
+      ]
+    },
+    {
+      title: "When a necklace is better than a hanging ornament",
+      paragraphs: [
+        "A necklace makes sense when the user wants a small wearable symbol rather than a room decoration. It is easier to give as a personal gift, easier to ship, and easier to pair with pendants or stones. The downside is that wearability matters much more: rough cord, heavy charms, or weak adjustable knots can make the piece uncomfortable even if the design looks meaningful.",
+        "For future buying guides, necklace recommendations should therefore use stricter comfort checks than wall ornaments. Product notes should mention cord softness, adjustable range, pendant weight, skin contact, and whether the knot is decorative only or part of the closure. These details make the page more useful than a simple gallery of red cord jewelry."
       ]
     }
   ],
@@ -610,8 +624,18 @@ function auditPage(page, html, sitemap) {
   if (!sitemap.includes(`<loc>${absolute(page.path)}</loc>`)) issues.push("missing from sitemap");
   const needsFaq = page.path.startsWith("/knots/") || page.path.includes("knot") || page.path.includes("bracelet") || page.path.includes("cord");
   if (needsFaq && page.path !== "/guides/" && faqCount < 2) issues.push("missing FAQ");
-  if (wordCount < 180) issues.push("thin content");
-  return { path: page.path, score: Math.max(54, Math.min(100, 100 - issues.length * 8 + (wordCount > 520 ? 4 : 0))), titleLength: title.length, descriptionLength: description.length, wordCount, h1, h2, faqs: faqCount, issues };
+  if (requiresFullArticleDepth(page.path) && wordCount < 1000) issues.push("thin content: under 1000 words");
+  else if (!requiresFullArticleDepth(page.path) && wordCount < 180) issues.push("thin support content");
+  let score = 100 - issues.length * 8 + (wordCount >= 1000 ? 4 : 0);
+  if (requiresFullArticleDepth(page.path) && wordCount < 1000) score = Math.min(score, 69);
+  score = Math.max(54, Math.min(100, score));
+  return { path: page.path, score, titleLength: title.length, descriptionLength: description.length, wordCount, h1, h2, faqs: faqCount, issues };
+}
+
+function requiresFullArticleDepth(path) {
+  if (["/", "/about/", "/contact/", "/privacy/", "/terms/", "/guides/", "/chinese-knot-faq/"].includes(path)) return false;
+  if (path.startsWith("/admin/")) return false;
+  return true;
 }
 
 function clientScript() {
