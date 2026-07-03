@@ -566,7 +566,7 @@ await writePage("/chinese-knot-jewelry/", supportArticle({
   title: "Chinese Knot Jewelry: Bracelets, Necklaces, Charms, Meaning, and Buying Guide",
   description: "Learn how Chinese knot jewelry works across bracelets, necklaces, charms, cord choices, symbolic meanings, and gift-focused buying checks.",
   path: "/chinese-knot-jewelry/",
-  h1: "Chinese Knot Jewelry",
+  h1: "Chinese Knot Jewelry: Bracelets, Necklaces, Charms, Meaning, and Buying Guide",
   intro: "Chinese knot jewelry connects traditional knot symbolism with wearable products such as bracelets, necklaces, pendants, and small charms.",
   answer: "Chinese knot jewelry usually uses decorative cord knots in bracelets, necklaces, pendants, keychain charms, or small gift pieces. The best choice depends on cord comfort, knot security, pendant weight, color symbolism, finishing quality, and whether the item is meant for daily wear or symbolic gifting.",
   details: [
@@ -594,7 +594,7 @@ await writePage("/red-chinese-knot/", supportArticle({
   title: "Red Chinese Knot Meaning, Decor Use, Gifts, and Buying Checks",
   description: "Learn what a red Chinese knot means, where it is used, how to choose decor or gift pieces, and what quality details to check.",
   path: "/red-chinese-knot/",
-  h1: "Red Chinese Knot",
+  h1: "Red Chinese Knot Meaning, Decor Use, Gifts, and Buying Checks",
   intro: "A red Chinese knot is one of the most recognizable Chinese decorative symbols because red cord connects strongly with celebration, blessing, and festive display.",
   answer: "A red Chinese knot usually represents good wishes, celebration, continuity, and auspicious decoration in a cultural or symbolic sense. It is commonly used for home decor, festivals, gifts, car ornaments, wall hangings, bracelets, keychains, and holiday displays, but the meaning should be described as symbolism rather than a guaranteed result.",
   details: [
