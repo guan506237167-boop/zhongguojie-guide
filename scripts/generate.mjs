@@ -42,7 +42,8 @@ const guides = [
   { title: "Chinese Knot Ornament", path: "/chinese-knot-ornament/", category: "Gift & Decor", description: "A decor and gift guide for Chinese knot ornaments, hanging styles, meanings, and product selection." },
   { title: "Chinese Knot Necklace", path: "/chinese-knot-necklace/", category: "Gift & Decor", description: "A guide to Chinese knot necklaces, cord choices, pendants, meaning notes, and gift positioning." },
   { title: "Chinese Knot Jewelry", path: "/chinese-knot-jewelry/", category: "Jewelry Guides", description: "A guide to Chinese knot jewelry, including bracelets, necklaces, charms, cord choices, meanings, and gift buying checks." },
-  { title: "Red Chinese Knot", path: "/red-chinese-knot/", category: "Meaning Guides", description: "A guide to red Chinese knot meaning, decor use, gift positioning, color symbolism, and buying checks." }
+  { title: "Red Chinese Knot", path: "/red-chinese-knot/", category: "Meaning Guides", description: "A guide to red Chinese knot meaning, decor use, gift positioning, color symbolism, and buying checks." },
+  { title: "Chinese Knot Earrings", path: "/chinese-knot-earrings/", category: "Jewelry Guides", description: "A guide to Chinese knot earrings, cord styles, weight, comfort, symbolism, and gift buying checks." }
 ];
 
 const pages = [];
@@ -617,6 +618,42 @@ await writePage("/red-chinese-knot/", supportArticle({
     ]}
   ],
   related: [guides[2], guides[8], guides[15], guides[7], guides[9]].filter(Boolean)
+}));
+
+await writePage("/chinese-knot-earrings/", supportArticle({
+  title: "Chinese Knot Earrings: Style, Comfort, Meaning, and Buying Checks",
+  description: "Compare Chinese knot earrings by cord style, weight, hook quality, color symbolism, gift use, and practical buying details.",
+  path: "/chinese-knot-earrings/",
+  h1: "Chinese Knot Earrings: Style, Comfort, Meaning, and Buying Checks",
+  intro: "Chinese knot earrings turn traditional cordwork into a small wearable item, so the guide needs to balance symbolism, comfort, weight, finishing quality, and gift presentation.",
+  answer: "Chinese knot earrings are lightweight jewelry pieces that use decorative cord knots, tassels, beads, charms, or metal findings. The best pair should look balanced, feel comfortable, use secure hooks or posts, and explain color symbolism without making exaggerated claims about luck or protection.",
+  details: [
+    "Earrings need stricter comfort checks than wall ornaments because they move with the body and sit close to the face. Weight, hook quality, cord finish, and tassel length matter as much as color and meaning.",
+    "For gift use, separate festive red designs, understated daily pairs, tassel earrings, bead-and-knot designs, and handmade craft styles instead of treating all knot earrings as one product type."
+  ],
+  sections: [
+    { title: "What makes Chinese knot earrings different", paragraphs: [
+      "Chinese knot earrings are not only miniature ornaments. The knot has to hold its shape at small scale, the tassel or charm has to hang evenly, and the hardware has to feel comfortable through repeated wear. A large wall knot can tolerate more visual weight, but earrings need proportion and movement control.",
+      "This makes the topic useful for both buyers and makers. A buyer wants to know whether the earrings are light, balanced, and suitable for daily wear or festival outfits. A maker wants to know what cord thickness, bead size, and finding style will keep the pair symmetrical. A strong page should answer both intents clearly."
+    ]},
+    { title: "Weight, hooks, and comfort checks", paragraphs: [
+      "Weight is the first practical check. Knot earrings can look delicate in photos, but tassels, beads, coins, and metal charms can make them heavier than expected. If the pair is intended for long wear, look for stated dimensions, lightweight findings, and photos that show scale near the ear or face.",
+      "Hardware is the second check. Hooks, posts, hoops, and clip-ons all change comfort and security. A beautiful knot loses value if the hook bends easily, the post irritates the ear, or the earring twists so the knot faces sideways. Product descriptions should show the attachment clearly, not only the decorative front."
+    ]},
+    { title: "Cord, tassels, beads, and color symbolism", paragraphs: [
+      "Cord quality affects both appearance and durability. Cleanly sealed ends, even knot tension, and smooth tassel trimming make a small pair look polished. Frayed cord or uneven tassels are easy to notice because earrings sit near the face. If beads or charms are added, they should support the knot instead of overpowering it.",
+      "Red is the most traditional festive choice, while black, gold, jade-like green, ivory, or mixed colors can create different moods. The safest wording treats those colors as cultural and visual symbolism. A pair can express good wishes, celebration, connection, or elegance, but product copy should not promise real-world outcomes."
+    ]},
+    { title: "Buying checklist for finished earrings", paragraphs: [
+      "Before buying, check length, weight, hardware type, cord material, tassel finish, whether the pair is handmade, and whether the product photo shows both earrings. Symmetry matters because one uneven knot is more visible in earrings than in a larger ornament. If the earrings are gifts, packaging and a short meaning card can help, but construction quality still comes first.",
+      "Also decide whether the pair is for daily wear, wedding or festival styling, cultural gifts, dance costumes, or craft display. A dramatic tassel pair may look excellent for photos but feel too long for daily wear. A small knot stud may be easier to wear but less visually expressive. The intended use should drive the choice."
+    ]},
+    { title: "How this page connects to jewelry and craft content", paragraphs: [
+      "Chinese knot earrings sit inside the broader jewelry cluster with bracelets, necklaces, pendants, charms, and cord supplies. Internal links should help visitors compare wearable products by comfort and use case, then move to meaning pages if they want cultural context or tutorial pages if they want to make their own pair.",
+      "A useful earrings guide should leave the reader with a buying framework: check comfort, check scale, check symmetry, check hardware, check cord finishing, and read symbolism responsibly. That is more valuable than a short decorative description and gives future product blocks a clear standard."
+    ]}
+  ],
+  related: [guides[16], guides[15], guides[8], guides[7], guides[17]].filter(Boolean)
 }));
 
 for (const knot of knots) {
