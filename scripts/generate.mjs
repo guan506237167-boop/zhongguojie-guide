@@ -43,7 +43,8 @@ const guides = [
   { title: "Chinese Knot Necklace", path: "/chinese-knot-necklace/", category: "Gift & Decor", description: "A guide to Chinese knot necklaces, cord choices, pendants, meaning notes, and gift positioning." },
   { title: "Chinese Knot Jewelry", path: "/chinese-knot-jewelry/", category: "Jewelry Guides", description: "A guide to Chinese knot jewelry, including bracelets, necklaces, charms, cord choices, meanings, and gift buying checks." },
   { title: "Red Chinese Knot", path: "/red-chinese-knot/", category: "Meaning Guides", description: "A guide to red Chinese knot meaning, decor use, gift positioning, color symbolism, and buying checks." },
-  { title: "Chinese Knot Earrings", path: "/chinese-knot-earrings/", category: "Jewelry Guides", description: "A guide to Chinese knot earrings, cord styles, weight, comfort, symbolism, and gift buying checks." }
+  { title: "Chinese Knot Earrings", path: "/chinese-knot-earrings/", category: "Jewelry Guides", description: "A guide to Chinese knot earrings, cord styles, weight, comfort, symbolism, and gift buying checks." },
+  { title: "Chinese Knot Pendant", path: "/chinese-knot-pendant/", category: "Jewelry Guides", description: "A guide to Chinese knot pendants, cord balance, charms, symbolism, gift use, and buying checks." }
 ];
 
 const pages = [];
@@ -654,6 +655,42 @@ await writePage("/chinese-knot-earrings/", supportArticle({
     ]}
   ],
   related: [guides[16], guides[15], guides[8], guides[7], guides[17]].filter(Boolean)
+}));
+
+await writePage("/chinese-knot-pendant/", supportArticle({
+  title: "Chinese Knot Pendant: Cord, Charm, Meaning, Gift Use, and Buying Checks",
+  description: "Choose a Chinese knot pendant by cord quality, pendant weight, knot balance, color symbolism, gift presentation, and practical buying details.",
+  path: "/chinese-knot-pendant/",
+  h1: "Chinese Knot Pendant: Cord, Charm, Meaning, Gift Use, and Buying Checks",
+  intro: "A Chinese knot pendant combines cordwork with a charm, stone, coin, bead, or symbolic center, so both the knot and the hanging element need to be judged together.",
+  answer: "A Chinese knot pendant is a decorative cord piece that uses knotwork to hold, frame, or support a charm or symbolic ornament. The best pendant should have balanced cord tension, secure attachment, suitable pendant weight, clean finishing, and color meaning that is explained responsibly.",
+  details: [
+    "Pendant guides need practical buying checks because a beautiful knot can fail if the charm is too heavy, the cord is too thin, or the attachment point twists during wear or hanging.",
+    "This topic can support jewelry, gift, decor, car ornament, bag charm, and DIY supply intent, but those use cases should be separated so the page does not become a vague product list."
+  ],
+  sections: [
+    { title: "What counts as a Chinese knot pendant", paragraphs: [
+      "A Chinese knot pendant can be worn as jewelry, hung on a bag, attached to a keychain, placed in a car, or used as a small decor ornament. Some designs use the knot as the main visual feature. Others use the knot to support a jade-like charm, coin shape, bead, tassel, or symbolic object. The shared feature is that the cordwork and pendant work together.",
+      "Because the category crosses jewelry and decor, the page should ask what the pendant is meant to do. A necklace pendant must be comfortable. A bag charm must be durable. A car ornament must hang straight. A decorative gift pendant must look balanced and arrive in protective packaging."
+    ]},
+    { title: "Cord balance and pendant weight", paragraphs: [
+      "The first quality check is weight. A pendant that is too heavy can pull the knot out of shape or make the cord hang unevenly. A pendant that is too light may look cheap if the cord is thick and dramatic. The best design balances cord thickness, knot size, pendant material, and final use.",
+      "Attachment quality is equally important. The connection between knot and pendant should be secure, centered, and cleanly finished. If the product photo hides the connection point, the buyer cannot judge whether the piece will twist, fray, or separate after use."
+    ]},
+    { title: "Meaning, color, and gift positioning", paragraphs: [
+      "Chinese knot pendants are often chosen as symbolic gifts. Red can feel festive, gold accents can feel formal, black can feel more understated, and jade-like green can suggest a calmer traditional mood. The exact meaning depends on knot form, color, charm, and occasion.",
+      "The safest wording treats meaning as cultural symbolism. A pendant can express a wish for connection, celebration, blessing, or continuity, but product copy should not claim guaranteed luck, wealth, protection, or relationship outcomes. This protects trust while still explaining why people choose the design."
+    ]},
+    { title: "Buying checklist for pendants", paragraphs: [
+      "Before buying a Chinese knot pendant, check dimensions, pendant weight, cord material, knot symmetry, tassel finish, attachment point, color accuracy, and whether the product photo shows the full item. A pendant photographed close up may look larger than it is. A small pendant can be perfect for a necklace but underwhelming as wall or car decor.",
+      "Gift buyers should also check packaging and explanation. A simple meaning card can help recipients understand the design. Protective packaging matters because cords can bend, tassels can crease, and charms can scratch during shipping."
+    ]},
+    { title: "How this fits the Chinese knot site", paragraphs: [
+      "A pendant page should connect to necklace, bracelet, earring, keychain, cord, and meaning pages. Those links help different visitors continue along the right path: buyers compare finished pieces, makers compare supplies, and culture-focused readers read symbolic context.",
+      "The strongest page gives readers one clear framework: check the cord, check the pendant, check the connection, check the use case, and read the meaning responsibly. That keeps the content practical enough for product selection and careful enough for cultural reference."
+    ]}
+  ],
+  related: [guides[16], guides[15], guides[18], guides[8], guides[7]].filter(Boolean)
 }));
 
 for (const knot of knots) {

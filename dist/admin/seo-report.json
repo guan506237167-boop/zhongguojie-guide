@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-03T23:46:56.225Z",
+  "generatedAt": "2026-07-04T00:02:19.186Z",
   "totals": {
     "average": 99,
-    "pages": 32,
-    "pass": 32,
+    "pages": 33,
+    "pass": 33,
     "review": 0,
     "fix": 0
   },
@@ -24,7 +24,7 @@
       "score": 100,
       "titleLength": 65,
       "descriptionLength": 134,
-      "wordCount": 550,
+      "wordCount": 570,
       "h1": 1,
       "h2": 3,
       "faqs": 0,
@@ -234,6 +234,17 @@
       "titleLength": 65,
       "descriptionLength": 123,
       "wordCount": 1654,
+      "h1": 1,
+      "h2": 11,
+      "faqs": 6,
+      "issues": []
+    },
+    {
+      "path": "/chinese-knot-pendant/",
+      "score": 100,
+      "titleLength": 71,
+      "descriptionLength": 142,
+      "wordCount": 1601,
       "h1": 1,
       "h2": 11,
       "faqs": 6,
