@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-05T01:36:01.914Z",
+  "generatedAt": "2026-07-05T23:27:17.643Z",
   "totals": {
     "average": 99,
-    "pages": 34,
-    "pass": 34,
+    "pages": 36,
+    "pass": 36,
     "review": 0,
     "fix": 0
   },
@@ -24,7 +24,7 @@
       "score": 100,
       "titleLength": 65,
       "descriptionLength": 134,
-      "wordCount": 593,
+      "wordCount": 623,
       "h1": 1,
       "h2": 3,
       "faqs": 0,
@@ -389,6 +389,28 @@
       "issues": [
         "thin support content"
       ]
+    },
+    {
+      "path": "/chinese-button-knot-tutorial/",
+      "score": 100,
+      "titleLength": 70,
+      "descriptionLength": 112,
+      "wordCount": 1351,
+      "h1": 1,
+      "h2": 11,
+      "faqs": 4,
+      "issues": []
+    },
+    {
+      "path": "/chinese-knot-bracelet-tutorial/",
+      "score": 100,
+      "titleLength": 70,
+      "descriptionLength": 117,
+      "wordCount": 1336,
+      "h1": 1,
+      "h2": 11,
+      "faqs": 4,
+      "issues": []
     }
   ]
 }
