@@ -49,6 +49,8 @@ const guides = [
 
   { title: 'Chinese Button Knot Tutorial', path: '/chinese-button-knot-tutorial/', category: 'Tutorial Guides', description: 'Learn button knot cord choice and beginner mistakes.' },
   { title: 'Chinese Knot Bracelet Tutorial', path: '/chinese-knot-bracelet-tutorial/', category: 'Tutorial Guides', description: 'Make bracelets with sizing, cord, and gift checks.' },
+  { title: 'Step by Step Chinese Knots', path: '/step-by-step-chinese-knots/', category: 'Tutorial Guides', description: 'Plan beginner Chinese knot practice in safe steps.' },
+  { title: 'Chinese Lucky Knot Tutorial', path: '/chinese-lucky-knot-tutorial/', category: 'Tutorial Guides', description: 'Learn lucky knot meaning, cord control, and gift use.' },
 ];
 
 const pages = [];
@@ -451,7 +453,7 @@ await writePage("/how-to-make-chinese-knot/", supportArticle({
 }));
 
 await writePage("/pan-chang-knot-tutorial/", supportArticle({
-  title: "Pan Chang Knot Tutorial: Meaning, Setup, Loop Control, and Practice Tips",
+  title: "Pan Chang Knot Tutorial: Setup and Loop Control",
   description: "Follow a Pan Chang knot tutorial path with setup notes, loop control, tightening tips, symbolic meaning, and beginner mistakes.",
   path: "/pan-chang-knot-tutorial/",
   h1: "Pan Chang Knot Tutorial",
@@ -465,7 +467,7 @@ await writePage("/pan-chang-knot-tutorial/", supportArticle({
 }));
 
 await writePage("/chinese-knot-ornament/", supportArticle({
-  title: "Chinese Knot Ornament: Meaning, Decor Uses, Gift Ideas, and Buying Notes",
+  title: "Chinese Knot Ornament: Meaning, Gifts, and Decor Uses",
   description: "Learn how Chinese knot ornaments are used for decor, gifts, festive hanging, symbolic meaning, and product selection.",
   path: "/chinese-knot-ornament/",
   h1: "Chinese Knot Ornament",
@@ -517,7 +519,7 @@ await writePage("/chinese-knot-ornament/", supportArticle({
 }));
 
 await writePage("/chinese-knot-wall-hanging/", supportArticle({
-  title: "Chinese Knot Wall Hanging: Decor Meaning, Size, Placement, and Buying Checks",
+  title: "Chinese Knot Wall Hanging: Decor, Size, and Placement",
   description: "Choose a Chinese knot wall hanging by size, color, tassel quality, placement, decor style, gift use, and product photo checks.",
   path: "/chinese-knot-wall-hanging/",
   h1: "Chinese Knot Wall Hanging",
@@ -605,10 +607,10 @@ await writePage("/chinese-knot-necklace/", supportArticle({
 }));
 
 await writePage("/chinese-knot-jewelry/", supportArticle({
-  title: "Chinese Knot Jewelry: Bracelets, Necklaces, Charms, Meaning, and Buying Guide",
+  title: "Chinese Knot Jewelry: Bracelets, Necklaces, and Charms",
   description: "Learn how Chinese knot jewelry works across bracelets, necklaces, charms, cord choices, symbolic meanings, and gift-focused buying checks.",
   path: "/chinese-knot-jewelry/",
-  h1: "Chinese Knot Jewelry: Bracelets, Necklaces, Charms, Meaning, and Buying Guide",
+  h1: "Chinese Knot Jewelry: Bracelets, Necklaces, and Charms",
   intro: "Chinese knot jewelry connects traditional knot symbolism with wearable products such as bracelets, necklaces, pendants, and small charms.",
   answer: "Chinese knot jewelry usually uses decorative cord knots in bracelets, necklaces, pendants, keychain charms, or small gift pieces. The best choice depends on cord comfort, knot security, pendant weight, color symbolism, finishing quality, and whether the item is meant for daily wear or symbolic gifting.",
   details: [
@@ -698,10 +700,10 @@ await writePage("/chinese-knot-earrings/", supportArticle({
 }));
 
 await writePage("/chinese-knot-pendant/", supportArticle({
-  title: "Chinese Knot Pendant: Cord, Charm, Meaning, Gift Use, and Buying Checks",
+  title: "Chinese Knot Pendant: Cord, Charm, and Gift Use",
   description: "Choose a Chinese knot pendant by cord quality, pendant weight, knot balance, color symbolism, gift presentation, and practical buying details.",
   path: "/chinese-knot-pendant/",
-  h1: "Chinese Knot Pendant: Cord, Charm, Meaning, Gift Use, and Buying Checks",
+  h1: "Chinese Knot Pendant: Cord, Charm, and Gift Use",
   intro: "A Chinese knot pendant combines cordwork with a charm, stone, coin, bead, or symbolic center, so both the knot and the hanging element need to be judged together.",
   answer: "A Chinese knot pendant is a decorative cord piece that uses knotwork to hold, frame, or support a charm or symbolic ornament. The best pendant should have balanced cord tension, secure attachment, suitable pendant weight, clean finishing, and color meaning that is explained responsibly.",
   details: [
@@ -994,6 +996,240 @@ const dailyArticles20260706 = [
         "description": "Read symbolic context."
       }
     ]
+  },
+  {
+    "title": "Chinese Lucky Knot Tutorial: Meaning, Cord, Steps, and Mistakes",
+    "path": "/chinese-lucky-knot-tutorial/",
+    "description": "Learn a Chinese lucky knot tutorial path with meaning, cord choice, beginner steps, gift use, tightening checks, and common mistakes.",
+    "h1": "Chinese Lucky Knot Tutorial: Meaning, Cord, Steps, and Mistakes",
+    "intro": "A Chinese lucky knot is easiest to learn when you start with medium cord, keep the loops even, and treat the meaning as a blessing symbol rather than a guarantee.",
+    "answer": "A Chinese lucky knot tutorial should teach loop control, even tightening, cord choice, and symbolic use; red cord is common, but the knot expresses a wish rather than promising a real-world result.",
+    "details": [
+      "A lucky knot search usually has two intentions at once: the reader wants to make something and also understand why the object feels auspicious. The article must handle both without turning symbolism into a promise.",
+      "For a beginner, the most important material choice is not the most decorative cord. Use medium cord that is visible, flexible, and not too slippery. The goal is to see the structure while tightening slowly.",
+      "This tutorial page is also useful for gift planning because lucky knots often appear in ornaments, bracelets, keychains, and festival decor.",
+      "For visual quality, photograph or inspect the knot before adding it to a finished project. A lucky knot depends on balance: the center should not lean, the loops should look intentional, and the cord ends should be finished cleanly. Small asymmetry can be charming in handmade work, but obvious twisting makes the object feel careless.",
+      "If the knot is for a festival gift, match the scale to the recipient and setting. A large door ornament can use stronger visual contrast, while a bracelet or keychain needs comfort and durability. The same lucky-knot idea becomes different products when size, attachment, and daily wear are considered.",
+      "For display use, test how the knot hangs before final trimming. A knot that looks balanced on the table may tilt once attached to a tassel, hook, bracelet cord, or key ring."
+    ],
+    "sections": [
+      {
+        "title": "What a lucky knot means",
+        "paragraphs": [
+          "A Chinese lucky knot is commonly used as a visual blessing. Red cord, balanced loops, and symmetrical form can suggest good wishes, celebration, protection, or happiness depending on the object and occasion.",
+          "The meaning should stay symbolic. A knot can carry a wish or cultural image, but it does not guarantee luck. Responsible wording makes the craft more respectful and keeps the guide trustworthy."
+        ]
+      },
+      {
+        "title": "Beginner cord and setup",
+        "paragraphs": [
+          "Choose a medium-thickness cord for the first practice. Thin cord is hard to see and easy to overtighten. Very thick cord can make the final knot bulky. A smooth but not slippery cord gives the best learning balance.",
+          "Before tightening, lay the loops clearly and check symmetry. Many beginner knots fail at the final pull because one loop is already twisted or shorter than the others. Slow tightening matters more than speed."
+        ]
+      },
+      {
+        "title": "Step-by-step practice rhythm",
+        "paragraphs": [
+          "First, form the starting loops loosely. Second, trace the path with your finger before pulling. Third, tighten in small movements from opposite sides. Fourth, flatten and adjust the knot before cutting or sealing any cord ends.",
+          "Do not rush into beads or charms on the first attempt. Decoration hides problems in the structure. Once the base knot looks even, then the project can become a bracelet, keychain, ornament, or gift tag."
+        ]
+      },
+      {
+        "title": "Common lucky knot mistakes",
+        "paragraphs": [
+          "The first mistake is pulling one side tight while the rest of the knot is still loose. The second is using cord that is too slippery for the learner's hands. The third is writing exaggerated claims about luck or protection.",
+          "Another mistake is choosing a project before learning the knot scale. A knot that looks good as a wall ornament may be too large for a bracelet. A knot that works on a bracelet may look too small on a door hanging."
+        ]
+      },
+      {
+        "title": "Gift and product checks",
+        "paragraphs": [
+          "If you buy or sell a lucky knot, inspect symmetry, cord finish, color consistency, and attachment strength. For keychains and bracelets, daily friction matters. For wall decor, visual balance and clean hanging points matter more.",
+          "The best next step depends on the reader. Makers should practice the knot. Buyers should compare finished quality. Gift givers should match color and occasion without promising results that a symbolic object cannot guarantee."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Quick decision table",
+      "headers": ["Reader goal", "What to check", "Why it matters"],
+      "rows": [
+        [
+          "Beginner",
+          "Start with the one detail that changes the answer",
+          "It prevents the article from becoming a broad definition with no action"
+        ],
+        [
+          "Buyer or gift giver",
+          "Compare use case, photos, material, and maintenance",
+          "A practical purchase needs more than a decorative claim"
+        ],
+        [
+          "Researcher",
+          "Verify calendar, spelling, character, or source context",
+          "Clean wording is not reliable unless the evidence is clear"
+        ],
+        [
+          "Culture-focused reader",
+          "Read symbolic meaning with its limits",
+          "Responsible wording keeps cultural content useful and credible"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "What is a Chinese lucky knot?",
+        "a": "A Chinese lucky knot is a decorative knot used as a blessing symbol in gifts, ornaments, bracelets, and festive decor."
+      },
+      {
+        "q": "What cord is best for beginners?",
+        "a": "Medium cord that is visible, flexible, and not too slippery is usually best for learning."
+      },
+      {
+        "q": "Does a lucky knot guarantee luck?",
+        "a": "No. It expresses a cultural wish or blessing, not a guaranteed outcome."
+      },
+      {
+        "q": "What is the biggest tutorial mistake?",
+        "a": "The biggest mistake is tightening too quickly before the loops are even and correctly placed."
+      }
+    ],
+    "related": [
+      {
+        "title": "Chinese Lucky Knot",
+        "path": "/chinese-lucky-knot/",
+        "category": "Meaning",
+        "description": "Read the symbolic profile."
+      },
+      {
+        "title": "Chinese Knot Cord",
+        "path": "/chinese-knot-cord/",
+        "category": "Cord",
+        "description": "Choose beginner cord."
+      },
+      {
+        "title": "How to Tie Chinese Knot",
+        "path": "/how-to-tie-chinese-knot/",
+        "category": "Tutorial",
+        "description": "Start with basic habits."
+      }
+    ]
+  },
+  {
+    "title": "Step by Step Chinese Knots: Beginner Practice Order and Checks",
+    "path": "/step-by-step-chinese-knots/",
+    "description": "Use a step by step Chinese knots practice path for beginners, including cord choice, knot order, tightening checks, and project planning.",
+    "h1": "Step by Step Chinese Knots: Beginner Practice Order and Checks",
+    "intro": "The best step-by-step path for Chinese knots starts with cord handling, then simple knots, then bracelets, keychains, and larger ornaments.",
+    "answer": "A beginner should learn Chinese knots step by step by choosing visible medium cord, practicing one simple knot, checking symmetry, repeating the tightening process, and only then moving to bracelets, keychains, or ornaments.",
+    "details": [
+      "A step-by-step search usually means the reader is overwhelmed by beautiful finished knots and needs a practice order. The best answer is not to start with the most impressive pattern.",
+      "Chinese knotting rewards control. Cord choice, loop spacing, finger pressure, and final tightening decide whether a project looks clean. Those fundamentals should come before beads, tassels, charms, or wall-hanging scale.",
+      "This guide gives a realistic path that can support both DIY learning and future product pages, because good buying advice depends on understanding how quality is made.",
+      "A good practice session is short and repeatable. Make one knot, loosen it, make it again, then compare both versions. This teaches the hand to recognize tension and teaches the eye to see whether the loop path is still correct. Long sessions with too many new patterns often create frustration instead of skill.",
+      "For product comparison, step-by-step knowledge helps buyers notice quality. Clean knotwork usually has consistent cord tension, neat backs, secure endings, and a shape that still reads clearly from a distance. These checks are useful before buying bracelets, keychains, ornaments, or wall hangings.",
+      "Keep one finished practice sample beside the next attempt. Side-by-side comparison makes small improvements visible and helps beginners understand whether tension, spacing, or cord choice caused the difference."
+    ],
+    "sections": [
+      {
+        "title": "Step 1: choose practice cord",
+        "paragraphs": [
+          "Use cord that lets you see the path clearly. Medium red nylon cord is common, but any visible flexible cord can work for practice. Avoid thin dark cord at the beginning because it hides crossings and makes mistakes harder to find.",
+          "Cut enough length to practice without tension. Short cord forces tight movements too early. Long cord can tangle, so keep the first project simple and leave extra length only when the pattern needs it."
+        ]
+      },
+      {
+        "title": "Step 2: learn one knot well",
+        "paragraphs": [
+          "Start with a small knot such as a button knot, lucky knot, or double coin knot before attempting a large Pan Chang design. Repeat the same knot several times until the path and tightening rhythm feel familiar.",
+          "A clean beginner result is not judged by speed. It is judged by symmetry, even loops, clean crossings, and stable finishing. If the knot collapses when you set it down, the tightening sequence needs more practice."
+        ]
+      },
+      {
+        "title": "Step 3: tighten and inspect",
+        "paragraphs": [
+          "Tightening should happen gradually. Pull a little from one side, then adjust the opposite side. Keep checking the front shape instead of only pulling the loose ends. Many knots look wrong because one crossing moved during the final pull.",
+          "After tightening, inspect the knot from the front and side. Look for twisted cord, uneven loops, loose gaps, and sections that hide the intended shape. This habit also helps buyers judge handmade products later."
+        ]
+      },
+      {
+        "title": "Step 4: choose the right project",
+        "paragraphs": [
+          "Move from practice knots to small projects. A keychain teaches durability. A bracelet teaches sizing and closure. An ornament teaches proportion and hanging balance. A wall hanging should wait until the learner can keep repeated knots consistent.",
+          "Project choice changes material choice. Bracelet cord touches skin and needs comfort. Keychain cord needs strength. Wall decor needs visual presence. The same knot can fail if used in the wrong scale."
+        ]
+      },
+      {
+        "title": "Common beginner mistakes",
+        "paragraphs": [
+          "The most common mistake is jumping from a single photo to a complex finished object. Another is buying many supplies before learning which cord feels controllable. A third is ignoring the back side of the knot, where loose or twisted sections often appear.",
+          "The practical rule is to repeat fewer knots more carefully. Once the beginner can make a clean small knot, tutorials, kits, products, and gift projects become much easier to judge."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Quick decision table",
+      "headers": ["Reader goal", "What to check", "Why it matters"],
+      "rows": [
+        [
+          "Beginner",
+          "Start with the one detail that changes the answer",
+          "It prevents the article from becoming a broad definition with no action"
+        ],
+        [
+          "Buyer or gift giver",
+          "Compare use case, photos, material, and maintenance",
+          "A practical purchase needs more than a decorative claim"
+        ],
+        [
+          "Researcher",
+          "Verify calendar, spelling, character, or source context",
+          "Clean wording is not reliable unless the evidence is clear"
+        ],
+        [
+          "Culture-focused reader",
+          "Read symbolic meaning with its limits",
+          "Responsible wording keeps cultural content useful and credible"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "What Chinese knot should beginners learn first?",
+        "a": "Beginners should start with a small simple knot such as a button knot, lucky knot, or double coin knot."
+      },
+      {
+        "q": "What cord should I use for step-by-step practice?",
+        "a": "Use visible medium cord that is flexible and not too slippery."
+      },
+      {
+        "q": "Why do Chinese knots look uneven?",
+        "a": "Uneven knots usually come from rushed tightening, twisted cord, or loops that were not balanced before the final pull."
+      },
+      {
+        "q": "When should beginners make bracelets or keychains?",
+        "a": "After they can repeat a small knot cleanly and control the tightening process."
+      }
+    ],
+    "related": [
+      {
+        "title": "Chinese Button Knot Tutorial",
+        "path": "/chinese-button-knot-tutorial/",
+        "category": "Tutorial",
+        "description": "Practice a compact knot."
+      },
+      {
+        "title": "Chinese Knot Bracelet Tutorial",
+        "path": "/chinese-knot-bracelet-tutorial/",
+        "category": "Bracelet",
+        "description": "Move into wearable projects."
+      },
+      {
+        "title": "Chinese Knot Cord",
+        "path": "/chinese-knot-cord/",
+        "category": "Cord",
+        "description": "Choose supplies."
+      }
+    ]
   }
 ];
 
@@ -1180,6 +1416,7 @@ body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-item p{backgro
 @media(max-width:640px){.knot-hero-copy h2{font-size:38px}.knot-hero-visual{min-height:330px}.knot-float-card{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;margin:10px;justify-self:start;align-self:end}.knot-stats,.animal-grid,.guide-grid{grid-template-columns:1fr}.knot-actions{display:grid}.knot-actions .button-link{width:100%}.page-guides .content-section:not(.article-search){padding:24px!important}.page-guides .guide-card{padding:20px!important}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.content-section{padding:24px!important}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-shell{gap:22px}}
 `;
 }
+
 
 
 

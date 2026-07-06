@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-05T23:27:17.643Z",
+  "generatedAt": "2026-07-06T23:18:32.859Z",
   "totals": {
-    "average": 99,
-    "pages": 36,
-    "pass": 36,
+    "average": 98,
+    "pages": 38,
+    "pass": 37,
     "review": 0,
-    "fix": 0
+    "fix": 1
   },
   "reports": [
     {
@@ -24,7 +24,7 @@
       "score": 100,
       "titleLength": 65,
       "descriptionLength": 134,
-      "wordCount": 623,
+      "wordCount": 653,
       "h1": 1,
       "h2": 3,
       "faqs": 0,
@@ -176,9 +176,9 @@
     {
       "path": "/pan-chang-knot-tutorial/",
       "score": 100,
-      "titleLength": 72,
+      "titleLength": 47,
       "descriptionLength": 127,
-      "wordCount": 1032,
+      "wordCount": 1029,
       "h1": 1,
       "h2": 6,
       "faqs": 6,
@@ -187,9 +187,9 @@
     {
       "path": "/chinese-knot-ornament/",
       "score": 100,
-      "titleLength": 72,
+      "titleLength": 53,
       "descriptionLength": 117,
-      "wordCount": 1704,
+      "wordCount": 1701,
       "h1": 1,
       "h2": 11,
       "faqs": 6,
@@ -198,9 +198,9 @@
     {
       "path": "/chinese-knot-wall-hanging/",
       "score": 100,
-      "titleLength": 76,
+      "titleLength": 53,
       "descriptionLength": 126,
-      "wordCount": 1656,
+      "wordCount": 1653,
       "h1": 1,
       "h2": 11,
       "faqs": 6,
@@ -220,9 +220,9 @@
     {
       "path": "/chinese-knot-jewelry/",
       "score": 100,
-      "titleLength": 77,
+      "titleLength": 54,
       "descriptionLength": 138,
-      "wordCount": 1451,
+      "wordCount": 1445,
       "h1": 1,
       "h2": 9,
       "faqs": 6,
@@ -253,9 +253,9 @@
     {
       "path": "/chinese-knot-pendant/",
       "score": 100,
-      "titleLength": 71,
+      "titleLength": 47,
       "descriptionLength": 142,
-      "wordCount": 1603,
+      "wordCount": 1597,
       "h1": 1,
       "h2": 11,
       "faqs": 6,
@@ -411,6 +411,30 @@
       "h2": 11,
       "faqs": 4,
       "issues": []
+    },
+    {
+      "path": "/chinese-lucky-knot-tutorial/",
+      "score": 100,
+      "titleLength": 63,
+      "descriptionLength": 133,
+      "wordCount": 1007,
+      "h1": 1,
+      "h2": 10,
+      "faqs": 4,
+      "issues": []
+    },
+    {
+      "path": "/step-by-step-chinese-knots/",
+      "score": 69,
+      "titleLength": 62,
+      "descriptionLength": 137,
+      "wordCount": 996,
+      "h1": 1,
+      "h2": 10,
+      "faqs": 4,
+      "issues": [
+        "thin content: under 1000 words"
+      ]
     }
   ]
 }
