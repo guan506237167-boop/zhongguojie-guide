@@ -51,6 +51,9 @@ const guides = [
   { title: 'Chinese Knot Bracelet Tutorial', path: '/chinese-knot-bracelet-tutorial/', category: 'Tutorial Guides', description: 'Make bracelets with sizing, cord, and gift checks.' },
   { title: 'Step by Step Chinese Knots', path: '/step-by-step-chinese-knots/', category: 'Tutorial Guides', description: 'Plan beginner Chinese knot practice in safe steps.' },
   { title: 'Chinese Lucky Knot Tutorial', path: '/chinese-lucky-knot-tutorial/', category: 'Tutorial Guides', description: 'Learn lucky knot meaning, cord control, and gift use.' },
+  {"title":"Chinese Knotting Cord","path":"/chinese-knotting-cord/","category":"Supplies","description":"Choose knotting cord sizes, materials, and project uses."},
+  {"title":"Chinese Knot Tassel Tutorial","path":"/chinese-knot-tassel-tutorial/","category":"Tutorial Guides","description":"Learn tassel balance, cord choice, finishing, and gift quality checks."},
+
 ];
 
 const pages = [];
@@ -1261,6 +1264,265 @@ function dailyArticlePage20260706(article) {
 }
 
 for (const article of dailyArticles20260706) {
+  await writePage(article.path, dailyArticlePage20260706(article));
+}
+
+const dailyArticles20260708 = [
+  {
+    "title": "Chinese Knotting Cord: Sizes, Materials, and Buying Checks",
+    "path": "/chinese-knotting-cord/",
+    "description": "Choose Chinese knotting cord by size, material, color, stiffness, bracelet use, ornament use, and beginner project needs.",
+    "h1": "Chinese Knotting Cord: Sizes, Materials, and Buying Checks",
+    "intro": "Chinese knotting cord determines how clean a knot looks, how easy it is to tighten, and whether the finished object works as jewelry, decor, or a gift.",
+    "answer": "Chinese knotting cord should be chosen by project type: beginners usually need visible medium cord, bracelets need comfort and secure adjustment, keychains need stronger wear resistance, and wall ornaments need enough thickness to hold shape from a distance.",
+    "details": [
+      "If you are choosing Chinese knotting cord, start with the object you want to make. A bracelet cord touches skin and needs comfort. A keychain cord needs durability. A wall hanging needs visual weight. A tutorial sample needs a size that lets you see every crossing without fighting the material.",
+      "Cord choice changes the final knot more than many beginners expect. Thin cord can make a knot look delicate, but it can also hide mistakes and become hard to tighten evenly. Very thick cord is easy to see but may create bulky knots that do not work for bracelets or small charms.",
+      "Material matters too. Nylon cord is common because it can be smooth, colorful, and strong. Satin cord can look bright but may feel slippery. Waxed or braided cord can hold structure differently. The right answer follows the project, not just the color.",
+      "For buyers, product photos should show scale. A close-up of red cord can look impressive while hiding thickness, stiffness, or fraying. A good listing should state size, material, length, color, and recommended use."
+    ],
+    "sections": [
+      {
+        "title": "Start with the project",
+        "paragraphs": [
+          "Before buying cord, decide whether the project is practice, bracelet, necklace, keychain, pendant, tassel, or wall decor. Each project changes the best size and feel. Practice cord should be easy to see and undo. Jewelry cord should feel comfortable and secure. Decor cord should be thick enough to hold visual presence.",
+          "This decision prevents waste. Many beginners buy several colors first, then discover the cord is too slippery or too thin for the knot they want. A better path is to choose one manageable size, practice a simple knot, then expand into colors and finishes."
+        ]
+      },
+      {
+        "title": "Size and thickness",
+        "paragraphs": [
+          "Cord size affects both learning and final appearance. Thin cord works for delicate jewelry and beadwork, but it demands more finger control. Medium cord is usually easier for tutorials because the path is visible. Thick cord can make ornaments bold, though the finished knot may become too large for small projects.",
+          "When a listing says 0.8 mm, 1 mm, 1.5 mm, or 2 mm, compare that number with the finished object. A tiny bracelet knot and a door hanging should not use the same buying rule. If the product photo has no scale reference, check reviews or choose a seller with clearer measurements."
+        ]
+      },
+      {
+        "title": "Material and surface feel",
+        "paragraphs": [
+          "Smooth nylon is common for Chinese knotting because it comes in bright colors and can make clean shapes. The tradeoff is slipperiness. A beginner may need to hold loops with pins, clips, or a board while learning tension.",
+          "Satin-like cord can look festive but may slide while tightening. Braided cord may feel easier to control but can look less glossy. Waxed cord can hold a shape, yet it may not match every traditional-looking ornament. The best material is the one that supports the project's use case."
+        ]
+      },
+      {
+        "title": "Color and cultural use",
+        "paragraphs": [
+          "Red cord is common because it carries festive and auspicious visual meaning in Chinese cultural settings. Gold, jade-like green, black, and mixed colors can also work depending on the object. Treat color as symbolism and design language, not as a guaranteed result.",
+          "For a gift, color should match the occasion and the recipient. A bright red bracelet may feel festive. A darker cord may feel more wearable every day. A wall ornament can handle stronger contrast because it is viewed from farther away."
+        ]
+      },
+      {
+        "title": "Common buying mistakes",
+        "paragraphs": [
+          "The first mistake is buying cord only by color. The second is ignoring thickness. The third is choosing a cord that looks beautiful in a photo but is too slippery for a first tutorial. A fourth mistake is buying a large spool before testing how the cord behaves.",
+          "For finished products, inspect ends, fraying, stiffness, and whether the knot stays centered. A cord that looks clean before tying may show problems after tightening, especially around beads, rings, tassels, and adjustable closures."
+        ]
+      },
+      {
+        "title": "Best next step",
+        "paragraphs": [
+          "For beginners, start with one medium red or contrasting cord and make a small button knot, lucky knot, or double coin knot. For bracelet makers, test comfort and closure before adding beads. For gift sellers, photograph finished scale clearly so buyers know what they are getting.",
+          "After choosing cord, move to the tutorial and knot type pages. Cord is the material decision; the knot type is the structure decision. Keeping those decisions separate makes the project easier and the product page more trustworthy."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Practical decision table",
+      "headers": [
+        "Reader goal",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Beginner",
+          "Visible medium cord, easy to loosen",
+          "Learning depends on seeing the path clearly"
+        ],
+        [
+          "Bracelet maker",
+          "Comfort, thickness, closure behavior",
+          "The cord touches skin and moves repeatedly"
+        ],
+        [
+          "Keychain maker",
+          "Strength, fray resistance, hardware fit",
+          "Daily carrying creates more wear"
+        ],
+        [
+          "Decor buyer",
+          "Color, scale, tassel balance, stiffness",
+          "Large ornaments need visible structure"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "What cord is best for Chinese knotting?",
+        "a": "Beginners usually do best with visible medium nylon cord that is flexible, not too thin, and not too slippery."
+      },
+      {
+        "q": "What size Chinese knotting cord should beginners use?",
+        "a": "A medium size is usually easier than very thin cord because the crossings are easier to see and adjust."
+      },
+      {
+        "q": "Is red cord required for Chinese knots?",
+        "a": "No. Red is common for festive symbolism, but other colors can work when they match the project and meaning."
+      },
+      {
+        "q": "What should I check before buying knotting cord?",
+        "a": "Check material, thickness, length, stiffness, color accuracy, fray resistance, and whether the cord suits the project."
+      }
+    ],
+    "related": [
+      {
+        "title": "Chinese Knot Cord",
+        "path": "/chinese-knot-cord/",
+        "category": "Supplies",
+        "description": "General cord selection guide."
+      },
+      {
+        "title": "Chinese Knot Tutorial",
+        "path": "/chinese-knot-tutorial/",
+        "category": "Tutorials",
+        "description": "Start tying after choosing cord."
+      },
+      {
+        "title": "Chinese Knot Bracelet",
+        "path": "/chinese-knot-bracelet/",
+        "category": "Craft Ideas",
+        "description": "Use cord in bracelet projects."
+      }
+    ]
+  },
+  {
+    "title": "Chinese Knot Tassel Tutorial: Cord, Balance, Finishing, and Gift Use",
+    "path": "/chinese-knot-tassel-tutorial/",
+    "description": "Learn a Chinese knot tassel tutorial path with cord choice, length balance, knot finishing, ornament use, and gift quality checks.",
+    "h1": "Chinese Knot Tassel Tutorial: Cord, Balance, Finishing, and Gift Use",
+    "intro": "A Chinese knot tassel can make a small knot feel finished, but the tassel needs the right length, cord texture, and hanging balance.",
+    "answer": "A Chinese knot tassel should be planned after the knot body is stable: match tassel length to the ornament, keep the hanging line centered, trim ends cleanly, and test how the finished piece hangs before sealing or gifting it.",
+    "details": [
+      "A tassel changes a Chinese knot from a practice sample into a finished object. It can add movement, length, and ceremonial feeling to ornaments, keychains, bookmarks, bags, and gift packaging. The challenge is that a tassel also exposes imbalance. If the knot is off center, the tassel makes the problem more visible.",
+      "For beginners, the right tutorial path is simple: tie the knot body first, check symmetry, attach or form the tassel, test hanging balance, then trim and finish. Skipping the balance test is the reason many pieces look good on a table but tilt when held or hung.",
+      "Cord choice matters because tassels need a different behavior from the knot body. A cord that makes a tight knot may not drape well as a tassel. Some projects use the same cord for both parts, while more polished ornaments use a knot body plus a softer tassel thread.",
+      "For gift or product use, the finish matters as much as the symbolism. Clean ends, even length, centered hanging, and a tassel that does not tangle immediately are the visible quality signals buyers notice first."
+    ],
+    "sections": [
+      {
+        "title": "Plan the tassel after the knot body",
+        "paragraphs": [
+          "Start by finishing the main knot shape loosely, then tighten it in small stages until both sides look balanced. The tassel should not be used to hide a distorted knot. If the center leans, the tassel will pull attention toward the mistake.",
+          "Once the knot body is stable, decide whether the tassel is decorative, functional, or part of a hanging ornament. A small bracelet charm needs a short tassel or no tassel. A wall ornament can support a longer tassel because it needs vertical presence."
+        ]
+      },
+      {
+        "title": "Choose cord and tassel thread",
+        "paragraphs": [
+          "If you use the same cord for the knot and tassel, the project feels simple and consistent. This works well for beginner ornaments, keychains, and gift tags. If you use softer tassel thread, the finished piece may drape better, but the attachment point must be secure.",
+          "Check color under normal light. Red and gold can look rich in photos, but mismatched reds can make a handmade piece look careless. For gift work, cord color, tassel color, bead color, and metal ring color should feel intentional together."
+        ]
+      },
+      {
+        "title": "Attach, align, and test hanging balance",
+        "paragraphs": [
+          "The attachment point should sit on the center line of the knot. Hold the piece up before trimming. If it leans, adjust the loop, cord tension, or tassel position while there is still enough material to work with.",
+          "Testing matters because gravity changes the shape. A knot that looks flat on a table can rotate when hung on a door, bag, or car mirror. For product photos, show the item hanging as well as lying flat so buyers can judge the real shape."
+        ]
+      },
+      {
+        "title": "Trim and finish the ends",
+        "paragraphs": [
+          "Trim slowly. Cut less than you think at first, then compare both sides. If the tassel is meant to look formal, use a guide or flat surface to keep the ends even. If it is a casual handmade charm, slight variation can be acceptable, but fraying should still be controlled.",
+          "Finishing methods depend on material. Some synthetic cords can be sealed carefully with heat, while other threads need knots, glue, caps, or wrapping. Use a method suitable for the material and avoid leaving sharp or melted edges where they can touch skin or fabric."
+        ]
+      },
+      {
+        "title": "Common tassel mistakes",
+        "paragraphs": [
+          "The first mistake is making the tassel too long for the object. A long tassel can look elegant on a wall hanging but awkward on a bracelet or keychain. The second mistake is trimming before testing how the object hangs.",
+          "The third mistake is attaching a tassel to a weak knot. Movement and handling will pull on the center. For keychains and bags, durability matters more than delicate appearance. For wall decor, symmetry and clean drape matter more."
+        ]
+      },
+      {
+        "title": "Best next step for learners and buyers",
+        "paragraphs": [
+          "A learner should practice one knot body and one tassel style several times before adding beads or charms. A buyer should inspect the center line, the tassel ends, the attachment point, and whether the product photo shows full length.",
+          "After learning tassels, move into ornament, keychain, bracelet, and cord pages. The tassel is a finishing skill, but the final product still depends on knot type, scale, color, material, and the occasion."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Practical decision table",
+      "headers": [
+        "Reader goal",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Beginner",
+          "Knot body first, tassel second",
+          "A centered body makes finishing easier"
+        ],
+        [
+          "Gift maker",
+          "Even ends, clean color match, secure attachment",
+          "Visible finish signals quality"
+        ],
+        [
+          "Wall decor buyer",
+          "Longer tassel and clear hanging photo",
+          "Scale matters from a distance"
+        ],
+        [
+          "Keychain maker",
+          "Shorter tassel and stronger attachment",
+          "Daily use creates friction and pulling"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "How do you add a tassel to a Chinese knot?",
+        "a": "Finish and balance the knot body first, attach the tassel on the center line, test how it hangs, then trim and finish the ends."
+      },
+      {
+        "q": "How long should a Chinese knot tassel be?",
+        "a": "The tassel length depends on the object. Wall ornaments can use longer tassels, while bracelets and keychains usually need shorter tassels."
+      },
+      {
+        "q": "Can beginners make Chinese knot tassels?",
+        "a": "Yes. Beginners should start with a simple knot body, medium cord, and a short tassel before adding beads or complex ornaments."
+      },
+      {
+        "q": "What is the biggest tassel mistake?",
+        "a": "The biggest mistake is trimming or sealing before testing whether the finished knot hangs straight."
+      }
+    ],
+    "related": [
+      {
+        "title": "Chinese Knot Ornament",
+        "path": "/chinese-knot-ornament/",
+        "category": "Gift & Decor",
+        "description": "Use tassels in hanging ornaments."
+      },
+      {
+        "title": "Chinese Knotting Cord",
+        "path": "/chinese-knotting-cord/",
+        "category": "Supplies",
+        "description": "Choose cord before finishing."
+      },
+      {
+        "title": "Chinese Knot Keychain",
+        "path": "/chinese-knot-keychain/",
+        "category": "Craft Ideas",
+        "description": "Apply tassels to small gifts."
+      }
+    ]
+  }
+];
+
+for (const article of dailyArticles20260708) {
   await writePage(article.path, dailyArticlePage20260706(article));
 }
 

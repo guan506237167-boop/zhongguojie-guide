@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-06T23:18:32.859Z",
+  "generatedAt": "2026-07-07T23:24:26.953Z",
   "totals": {
     "average": 98,
-    "pages": 38,
-    "pass": 37,
+    "pages": 40,
+    "pass": 39,
     "review": 0,
     "fix": 1
   },
@@ -24,7 +24,7 @@
       "score": 100,
       "titleLength": 65,
       "descriptionLength": 134,
-      "wordCount": 653,
+      "wordCount": 681,
       "h1": 1,
       "h2": 3,
       "faqs": 0,
@@ -435,6 +435,28 @@
       "issues": [
         "thin content: under 1000 words"
       ]
+    },
+    {
+      "path": "/chinese-knotting-cord/",
+      "score": 100,
+      "titleLength": 58,
+      "descriptionLength": 121,
+      "wordCount": 1126,
+      "h1": 1,
+      "h2": 11,
+      "faqs": 4,
+      "issues": []
+    },
+    {
+      "path": "/chinese-knot-tassel-tutorial/",
+      "score": 100,
+      "titleLength": 68,
+      "descriptionLength": 130,
+      "wordCount": 1122,
+      "h1": 1,
+      "h2": 11,
+      "faqs": 4,
+      "issues": []
     }
   ]
 }
