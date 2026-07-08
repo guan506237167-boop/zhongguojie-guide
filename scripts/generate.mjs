@@ -46,6 +46,8 @@ const guides = [
   { title: "Red Chinese Knot", path: "/red-chinese-knot/", category: "Meaning Guides", description: "A guide to red Chinese knot meaning, decor use, gift positioning, color symbolism, and buying checks." },
   { title: "Chinese Knot Earrings", path: "/chinese-knot-earrings/", category: "Jewelry Guides", description: "A guide to Chinese knot earrings, cord styles, weight, comfort, symbolism, and gift buying checks." },
   { title: "Chinese Knot Pendant", path: "/chinese-knot-pendant/", category: "Jewelry Guides", description: "A guide to Chinese knot pendants, cord balance, charms, symbolism, gift use, and buying checks." },
+  { title: "Chinese Knot Tassel", path: "/chinese-knot-tassel/", category: "Product Guides", description: "Choose Chinese knot tassels by length, color, balance, attachment, and decor use." },
+  { title: "Chinese Knot Charms", path: "/chinese-knot-charms/", category: "Product Guides", description: "Choose Chinese knot charms by cord quality, hardware, size, meaning, and gift use." },
 
   { title: 'Chinese Button Knot Tutorial', path: '/chinese-button-knot-tutorial/', category: 'Tutorial Guides', description: 'Learn button knot cord choice and beginner mistakes.' },
   { title: 'Chinese Knot Bracelet Tutorial', path: '/chinese-knot-bracelet-tutorial/', category: 'Tutorial Guides', description: 'Make bracelets with sizing, cord, and gift checks.' },
@@ -1523,6 +1525,270 @@ const dailyArticles20260708 = [
 ];
 
 for (const article of dailyArticles20260708) {
+  await writePage(article.path, dailyArticlePage20260706(article));
+}
+
+
+const dailyArticles20260709 = [
+  {
+    "title": "Chinese Knot Tassel: Length, Color, Balance, and Buying Checks",
+    "path": "/chinese-knot-tassel/",
+    "description": "Choose Chinese knot tassels by length, color, cord quality, balance, decor use, jewelry use, and gift presentation.",
+    "h1": "Chinese Knot Tassel: Length, Color, Balance, and Buying Checks",
+    "intro": "A Chinese knot tassel changes how a knot hangs, moves, and looks from a distance, so length and balance matter as much as color.",
+    "answer": "A Chinese knot tassel should match the knot size, project use, cord material, color symbolism, and hanging position; check length, weight, fraying, attachment, and overall balance before buying or making one.",
+    "details": [
+      "This guide focuses on Chinese knot tassel because the search intent is practical. The reader needs a clear answer, the first checks to make, and a way to avoid weak assumptions.",
+      "The topic can look simple, but the useful answer depends on details such as material, use case, spelling, source evidence, scale, or construction quality. A short page would miss those details.",
+      "This article is built to work as a standalone answer and as part of the larger site cluster. It links broader guides and gives enough context for the reader to decide what to read next.",
+      "Use the information as educational guidance. It can support buying, research, cultural learning, or craft planning, but it should not be treated as a guarantee, certification, or professional advice.",
+      "For product selection, a tassel should be judged in motion as well as in a still photo. A wall hanging can use a longer tassel because it is viewed from a distance, but a bracelet, bag charm, or keychain needs shorter fibers that do not snag easily. The same red tassel can look elegant in one format and messy in another if the scale is wrong.",
+      "Material also changes the final impression. Smooth silk-like tassels feel formal and gift-ready, while thicker cord tassels can look more casual and durable. Before buying several pieces, check whether the tassel falls straight, whether the end is clean, and whether the attachment point hides knots or loose glue."
+    ],
+    "sections": [
+      {
+        "title": "Start with the real question behind Chinese knot tassel",
+        "paragraphs": [
+          "Most visitors searching for Chinese knot tassel want a decision, not a dictionary entry. They may be choosing a product, comparing care instructions, checking a surname, or planning a craft project.",
+          "A useful answer therefore begins with what changes the outcome. The reader should know what is safe to decide immediately and what still needs checking."
+        ]
+      },
+      {
+        "title": "What to check first",
+        "paragraphs": [
+          "The first check is proportion. A tassel that is too long can overpower a small bracelet or keychain, while a tassel that is too short can make a wall hanging look unfinished.",
+          "The second check is attachment. The connection between knot and tassel should be secure, centered, and clean because weak attachment is where many finished products fail."
+        ]
+      },
+      {
+        "title": "How to interpret the result",
+        "paragraphs": [
+          "After the first check, read the result in context. Product names, surname spellings, and craft labels are starting points. They become more reliable when connected with materials, documents, measurements, and actual use.",
+          "This is also where internal links help. A reader who needs a broader framework can move to the main guide, while a reader with a narrow question can continue to a focused related page."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "The first mistake is choosing a tassel by color alone. Color matters, but length, thread quality, and attachment affect the finished object more.",
+          "Another mistake is using the same tassel for jewelry, keychains, ornaments, and wall decor. Each use case needs different scale and durability."
+        ]
+      },
+      {
+        "title": "Best use cases",
+        "paragraphs": [
+          "The best use case for this page is a reader who needs a reliable reference before taking action. That action may be buying a set, writing a family note, choosing craft supplies, or deciding whether a deeper guide is needed.",
+          "A second use case is content planning. Because Chinese knot tassel connects to several related searches, the page can support topical authority without becoming thin or repetitive."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "If the reader only needed the short answer, the answer block and table are enough. If accuracy matters, continue with the related guides and verify the practical detail that affects the decision.",
+          "For future updates, this article can support product recommendations, printable checklists, paid reports, or comparison tools. The important rule is to keep the page useful before adding monetization."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Practical decision table",
+      "headers": [
+        "Reader goal",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Quick answer",
+          "Direct definition and first condition",
+          "Prevents a vague answer"
+        ],
+        [
+          "Accuracy",
+          "Material, source, size, or use case",
+          "Small details change the result"
+        ],
+        [
+          "Buying or planning",
+          "Quality signals and care requirements",
+          "The best option depends on real use"
+        ],
+        [
+          "Further research",
+          "Related guide and evidence level",
+          "Keeps the next step clear"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "What is the short answer for Chinese knot tassel?",
+        "a": "A Chinese knot tassel should match the knot size, project use, cord material, color symbolism, and hanging position; check length, weight, fraying, attachment, and overall balance before buying or making one."
+      },
+      {
+        "q": "What should I check first for Chinese knot tassel?",
+        "a": "Check the detail that changes the answer: material, use case, source, spelling, size, construction, or quality signal."
+      },
+      {
+        "q": "Is Chinese knot tassel enough for a final decision?",
+        "a": "It is enough for a starting point, but important buying or research decisions should use the practical checks and related guides."
+      },
+      {
+        "q": "How does this page fit the site?",
+        "a": "It supports the broader guide cluster by answering a focused search query and linking readers to more complete reference pages."
+      }
+    ],
+    "related": [
+      {
+        "title": "Chinese Knot Tutorial",
+        "path": "/chinese-knot-tutorial/",
+        "category": "Tutorials",
+        "description": "Start with beginner knot practice."
+      },
+      {
+        "title": "Chinese Knot Cord",
+        "path": "/chinese-knot-cord/",
+        "category": "Supplies",
+        "description": "Choose cord by size and material."
+      },
+      {
+        "title": "Types of Chinese Knots",
+        "path": "/types-of-chinese-knots/",
+        "category": "Knot Types",
+        "description": "Compare common knot forms."
+      }
+    ]
+  },
+  {
+    "title": "Chinese Knot Charms: Meaning, Materials, Gift Use, and Quality Checks",
+    "path": "/chinese-knot-charms/",
+    "description": "Choose Chinese knot charms by meaning, cord quality, hardware, size, color, gift use, and product-quality checks.",
+    "h1": "Chinese Knot Charms: Meaning, Materials, Gift Use, and Quality Checks",
+    "intro": "Chinese knot charms combine knotwork, color, small pendants, beads, tassels, or hardware into compact gifts and decor pieces.",
+    "answer": "Chinese knot charms should be judged by knot security, cord quality, hardware strength, scale, color meaning, and gift context rather than by a luck claim alone.",
+    "details": [
+      "This guide focuses on Chinese knot charms because the search intent is practical. The reader needs a clear answer, the first checks to make, and a way to avoid weak assumptions.",
+      "The topic can look simple, but the useful answer depends on details such as material, use case, spelling, source evidence, scale, or construction quality. A short page would miss those details.",
+      "This article is built to work as a standalone answer and as part of the larger site cluster. It links broader guides and gives enough context for the reader to decide what to read next.",
+      "Use the information as educational guidance. It can support buying, research, cultural learning, or craft planning, but it should not be treated as a guarantee, certification, or professional advice.",
+      "For Chinese knot charms, meaning and construction should be read together. A charm may use red cord, coins, beads, jade-colored pendants, tassels, or metal fittings, but the useful buying question is whether those parts support the intended use. A car hanging, phone charm, gift box ornament, and bracelet charm all face different movement and wear.",
+      "The best product pages show scale, back side, hardware, and close-up knot detail. If a listing only shows a beautiful front photo, check reviews or choose a simpler charm with clearer construction. This keeps the cultural symbolism visible without ignoring the practical quality that decides whether the charm will actually last."
+    ],
+    "sections": [
+      {
+        "title": "Start with the real question behind Chinese knot charms",
+        "paragraphs": [
+          "Most visitors searching for Chinese knot charms want a decision, not a dictionary entry. They may be choosing a product, comparing care instructions, checking a surname, or planning a craft project.",
+          "A useful answer therefore begins with what changes the outcome. The reader should know what is safe to decide immediately and what still needs checking."
+        ]
+      },
+      {
+        "title": "What to check first",
+        "paragraphs": [
+          "The first check is the charm structure. Look at whether the knot, tassel, bead, ring, pendant, or clasp is actually secure enough for the intended use.",
+          "The second check is use case. A bag charm, keychain, car hanging, bracelet charm, and wall ornament face different movement, wear, and visibility needs."
+        ]
+      },
+      {
+        "title": "How to interpret the result",
+        "paragraphs": [
+          "After the first check, read the result in context. Product names, surname spellings, and craft labels are starting points. They become more reliable when connected with materials, documents, measurements, and actual use.",
+          "This is also where internal links help. A reader who needs a broader framework can move to the main guide, while a reader with a narrow question can continue to a focused related page."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "A common mistake is buying only because a listing says lucky or protective. Symbolic wording can be meaningful, but quality still depends on materials and construction.",
+          "Another mistake is ignoring hardware. A clean knot can still fail if the ring, clasp, jump ring, or connector is weak."
+        ]
+      },
+      {
+        "title": "Best use cases",
+        "paragraphs": [
+          "The best use case for this page is a reader who needs a reliable reference before taking action. That action may be buying a set, writing a family note, choosing craft supplies, or deciding whether a deeper guide is needed.",
+          "A second use case is content planning. Because Chinese knot charms connects to several related searches, the page can support topical authority without becoming thin or repetitive."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "If the reader only needed the short answer, the answer block and table are enough. If accuracy matters, continue with the related guides and verify the practical detail that affects the decision.",
+          "For future updates, this article can support product recommendations, printable checklists, paid reports, or comparison tools. The important rule is to keep the page useful before adding monetization."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Practical decision table",
+      "headers": [
+        "Reader goal",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Quick answer",
+          "Direct definition and first condition",
+          "Prevents a vague answer"
+        ],
+        [
+          "Accuracy",
+          "Material, source, size, or use case",
+          "Small details change the result"
+        ],
+        [
+          "Buying or planning",
+          "Quality signals and care requirements",
+          "The best option depends on real use"
+        ],
+        [
+          "Further research",
+          "Related guide and evidence level",
+          "Keeps the next step clear"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "What is the short answer for Chinese knot charms?",
+        "a": "Chinese knot charms should be judged by knot security, cord quality, hardware strength, scale, color meaning, and gift context rather than by a luck claim alone."
+      },
+      {
+        "q": "What should I check first for Chinese knot charms?",
+        "a": "Check the detail that changes the answer: material, use case, source, spelling, size, construction, or quality signal."
+      },
+      {
+        "q": "Is Chinese knot charms enough for a final decision?",
+        "a": "It is enough for a starting point, but important buying or research decisions should use the practical checks and related guides."
+      },
+      {
+        "q": "How does this page fit the site?",
+        "a": "It supports the broader guide cluster by answering a focused search query and linking readers to more complete reference pages."
+      }
+    ],
+    "related": [
+      {
+        "title": "Chinese Knot Tutorial",
+        "path": "/chinese-knot-tutorial/",
+        "category": "Tutorials",
+        "description": "Start with beginner knot practice."
+      },
+      {
+        "title": "Chinese Knot Cord",
+        "path": "/chinese-knot-cord/",
+        "category": "Supplies",
+        "description": "Choose cord by size and material."
+      },
+      {
+        "title": "Types of Chinese Knots",
+        "path": "/types-of-chinese-knots/",
+        "category": "Knot Types",
+        "description": "Compare common knot forms."
+      }
+    ]
+  }
+];
+
+for (const article of dailyArticles20260709) {
   await writePage(article.path, dailyArticlePage20260706(article));
 }
 

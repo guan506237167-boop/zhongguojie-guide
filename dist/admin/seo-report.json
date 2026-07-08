@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-07T23:24:26.953Z",
+  "generatedAt": "2026-07-08T23:25:40.792Z",
   "totals": {
-    "average": 98,
-    "pages": 40,
-    "pass": 39,
+    "average": 99,
+    "pages": 42,
+    "pass": 41,
     "review": 0,
     "fix": 1
   },
@@ -24,7 +24,7 @@
       "score": 100,
       "titleLength": 65,
       "descriptionLength": 134,
-      "wordCount": 681,
+      "wordCount": 718,
       "h1": 1,
       "h2": 3,
       "faqs": 0,
@@ -453,6 +453,28 @@
       "titleLength": 68,
       "descriptionLength": 130,
       "wordCount": 1122,
+      "h1": 1,
+      "h2": 11,
+      "faqs": 4,
+      "issues": []
+    },
+    {
+      "path": "/chinese-knot-tassel/",
+      "score": 100,
+      "titleLength": 62,
+      "descriptionLength": 115,
+      "wordCount": 1028,
+      "h1": 1,
+      "h2": 11,
+      "faqs": 4,
+      "issues": []
+    },
+    {
+      "path": "/chinese-knot-charms/",
+      "score": 100,
+      "titleLength": 69,
+      "descriptionLength": 113,
+      "wordCount": 1000,
       "h1": 1,
       "h2": 11,
       "faqs": 4,
