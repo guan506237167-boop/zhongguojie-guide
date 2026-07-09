@@ -264,6 +264,14 @@ function standardFaqs() {
   ];
 }
 
+
+function knotGuidesIntroBlock() {
+  return `<section class="content-section article-body"><h2>How to use the Chinese knot guide library</h2><p>The Chinese knot library is organized around three visitor paths: learning to tie a knot, understanding symbolic meaning, and choosing finished products or supplies. A beginner should start with tutorial and cord pages before attempting complex symbolic knots. A buyer should compare use case, size, cord quality, tassel finish, hardware, and presentation before choosing a bracelet, keychain, ornament, or gift item.</p><p>For learning, the most useful order is cord choice first, then simple knot practice, then tension control, then larger decorative patterns. For meaning, start with color and knot-type symbolism, then read pages about endless knots, Pan Chang knots, lucky knots, and double coin knots. For products, separate bracelets, keychains, ornaments, and supplies because each category has different quality checks.</p><p>This page can later support affiliate products or direct product cards, but only after the content gives readers a reason to trust the recommendation. A useful product block should explain material, size, finishing, use case, and practical limits. It should not rely only on red color or lucky wording.</p><p>Use the filters to move between tutorial pages, meaning guides, knot type comparisons, and product-oriented craft pages. If you are not sure where to begin, start with the tutorial path and cord guide, then choose a small project such as a bracelet or keychain.</p></section>`;
+}
+
+function knotFaqIntroBlock() {
+  return `<section class="content-section article-body"><h2>How to read these Chinese knot answers</h2><p>Chinese knot questions often mix craft, symbolism, and product selection. A reader may ask what a knot means, how to tie it, what cord to buy, or whether a finished bracelet or ornament is worth choosing. These answers keep those needs separate so the page stays practical.</p><p>If the question is about learning, focus on cord thickness, loop visibility, and gradual tightening. If the question is about meaning, read the answer as cultural symbolism rather than a promise. If the question is about products, compare finishing quality, symmetry, tassels, hardware, size, and whether the item fits the intended use.</p></section>`;
+}
 function faqBlock(faqs) {
   const grouped = [
     { title: "Basics", hint: "Knot and meaning", items: faqs.slice(0, 2) },
@@ -385,7 +393,7 @@ await writePage("/guides/", pageLayout({
   path: "/guides/",
   h1: "Chinese Knot Guides",
   intro: "Browse tutorials, meaning guides, knot type references, and craft support pages.",
-  body: `${articleSearchBlock()}<section class="content-section latest-guides"><div class="section-heading"><p class="eyebrow">Guide Library</p><h2>Browse all Chinese knot guides</h2></div>${guideFilterBlock()}<div class="guide-grid">${guides.map(guideCard).join("")}</div></section>${keywordTable(meaningKeywords.slice(0, 10), "Meaning and type keyword cluster", "Publishing Queue")}`
+  body: `${articleSearchBlock()}${knotGuidesIntroBlock()}<section class="content-section latest-guides"><div class="section-heading"><p class="eyebrow">Guide Library</p><h2>Browse all Chinese knot guides</h2></div>${guideFilterBlock()}<div class="guide-grid">${guides.map(guideCard).join("")}</div></section>${keywordTable(meaningKeywords.slice(0, 10), "Meaning and type keyword cluster", "Publishing Queue")}`
 }));
 
 await writePage("/chinese-knot-tutorial/", supportArticle({
@@ -744,7 +752,7 @@ for (const knot of knots) {
   await writePage(`/knots/${knot.slug}/`, knotPage(knot));
 }
 
-await writePage("/chinese-knot-faq/", pageLayout({ title: "Chinese Knot FAQ: Tutorials, Meanings, Cord, Gifts, and Knot Types", description: "Browse common questions about Chinese knot tutorials, meanings, cord choice, bracelets, keychains, and symbolic uses.", path: "/chinese-knot-faq/", h1: "Chinese Knot FAQ", intro: "Use this FAQ for quick answers about Chinese knots, tutorials, meanings, and supplies.", faqs: standardFaqs(), body: `${articleSearchBlock()}${faqBlock(standardFaqs())}` }));
+await writePage("/chinese-knot-faq/", pageLayout({ title: "Chinese Knot FAQ: Tutorials, Meanings, Cord, Gifts, and Knot Types", description: "Browse common questions about Chinese knot tutorials, meanings, cord choice, bracelets, keychains, and symbolic uses.", path: "/chinese-knot-faq/", h1: "Chinese Knot FAQ", intro: "Use this FAQ for quick answers about Chinese knots, tutorials, meanings, and supplies.", faqs: standardFaqs(), body: `${articleSearchBlock()}${knotFaqIntroBlock()}${faqBlock(standardFaqs())}<section class="content-section article-body"><h2>What to open after the FAQ</h2><p>If you want to learn, open the tutorial and cord guides first. If you want meaning, open Chinese knot meaning, endless knot meaning, and Pan Chang knot pages. If you want a gift or product idea, compare bracelet, keychain, and ornament pages separately because each item has different material and finishing requirements.</p><p>The FAQ gives fast answers, while the guide pages give the full decision path. That keeps the site useful for craft learners, gift buyers, and readers who want cultural context without exaggerated claims.</p><p>For learners, the next step should be specific. Choose a medium cord, practice on a flat surface, keep the loops loose at first, and tighten gradually. A knot can be technically correct but still look poor if the tension is uneven or the cord is too slippery for the pattern.</p><p>For buyers, the quality check is different. Look at symmetry, cord thickness, tassel alignment, color consistency, hardware strength, and whether the product photo shows the full item. A bracelet should feel comfortable, a keychain should be durable, and a wall ornament should have enough size and visual balance for the space.</p><p>For meaning-focused readers, treat red, gold, endless-knot shapes, double-coin shapes, and lucky-knot names as cultural symbols. They can express blessing, continuity, celebration, or gift intention, but they should not be written as guaranteed outcomes. Keeping that boundary clear makes the site safer, more credible, and better suited for long-term SEO and product pages.</p><p>That is why the FAQ links outward instead of trying to answer everything in one place. Tutorials, meaning pages, cord guides, bracelet pages, keychain pages, and ornament pages each solve a different visitor problem. The FAQ should help the reader choose the right next page.</p><p>For future product pages, the same separation matters. A cord kit should explain size, color, texture, and beginner suitability. A bracelet page should explain comfort, adjustability, closure quality, and gift use. A keychain page should explain hardware strength and durability. A wall ornament page should explain size, tassel finish, and where it can be displayed.</p><p>For SEO and user trust, every recommendation should connect cultural meaning with practical checks. A red knot may look festive, but the product still needs clean finishing. An endless knot may symbolize continuity, but the page should still explain where it works best. This is the standard the site should use when adding affiliate blocks or direct product cards later.</p><p>If the reader is choosing a first project, the simplest path is medium cord, a small knot, a plain background, and slow tightening. If the reader is choosing a product, the simplest path is full-size photos, clear material notes, visible finishing, and a use case that matches the item.</p></section>` }));
 await writePage("/about/", simpleInfoPage({ title: "About Chinese Knot Guide and Its Tutorial Reference Scope", description: "Learn what Chinese Knot Guide covers, including tutorials, meanings, knot types, cord choices, bracelets, keychains, and symbolic use.", path: "/about/", h1: "About Chinese Knot Guide", intro: "This site explains Chinese knots for learners, craft buyers, and content researchers.", body: `<section class="content-section article-body"><h2>What this site covers</h2><p>Chinese Knot Guide covers beginner tutorials, symbolic meanings, common knot types, cord choices, bracelet projects, keychain ideas, and future supply or gift pages.</p><p>The site is built for practical learning first, then product and gift expansion after traffic data is available.</p></section><section class="content-section article-body"><h2>How to use the site</h2><p>Start with tutorials if you want to make knots. Start with meaning pages if you are researching symbols, gifts, or decorations.</p></section>` }));
 await writePage("/contact/", simpleInfoPage({ title: "Contact Chinese Knot Guide for Corrections and Craft Feedback", description: "Contact Chinese Knot Guide for page corrections, tutorial feedback, cord notes, product suggestions, or relevant partnership discussion.", path: "/contact/", h1: "Contact", intro: "Use this page for corrections, feedback, or site-related discussion.", body: `<section class="content-section article-body"><h2>Email</h2><p>Email: <a href="mailto:guan@shanyuegroup.com">guan@shanyuegroup.com</a></p><p>Please include the page URL and the knot type if your message is about a tutorial correction.</p></section><section class="content-section article-body"><h2>Scope</h2><p>The site can review tutorial clarity, meaning notes, and product category ideas, but it does not guarantee craft outcomes for every cord or project.</p></section>` }));
 await writePage("/privacy/", simpleLegalPage({ title: "Privacy Policy for Chinese Knot Guide Website Visitors", description: "Read the Chinese Knot Guide privacy policy covering analytics, email contact use, and standard website visitor data handling.", path: "/privacy/", h1: "Privacy Policy", intro: "This page explains what data may be handled through normal site usage.", sections: [{ title: "Analytics", text: "The site may use analytics tools to understand visits, pages viewed, and general content performance." }, { title: "Contact", text: "If you contact the site by email, the information you send is used only for that communication." }, { title: "No user accounts", text: "The current site does not provide public user accounts, subscriptions, or checkout forms." }] }));
@@ -1858,6 +1866,298 @@ function requiresFullArticleDepth(path) {
   if (["/", "/about/", "/contact/", "/privacy/", "/terms/", "/guides/", "/chinese-knot-faq/"].includes(path)) return false;
   if (path.startsWith("/admin/")) return false;
   return true;
+}
+
+
+const dailyArticles20260710 = [
+  {
+    "title": "Chinese Knot Bracelet Tutorial: Cord, Sizing, Closure, and Beginner Steps",
+    "path": "/chinese-knot-bracelet-tutorial/",
+    "description": "Learn a Chinese knot bracelet tutorial path with cord choice, wrist sizing, closure checks, beginner mistakes, and gift-use notes.",
+    "h1": "Chinese Knot Bracelet Tutorial: Cord, Sizing, Closure, and Beginner Steps",
+    "intro": "A Chinese knot bracelet tutorial should begin with cord choice, wrist size, closure style, and a knot that matches the learner's skill level.",
+    "answer": "For beginners, a Chinese knot bracelet works best with medium cord, a simple repeated knot or focal knot, a comfortable adjustable closure, and slow tightening so the bracelet stays even on the wrist.",
+    "details": [
+      "This article focuses on Chinese Knot Bracelet Tutorial because the search intent is practical. The reader needs a direct answer, enough context to avoid a weak assumption, and a clear next step inside the site.",
+      "A short definition is not enough for this topic. Useful content has to separate the main answer from details such as date boundaries, material quality, spelling variants, product use case, or symbolic limits.",
+      "The page is written as both a standalone answer and a routing page. It gives the reader enough information to act, then points toward broader guides, tools, and related pages when the question needs more depth.",
+      "Use the information as educational guidance. It can support cultural learning, buying decisions, family-name research, craft planning, or content planning, but it should not be treated as legal, medical, financial, genealogy-certified, or guaranteed luck advice.",
+      "The first practical check is wrist size. A bracelet tutorial should leave room for comfort, closure adjustment, and cord thickness rather than copying a fixed length blindly.",
+      "The second check is cord softness. A cord that looks good in photos may feel stiff, scratchy, or bulky if it is worn against the skin."
+    ],
+    "sections": [
+      {
+        "title": "Start with the real question behind Chinese Knot Bracelet Tutorial",
+        "paragraphs": [
+          "Most visitors searching for Chinese Knot Bracelet Tutorial are not looking for a decorative paragraph. They want to make a decision, confirm a fact, choose a product, understand a cultural symbol, or avoid a common mistake.",
+          "That means the useful answer should begin with what changes the outcome. A page can rank for a keyword and still disappoint the reader if it hides the practical decision behind vague background writing."
+        ]
+      },
+      {
+        "title": "What to check first",
+        "paragraphs": [
+          "Check whether the project uses a focal knot, repeated knots, beads, charms, tassels, or a sliding closure.",
+          "Check whether the tutorial is for practice, a gift, a child, or a finished product. Each purpose changes the best material and finish."
+        ]
+      },
+      {
+        "title": "How to read the answer responsibly",
+        "paragraphs": [
+          "After the first answer, keep the evidence layers separate. A zodiac phrase, surname spelling, product label, or craft name can be a useful clue, but the reliable conclusion depends on the supporting details around it.",
+          "This is where internal links matter. A visitor with a broad question should move to a main guide, while a visitor with a narrow buying, lookup, or tutorial question should continue to a focused page."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "The most common mistake is tightening too early. A bracelet can become uneven when the knot is pulled tight before both sides are balanced.",
+          "Another mistake is choosing cord only by color. Comfort, thickness, fraying, closure strength, and skin feel matter more for wearable knots."
+        ]
+      },
+      {
+        "title": "Best use cases",
+        "paragraphs": [
+          "The best use case for this page is a reader who needs a reliable reference before taking action. That action may be buying a lightweight product, checking a date, planning a gift, choosing craft supplies, or deciding whether a deeper guide is needed.",
+          "A second use case is topical authority. The page supports the larger site cluster by answering a focused query in enough detail, then linking the visitor toward more complete tools and reference pages."
+        ]
+      },
+      {
+        "title": "Decision framework",
+        "paragraphs": [
+          "Use a simple three-part framework: confirm the main fact, check the detail that can change the answer, then choose the next page or action. This keeps the article useful instead of turning it into a loose essay.",
+          "If the question involves a product, inspect construction, size, material, photos, and use case. If it involves culture, keep the wording bounded. If it involves family history, verify the character or source. If it involves a tool result, preserve the input date or context that produced the answer."
+        ]
+      },
+      {
+        "title": "When to use a broader guide",
+        "paragraphs": [
+          "Use this page when the question is specifically about Chinese Knot Bracelet Tutorial. Use a broader guide when the reader needs comparison, background, or a complete step-by-step workflow.",
+          "The broader guide is especially useful when several similar terms overlap. A product buyer may need comparison pages, a learner may need tutorial order, and a researcher may need meaning, origin, pronunciation, and source notes together."
+        ]
+      },
+      {
+        "title": "Practical next step",
+        "paragraphs": [
+          "If this is a first project, use a plain cord and a simple closure before adding beads or charms.",
+          "Next, read Chinese Knot Bracelet, Chinese Knot Cord, Chinese Button Knot, and Chinese Knot Jewelry for product and material context."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the quick answer for Chinese Knot Bracelet Tutorial?",
+        "a": "For beginners, a Chinese knot bracelet works best with medium cord, a simple repeated knot or focal knot, a comfortable adjustable closure, and slow tightening so the bracelet stays even on the wrist."
+      },
+      {
+        "q": "Can Chinese Knot Bracelet Tutorial be used for buying or paid products later?",
+        "a": "Yes, if the page keeps practical checks visible. Product or paid-report content should explain the decision path instead of relying on decorative wording."
+      },
+      {
+        "q": "Why is this page longer than a short definition?",
+        "a": "Because the reader usually needs tradeoffs, cautions, examples, and next steps. Thin pages are weak for SEO and weak for user trust."
+      },
+      {
+        "q": "What should I read next?",
+        "a": "Next, read Chinese Knot Bracelet, Chinese Knot Cord, Chinese Button Knot, and Chinese Knot Jewelry for product and material context."
+      }
+    ],
+    "related": [
+      {
+        "title": "Chinese Knot Tutorial",
+        "path": "/chinese-knot-tutorial/",
+        "category": "Tutorials",
+        "description": "Start with a beginner knotting path."
+      },
+      {
+        "title": "Chinese Knot Cord",
+        "path": "/chinese-knot-cord/",
+        "category": "Supplies",
+        "description": "Choose cord by size, texture, and project."
+      },
+      {
+        "title": "Chinese Knot Meaning",
+        "path": "/chinese-knot-meaning/",
+        "category": "Meanings",
+        "description": "Read symbolic meaning responsibly."
+      }
+    ],
+    "table": {
+      "title": "How to use Chinese Knot Bracelet Tutorial as a decision page",
+      "headers": [
+        "Reader need",
+        "What to check",
+        "Next action"
+      ],
+      "rows": [
+        [
+          "Quick answer",
+          "Confirm the main fact or product use case",
+          "Read the lead answer and save the exact page"
+        ],
+        [
+          "Accuracy",
+          "Check date, character, material, or construction detail",
+          "Use the related guide before deciding"
+        ],
+        [
+          "Buying or planning",
+          "Compare practical fit instead of decorative wording",
+          "Move to product, tutorial, or lookup pages"
+        ],
+        [
+          "Deeper research",
+          "Keep evidence and interpretation separate",
+          "Record the source and continue through the guide cluster"
+        ]
+      ]
+    }
+  },
+  {
+    "title": "Chinese Knot Gift: Meaning, Product Types, Quality Checks, and Buying Ideas",
+    "path": "/chinese-knot-gift/",
+    "description": "Choose a Chinese knot gift by meaning, product type, cord quality, tassel finish, size, packaging, and practical use.",
+    "h1": "Chinese Knot Gift: Meaning, Product Types, Quality Checks, and Buying Ideas",
+    "intro": "A Chinese knot gift should connect symbolic meaning with real product quality: clean knot symmetry, suitable size, durable cord, balanced tassels, and packaging that fits the occasion.",
+    "answer": "A good Chinese knot gift can be a bracelet, keychain, wall hanging, ornament, pendant, necklace, charm, or cord kit, but the best choice depends on use case, quality, meaning, and how the recipient will display or wear it.",
+    "details": [
+      "This article focuses on Chinese Knot Gift because the search intent is practical. The reader needs a direct answer, enough context to avoid a weak assumption, and a clear next step inside the site.",
+      "A short definition is not enough for this topic. Useful content has to separate the main answer from details such as date boundaries, material quality, spelling variants, product use case, or symbolic limits.",
+      "The page is written as both a standalone answer and a routing page. It gives the reader enough information to act, then points toward broader guides, tools, and related pages when the question needs more depth.",
+      "Use the information as educational guidance. It can support cultural learning, buying decisions, family-name research, craft planning, or content planning, but it should not be treated as legal, medical, financial, genealogy-certified, or guaranteed luck advice.",
+      "The first practical check is product type. A wall hanging, bracelet, keychain, and pendant are not interchangeable even if they use similar red knot imagery.",
+      "The second check is construction quality. Look for clean symmetry, firm cord ends, straight tassels, durable hardware, and photos that show the full item."
+    ],
+    "sections": [
+      {
+        "title": "Start with the real question behind Chinese Knot Gift",
+        "paragraphs": [
+          "Most visitors searching for Chinese Knot Gift are not looking for a decorative paragraph. They want to make a decision, confirm a fact, choose a product, understand a cultural symbol, or avoid a common mistake.",
+          "That means the useful answer should begin with what changes the outcome. A page can rank for a keyword and still disappoint the reader if it hides the practical decision behind vague background writing."
+        ]
+      },
+      {
+        "title": "What to check first",
+        "paragraphs": [
+          "Check whether the gift is meant for decor, everyday carrying, jewelry, festival use, wedding use, or DIY learning.",
+          "Check the wording of the listing. Meaning cards can be useful, but exaggerated luck promises should not replace product details."
+        ]
+      },
+      {
+        "title": "How to read the answer responsibly",
+        "paragraphs": [
+          "After the first answer, keep the evidence layers separate. A zodiac phrase, surname spelling, product label, or craft name can be a useful clue, but the reliable conclusion depends on the supporting details around it.",
+          "This is where internal links matter. A visitor with a broad question should move to a main guide, while a visitor with a narrow buying, lookup, or tutorial question should continue to a focused page."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "The most common mistake is buying only because the item is red or says lucky. Symbolic wording helps explain the gift, but it does not fix poor materials or weak finishing.",
+          "Another mistake is choosing the wrong size. A small charm may look lost on a wall, while a large ornament may be too bulky for a car or desk."
+        ]
+      },
+      {
+        "title": "Best use cases",
+        "paragraphs": [
+          "The best use case for this page is a reader who needs a reliable reference before taking action. That action may be buying a lightweight product, checking a date, planning a gift, choosing craft supplies, or deciding whether a deeper guide is needed.",
+          "A second use case is topical authority. The page supports the larger site cluster by answering a focused query in enough detail, then linking the visitor toward more complete tools and reference pages."
+        ]
+      },
+      {
+        "title": "Decision framework",
+        "paragraphs": [
+          "Use a simple three-part framework: confirm the main fact, check the detail that can change the answer, then choose the next page or action. This keeps the article useful instead of turning it into a loose essay.",
+          "If the question involves a product, inspect construction, size, material, photos, and use case. If it involves culture, keep the wording bounded. If it involves family history, verify the character or source. If it involves a tool result, preserve the input date or context that produced the answer."
+        ]
+      },
+      {
+        "title": "When to use a broader guide",
+        "paragraphs": [
+          "Use this page when the question is specifically about Chinese Knot Gift. Use a broader guide when the reader needs comparison, background, or a complete step-by-step workflow.",
+          "The broader guide is especially useful when several similar terms overlap. A product buyer may need comparison pages, a learner may need tutorial order, and a researcher may need meaning, origin, pronunciation, and source notes together."
+        ]
+      },
+      {
+        "title": "Practical next step",
+        "paragraphs": [
+          "If the gift is decorative, choose by space, hanging length, and tassel balance. If it is wearable, choose by comfort, weight, and closure quality.",
+          "Next, compare Chinese Knot Ornament, Chinese Knot Wall Hanging, Chinese Knot Bracelet, Chinese Knot Keychain, and Red Chinese Knot pages."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the quick answer for Chinese Knot Gift?",
+        "a": "A good Chinese knot gift can be a bracelet, keychain, wall hanging, ornament, pendant, necklace, charm, or cord kit, but the best choice depends on use case, quality, meaning, and how the recipient will display or wear it."
+      },
+      {
+        "q": "Can Chinese Knot Gift be used for buying or paid products later?",
+        "a": "Yes, if the page keeps practical checks visible. Product or paid-report content should explain the decision path instead of relying on decorative wording."
+      },
+      {
+        "q": "Why is this page longer than a short definition?",
+        "a": "Because the reader usually needs tradeoffs, cautions, examples, and next steps. Thin pages are weak for SEO and weak for user trust."
+      },
+      {
+        "q": "What should I read next?",
+        "a": "Next, compare Chinese Knot Ornament, Chinese Knot Wall Hanging, Chinese Knot Bracelet, Chinese Knot Keychain, and Red Chinese Knot pages."
+      }
+    ],
+    "related": [
+      {
+        "title": "Chinese Knot Tutorial",
+        "path": "/chinese-knot-tutorial/",
+        "category": "Tutorials",
+        "description": "Start with a beginner knotting path."
+      },
+      {
+        "title": "Chinese Knot Cord",
+        "path": "/chinese-knot-cord/",
+        "category": "Supplies",
+        "description": "Choose cord by size, texture, and project."
+      },
+      {
+        "title": "Chinese Knot Meaning",
+        "path": "/chinese-knot-meaning/",
+        "category": "Meanings",
+        "description": "Read symbolic meaning responsibly."
+      }
+    ],
+    "table": {
+      "title": "How to use Chinese Knot Gift as a decision page",
+      "headers": [
+        "Reader need",
+        "What to check",
+        "Next action"
+      ],
+      "rows": [
+        [
+          "Quick answer",
+          "Confirm the main fact or product use case",
+          "Read the lead answer and save the exact page"
+        ],
+        [
+          "Accuracy",
+          "Check date, character, material, or construction detail",
+          "Use the related guide before deciding"
+        ],
+        [
+          "Buying or planning",
+          "Compare practical fit instead of decorative wording",
+          "Move to product, tutorial, or lookup pages"
+        ],
+        [
+          "Deeper research",
+          "Keep evidence and interpretation separate",
+          "Record the source and continue through the guide cluster"
+        ]
+      ]
+    }
+  }
+];
+
+for (const article of dailyArticles20260710) {
+  await writePage(article.path, dailyArticlePage20260706(article));
 }
 
 function clientScript() {
