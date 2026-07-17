@@ -25,6 +25,44 @@ const knots = [
 ];
 
 const guides = [
+  {
+  "title": "Chinese Knot Phone Charm: Meaning, Cord Quality, Size, and Buying Checks",
+  "path": "/chinese-knot-phone-charm/",
+  "category": "Product Guides",
+  "description": "Choose a Chinese knot phone charm by meaning, cord quality, attachment loop, tassel length, phone case fit, and gift use."
+},
+  {
+  "title": "Chinese Knot Gift Box Ideas: Packaging, Meaning Cards, and Product Bundles",
+  "path": "/chinese-knot-gift-box-ideas/",
+  "category": "Gift & Decor",
+  "description": "Plan Chinese knot gift box ideas with packaging, meaning cards, bracelet bundles, keychains, charms, and safe symbolic wording."
+},
+  {
+  "title": "Chinese Knot Keychain Gifts: Meaning, Hardware, Size, and Buying Checks",
+  "path": "/chinese-knot-keychain-gifts/",
+  "category": "Product Guides",
+  "description": "Choose Chinese knot keychain gifts by meaning, cord quality, hardware, size, packaging, durability, and safe gift wording."
+},
+  {
+  "title": "Chinese Knot Wall Decor Meaning: Placement, Color, Size, and Gift Use",
+  "path": "/chinese-knot-wall-decor-meaning/",
+  "category": "Meaning Guides",
+  "description": "Understand Chinese knot wall decor meaning with placement, color symbolism, size, tassel quality, gift use, and buying checks."
+},
+  {
+  "title": "Chinese Knot Wedding Favors: Meaning, Packaging, and Buying Checks",
+  "path": "/chinese-knot-wedding-favors/",
+  "category": "Gift & Decor",
+  "description": "Choose Chinese knot wedding favors by meaning, color, packaging, cord quality, guest use, and safe buying checks."
+},
+  {
+  "title": "Chinese Knot Bracelet Meaning: Colors, Gifts, and Safe Wording",
+  "path": "/chinese-knot-bracelet-meaning/",
+  "category": "Jewelry Guides",
+  "description": "Understand Chinese knot bracelet meaning, color symbolism, gift wording, cord choices, fit, and responsible buying notes."
+},
+  {"title": "Chinese Knot Gifts", "path": "/chinese-knot-gifts/", "category": "Gift & Decor", "description": "Choose Chinese knot gifts by occasion, size, color, meaning, quality, and presentation."},
+  {"title": "Chinese Knot Car Hanging", "path": "/chinese-knot-car-hanging/", "category": "Product Guides", "description": "Choose Chinese knot car hangings by size, tassel, safety, meaning, and gift use."},
   { title: "Chinese Knot Tutorial", path: "/chinese-knot-tutorial/", category: "Tutorials", description: "A beginner path for learning Chinese knotting step by step." },
   { title: "How to Tie a Chinese Knot", path: "/how-to-tie-chinese-knot/", category: "Tutorials", description: "Simple practice order, cord setup, and common mistakes." },
   { title: "Chinese Knot Meaning", path: "/chinese-knot-meaning/", category: "Meanings", description: "Understand symbolic meanings, colors, and common gift contexts." },
@@ -55,10 +93,320 @@ const guides = [
   { title: 'Chinese Lucky Knot Tutorial', path: '/chinese-lucky-knot-tutorial/', category: 'Tutorial Guides', description: 'Learn lucky knot meaning, cord control, and gift use.' },
   {"title":"Chinese Knotting Cord","path":"/chinese-knotting-cord/","category":"Supplies","description":"Choose knotting cord sizes, materials, and project uses."},
   {"title":"Chinese Knot Tassel Tutorial","path":"/chinese-knot-tassel-tutorial/","category":"Tutorial Guides","description":"Learn tassel balance, cord choice, finishing, and gift quality checks."},
+  {"title":"Chinese Knot Supplies","path":"/chinese-knot-supplies/","category":"Supplies","description":"Choose Chinese knot supplies by cord, pins, board setup, hardware, and beginner project needs."},
+  {"title":"Chinese Knot for Beginners","path":"/chinese-knot-for-beginners/","category":"Tutorial Guides","description":"Start Chinese knotting with simple cord control, beginner patterns, and clean finishing checks."},
+  {"title":"Chinese Knot Wall Decor","path":"/chinese-knot-wall-decor/","category":"Gift & Decor","description":"Choose Chinese knot wall decor by size, tassel quality, color, and placement."},
+  {"title":"Adjustable Chinese Knot Bracelet","path":"/adjustable-chinese-knot-bracelet/","category":"Jewelry Guides","description":"Choose adjustable knot bracelets by fit, cord comfort, closure, and gift use."},
 
+  { title: "Chinese Knot Wedding Favors: Meaning, Packaging, and Buying Checks", path: "/chinese-knot-wedding-favors/", category: "Gift & Decor", description: "Choose Chinese knot wedding favors by knot type, color, packaging, meaning card, guest use, and safe symbolic wording." },
+  { title: "Chinese Knot Keychain Gifts: Cord, Hardware, Meaning, and Durability", path: "/chinese-knot-keychain-gifts/", category: "Product Guides", description: "Choose Chinese knot keychain gifts by cord strength, ring hardware, knot symmetry, tassel quality, meaning, and packaging." },
 ];
 
 const pages = [];
+
+const geoMicroPatches20260716 = new Map([
+  [
+    "/chinese-knot-bracelet-tutorial/",
+    {
+      "path": "/chinese-knot-bracelet-tutorial/",
+      "quick": "Quick answer: A Chinese knot bracelet tutorial works best when it states the cord diameter, starting lengths, wrist measurement, knot sequence, tightening method, and a secure finishing step.",
+      "facts": [
+        [
+          "Main task",
+          "Make a wearable knotted bracelet"
+        ],
+        [
+          "Required measurements",
+          "Wrist size, cord diameter, and starting cord lengths"
+        ],
+        [
+          "Control point",
+          "Tighten repeated knots evenly while checking symmetry"
+        ],
+        [
+          "Safety check",
+          "Finish ends securely and avoid sharp or heat-damaged edges"
+        ]
+      ],
+      "evidence": "Make a sample with the stated cord and record finished length before scaling the tutorial to another wrist size.",
+      "examples": "adjustable bracelets, button closures, sliding knots, bead accents, and friendship-bracelet projects",
+      "mistakes": "Do not cut cord from a photo estimate or tighten every knot fully before confirming the bracelet still fits.",
+      "faq": [
+        [
+          "How much cord should I use?",
+          "Use the tutorial's measured allowance and add extra for thicker cord, a larger wrist, complex knots, and finishing."
+        ],
+        [
+          "How do I keep the bracelet even?",
+          "Maintain equal working lengths, alternate tension carefully, and compare both sides after each repeat."
+        ]
+      ],
+      "dataAnchor": "Bracelet plan = wrist size + cord diameter + measured allowance + knot repeats + closure length."
+    }
+  ],
+  [
+    "/chinese-knot-keychain/",
+    {
+      "path": "/chinese-knot-keychain/",
+      "quick": "Quick answer: A durable Chinese knot keychain needs a knot and cord sized for daily handling, a secure attachment point, trimmed or sealed ends appropriate to the fiber, and enough clearance to avoid snagging.",
+      "facts": [
+        [
+          "Main task",
+          "Make or choose a portable decorative knot"
+        ],
+        [
+          "Hardware checks",
+          "Ring strength, connector closure, and cord-to-hardware fit"
+        ],
+        [
+          "Wear checks",
+          "Abrasion, loose ends, bead security, and overall length"
+        ],
+        [
+          "Safety note",
+          "Keep long cords away from children and moving equipment"
+        ]
+      ],
+      "evidence": "Inspect the ring, connector, cord diameter, finishing method, and load from beads or charms before regular use.",
+      "examples": "bag tags, zipper pulls, souvenir gifts, color-coded keys, and small luck-knot ornaments",
+      "mistakes": "Do not attach a heavy charm to thin cord or rely on an open jump ring that can spread during use.",
+      "faq": [
+        [
+          "Which knot works well for a keychain?",
+          "Compact symmetrical knots that hold their shape are practical, provided the cord and hardware match the finished scale."
+        ],
+        [
+          "Can I wash a knotted keychain?",
+          "Follow the cord and hardware care guidance; spot cleaning and thorough drying are usually safer than soaking mixed materials."
+        ]
+      ],
+      "dataAnchor": "Keychain durability = compact knot + abrasion-suitable cord + closed hardware + secure finish + manageable length."
+    }
+  ]
+]);
+
+function applyGeoMicroPatch20260716(path, html) {
+  const patch = geoMicroPatches20260716.get(path);
+  if (!patch || html.includes('data-geo-micro-patch="20260716"')) return html;
+  const facts = patch.facts.map((row) => `<tr><td>${escapeHtml(row[0])}</td><td>${escapeHtml(row[1])}</td></tr>`).join("");
+  const faq = patch.faq.map((item) => `<h3>${escapeHtml(item[0])}</h3><p>${escapeHtml(item[1])}</p>`).join("");
+  const block = `<section class="content-section article-body geo-micro-patch" data-geo-micro-patch="20260716">
+    <h2>Quick Answer and Evidence Check</h2><p>${escapeHtml(patch.quick)}</p>
+    <div class="table-wrap"><table><thead><tr><th>Basic fact</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div>
+    <p><strong>Source note:</strong> ${escapeHtml(patch.evidence)}</p>
+    <p><strong>Examples and use cases:</strong> ${escapeHtml(patch.examples)}.</p>
+    <p><strong>Common mistake:</strong> ${escapeHtml(patch.mistakes)}</p>
+    <h2>GEO FAQ</h2>${faq}
+    <p><strong>Data anchor:</strong> ${escapeHtml(patch.dataAnchor)}</p>
+  </section>`;
+  return html.includes("</main>") ? html.replace("</main>", `${block}</main>`) : `${html}${block}`;
+}
+
+
+const geoMicroPatches20260715 = new Map([
+  [
+    "/chinese-knot-supplies/",
+    {
+      "path": "/chinese-knot-supplies/",
+      "quick": "Quick answer: A useful Chinese knot supplies kit starts with consistent knotting cord, sharp scissors, measuring tools, clips or pins, and only the beads or findings required by the chosen project.",
+      "facts": [
+        [
+          "Main task",
+          "Choose tools and materials for Chinese knotting"
+        ],
+        [
+          "Core material",
+          "Cord with consistent diameter, color, and surface finish"
+        ],
+        [
+          "Core tools",
+          "Scissors, ruler, clips or pins, lighter only when material and safety allow"
+        ],
+        [
+          "Project check",
+          "Match cord diameter and findings to the knot and finished size"
+        ]
+      ],
+      "evidence": "Cord diameter, fiber type, spool length, color consistency, tensile feel, and hole sizes in beads or findings are practical selection evidence.",
+      "examples": "bracelet kits, keychain supplies, wall-hanging cord, tassel materials, beads, rings, clasps, and practice boards",
+      "mistakes": "Do not buy a large mixed kit before checking whether its cord diameter and findings fit the tutorial you plan to follow.",
+      "faq": [
+        [
+          "What cord is easiest for a beginner?",
+          "A smooth, visible, medium-thickness cord that holds its shape is easier to inspect and untie during practice."
+        ],
+        [
+          "Do I need a knotting board?",
+          "Not always. Clips, pins, or a simple firm work surface can be enough for small beginner projects."
+        ]
+      ],
+      "dataAnchor": "Supply list = selected project + cord diameter + finished size + compatible findings + safe finishing method."
+    }
+  ],
+  [
+    "/chinese-knot-cord/",
+    {
+      "path": "/chinese-knot-cord/",
+      "quick": "Quick answer: Choose Chinese knot cord by diameter, fiber, stiffness, surface sheen, color consistency, and the finished knot size rather than by color alone.",
+      "facts": [
+        [
+          "Main task",
+          "Select cord for a Chinese knot project"
+        ],
+        [
+          "Size check",
+          "Cord diameter changes knot scale, detail, and bead compatibility"
+        ],
+        [
+          "Handling check",
+          "Stiffness and surface friction affect tightening and shape"
+        ],
+        [
+          "Safety note",
+          "Use a finishing method appropriate to the fiber and work area"
+        ]
+      ],
+      "evidence": "A sample knot, measured diameter, spool length, fiber listing, color batch, and bead-hole fit provide better evidence than a product photo alone.",
+      "examples": "bracelet cord, button-knot cord, keychain cord, tassel cord, wall-hanging cord, and practice cord",
+      "mistakes": "Do not substitute a much thicker cord in a tutorial without adjusting lengths, bead holes, and expected finished dimensions.",
+      "faq": [
+        [
+          "What cord thickness should I buy?",
+          "Use the tutorial recommendation or make a sample knot; the right thickness depends on the knot and desired scale."
+        ],
+        [
+          "Can nylon cord ends be melted?",
+          "Some synthetic cords can be heat-sealed, but test a scrap first and use ventilation and fire-safe handling."
+        ]
+      ],
+      "dataAnchor": "Cord choice = knot type + target size + measured diameter + handling feel + compatible finishing method."
+    }
+  ]
+]);
+
+function applyGeoMicroPatch20260715(path, html) {
+  const patch = geoMicroPatches20260715.get(path);
+  if (!patch || html.includes('data-geo-micro-patch="20260715"')) return html;
+  const facts = patch.facts.map((row) => `<tr><td>${escapeHtml(row[0])}</td><td>${escapeHtml(row[1])}</td></tr>`).join("");
+  const faq = patch.faq.map((item) => `<h3>${escapeHtml(item[0])}</h3><p>${escapeHtml(item[1])}</p>`).join("");
+  const block = `<section class="content-section article-body geo-micro-patch" data-geo-micro-patch="20260715">
+    <h2>Quick Answer and Evidence Check</h2><p>${escapeHtml(patch.quick)}</p>
+    <div class="table-wrap"><table><thead><tr><th>Basic fact</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div>
+    <p><strong>Source note:</strong> ${escapeHtml(patch.evidence)}</p>
+    <p><strong>Examples and use cases:</strong> ${escapeHtml(patch.examples)}.</p>
+    <p><strong>Common mistake:</strong> ${escapeHtml(patch.mistakes)}</p>
+    <h2>GEO FAQ</h2>${faq}
+    <p><strong>Data anchor:</strong> ${escapeHtml(patch.dataAnchor)}</p>
+  </section>`;
+  return html.includes("</main>") ? html.replace("</main>", `${block}</main>`) : `${html}${block}`;
+}
+
+
+const geoMicroPatches20260714 = new Map([
+  [
+    "/chinese-knot-gifts/",
+    {
+      "path": "/chinese-knot-gifts/",
+      "quick": "Quick answer: Chinese knot gifts work best when the knot type, color, size, packaging, and occasion match the message you want to send.",
+      "facts": [
+        [
+          "Main topic",
+          "Chinese knot gifts"
+        ],
+        [
+          "First check",
+          "Occasion, knot type, finished size, cord quality, and gift packaging"
+        ],
+        [
+          "Buyer intent",
+          "Wedding favors, home decor, festival gifts, bracelet gifts, and small souvenirs"
+        ],
+        [
+          "Safety note",
+          "Describe symbolism as good wishes, not as guaranteed luck"
+        ]
+      ],
+      "evidence": "Product photos, cord finish, tassel quality, finished size, color consistency, and packaging details are practical buying evidence.",
+      "examples": "wedding favors, red hanging knots, bracelet gifts, car hangings, keychains, and festival decor",
+      "mistakes": "Do not choose only by red color while ignoring cord finish, tassel neatness, and package protection.",
+      "faq": [
+        [
+          "What makes a Chinese knot gift feel higher quality?",
+          "Clean cord tension, balanced tassels, neat finishing, appropriate size, and protective packaging."
+        ],
+        [
+          "Can I say a Chinese knot brings luck?",
+          "Use it as a blessing or symbolic wish, not as a guaranteed result."
+        ]
+      ],
+      "dataAnchor": "Chinese knot gift decision = occasion + knot type + color meaning + cord quality + packaging check."
+    }
+  ],
+  [
+    "/chinese-knot-car-hanging/",
+    {
+      "path": "/chinese-knot-car-hanging/",
+      "quick": "Quick answer: A Chinese knot car hanging should be lightweight, secure, visually balanced, and small enough that it does not block the driver's view.",
+      "facts": [
+        [
+          "Main topic",
+          "Chinese knot car hanging"
+        ],
+        [
+          "First check",
+          "Size, weight, hanging length, attachment method, and visibility"
+        ],
+        [
+          "Buyer intent",
+          "Car decor, small gifts, festival accessories, and symbolic travel keepsakes"
+        ],
+        [
+          "Safety note",
+          "Avoid large or heavy hangings that distract the driver or block sight lines"
+        ]
+      ],
+      "evidence": "Finished size, weight, cord loop strength, tassel length, product photos, and safety placement notes matter more than decoration alone.",
+      "examples": "small red knots, tassel hangings, charm knots, rear-view mirror accessories, and gift-boxed car decor",
+      "mistakes": "Do not buy a large decorative knot for a car without checking visibility, swing, and attachment safety.",
+      "faq": [
+        [
+          "Where should a car hanging be placed?",
+          "Place it where it stays secure and does not block the windshield, mirrors, controls, or driver attention."
+        ],
+        [
+          "What size is safer?",
+          "Smaller, lighter hangings with short tassels are usually easier to manage in a car."
+        ]
+      ],
+      "dataAnchor": "Chinese knot car hanging decision = size + weight + attachment + visibility + symbolic wording."
+    }
+  ]
+]);
+
+function applyGeoMicroPatch20260714(path, html) {
+  const patch = geoMicroPatches20260714.get(path);
+  if (!patch || html.includes('data-geo-micro-patch="20260714"')) return html;
+  const block = blockForGeoMicroPatch20260714(patch);
+  return html.includes("</main>") ? html.replace("</main>", `${block}</main>`) : `${html}${block}`;
+}
+
+function blockForGeoMicroPatch20260714(patch) {
+  const facts = patch.facts.map((row) => `<tr><td>${escapeHtml(row[0])}</td><td>${escapeHtml(row[1])}</td></tr>`).join("");
+  const faq = patch.faq.map((item) => `<h3>${escapeHtml(item[0])}</h3><p>${escapeHtml(item[1])}</p>`).join("");
+  return `<section class="content-section article-body geo-micro-patch" data-geo-micro-patch="20260714">
+    <h2>Quick Answer and Evidence Check</h2>
+    <p>${escapeHtml(patch.quick)}</p>
+    <div class="table-wrap"><table><thead><tr><th>Basic fact</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div>
+    <p><strong>Source note:</strong> ${escapeHtml(patch.evidence)}</p>
+    <p><strong>Examples and use cases:</strong> ${escapeHtml(patch.examples)}.</p>
+    <p><strong>Common mistake:</strong> ${escapeHtml(patch.mistakes)}</p>
+    <h2>GEO FAQ</h2>
+    ${faq}
+    <p><strong>Data anchor:</strong> ${escapeHtml(patch.dataAnchor)}</p>
+  </section>`;
+}
+
+
 
 await rm("dist", { recursive: true, force: true });
 await mkdir("dist/assets", { recursive: true });
@@ -194,6 +542,7 @@ function pageLayout({ title, description, path, h1, intro, body, faqs = [], page
   <meta property="og:image" content="${SITE.url}/assets/knot-ornament-hero.webp">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/styles.css?v=${SITE.assetVersion}">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1609779333813540" crossorigin="anonymous"></script>
   ${analyticsSnippet()}
   ${schema}
 </head>
@@ -228,7 +577,7 @@ function pageLayout({ title, description, path, h1, intro, body, faqs = [], page
     <nav class="footer-nav" aria-label="Footer navigation">
       <div><span>Learn</span><a href="/chinese-knot-tutorial/">Tutorial</a><a href="/how-to-tie-chinese-knot/">How to tie</a><a href="/types-of-chinese-knots/">Types</a></div>
       <div><span>Meaning</span><a href="/chinese-knot-meaning/">Meaning</a><a href="/endless-knot-meaning/">Endless knot</a><a href="/pan-chang-knot/">Pan Chang knot</a></div>
-      <div><span>Site</span><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/chinese-knot-faq/">FAQ</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
+      <div><span>Site</span><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/faq/">FAQ</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
     </nav>
   </footer>
   <script src="/toolkit.js?v=${SITE.assetVersion}" defer></script>
@@ -286,7 +635,8 @@ function articleSearchBlock() {
 }
 
 function guideCard(guide) {
-  return `<a class="guide-card" href="${guide.path}" data-guide-card data-guide-category="${slugify(guide.category)}"><span>${escapeHtml(guide.category)}</span><strong>${escapeHtml(guide.title)}</strong><p>${escapeHtml(guide.description)}</p></a>`;
+  const category = guide.category || "Related";
+  return `<a class="guide-card" href="${guide.path}" data-guide-card data-guide-category="${slugify(category)}"><span>${escapeHtml(category)}</span><strong>${escapeHtml(guide.title)}</strong><p>${escapeHtml(guide.description)}</p></a>`;
 }
 
 function guideFilterBlock() {
@@ -350,12 +700,31 @@ function knotPage(item) {
   });
 }
 
+function supplementalInfoBlock(path) {
+  if (path === "/about/") {
+    return `<section class="content-section article-body"><h2>Editorial standards</h2><p>The site is maintained as a practical English-language reference. Pages are written to answer a specific visitor question first, then explain context, common mistakes, and the next useful page. Content may be updated when better examples, clearer wording, or stronger internal links are needed.</p><p>The site avoids unsupported claims. Cultural meanings, product notes, learning tips, and comparison pages should help readers make better decisions, but they should not promise guaranteed personal outcomes or replace professional advice.</p></section><section class="content-section article-body"><h2>Commercial disclosure</h2><p>The site may use display advertising, affiliate links, digital products, or direct product pages in the future. Commercial sections should be clearly separated from editorial explanations, and recommendations should remain tied to practical checks such as material, use case, safety, quality, source evidence, or reader intent.</p></section><section class="content-section article-body"><h2>Ownership and review process</h2><p>The site is operated as part of an independent content portfolio. Pages are reviewed for clarity, usefulness, internal navigation, and commercial suitability before major monetization features are added. When a page is updated, the goal is to make the answer more useful, not to inflate claims or hide uncertainty.</p><p>Readers should be able to understand what the site covers, what it does not cover, and how to contact the operator if a correction is needed. This is especially important for topics that mix cultural context, product choices, tutorials, family-name research, or symbolic interpretation.</p></section>`;
+  }
+  if (path === "/contact/") {
+    return `<section class="content-section article-body"><h2>Editorial and business contact</h2><p>Contact messages may be used to review corrections, improve page clarity, evaluate relevant partnerships, or respond to site-related questions. For correction requests, include the page URL, the specific sentence, and the reason the change is needed.</p><p>For business inquiries, describe the site, product, service, or collaboration clearly. The site does not accept partnerships that require misleading claims, fake reviews, unsupported health or luck promises, or hidden advertising.</p></section><section class="content-section article-body"><h2>Privacy of messages</h2><p>Email messages are handled only for communication, correction review, and business follow-up. Do not send sensitive identity documents, payment details, passwords, or private personal records by email.</p></section><section class="content-section article-body"><h2>Message handling limits</h2><p>Contact is intended for site-related communication, not private consultation. The site may respond to factual corrections, broken links, unclear wording, advertising questions, affiliate discussions, or relevant product/service proposals. It may not respond to vague promotional outreach, requests for hidden paid placement, or messages unrelated to the site topic.</p><p>If a correction is accepted, the page may be updated without publishing a separate notice. If a request is outside the site scope, the message may simply be archived without further action.</p></section>`;
+  }
+  return "";
+}
+
+function supplementalLegalBlock(path) {
+  if (path === "/privacy/") {
+    return `<section class="content-section article-body"><h2>Cookies, analytics, and advertising partners</h2><p>The site may use cookies, analytics scripts, hosting logs, and advertising technologies to understand traffic, measure page performance, prevent abuse, and support free public content. Advertising partners may process browser or device signals according to their own privacy policies and consent tools.</p></section><section class="content-section article-body"><h2>Email and voluntary information</h2><p>If a visitor sends an email, the message may include an email address, page URL, correction notes, and any details the visitor chooses to provide. That information is used to respond, review the issue, improve the site, or keep a basic record of business communication.</p></section><section class="content-section article-body"><h2>Future paid features</h2><p>If checkout, digital reports, subscriptions, or user accounts are added later, this policy should be reviewed and updated before those features go live. Payment secrets, API keys, and private credentials must not be stored in public frontend code.</p></section><section class="content-section article-body"><h2>Visitor choices and retention</h2><p>Visitors can limit cookies through browser settings and can choose not to send email or voluntary information. Basic hosting, security, and analytics logs may be retained for a reasonable period to diagnose errors, measure content performance, and protect the site from abuse. The site does not build public user profiles in its current form.</p></section>`;
+  }
+  if (path === "/terms/") {
+    return `<section class="content-section article-body"><h2>Advertising, affiliate, and product boundaries</h2><p>The site may include display ads, affiliate links, direct products, downloadable reports, or service pages. Commercial content should not require misleading claims, fake reviews, hidden sponsorship, or guarantees that cannot be supported. Visitors are responsible for evaluating whether a product, tool, or guide fits their own situation.</p></section><section class="content-section article-body"><h2>Accuracy and updates</h2><p>Pages may be corrected, expanded, reorganized, or removed when better information is available or when the site structure changes. The site aims to keep explanations useful and clear, but no page can cover every regional, personal, product, or historical variation.</p></section><section class="content-section article-body"><h2>Permitted use</h2><p>Visitors may read and reference the site for personal learning. Automated scraping, copying large portions of the site, impersonating the site, or using the content to create misleading commercial claims is not permitted without written permission.</p></section><section class="content-section article-body"><h2>External links and third parties</h2><p>The site may link to third-party websites, product pages, payment processors, analytics tools, or advertising platforms. Those services are governed by their own policies and terms. A link does not mean the site controls the third-party service or guarantees its availability, pricing, accuracy, shipping, refund handling, or support quality.</p></section>`;
+  }
+  return "";
+}
 function simpleInfoPage({ title, description, path, h1, intro, body }) {
-  return pageLayout({ title, description, path, h1, intro, body, heroLabel: "Site information" });
+  return pageLayout({ title, description, path, h1, intro, body: body + supplementalInfoBlock(path), heroLabel: "Site information" });
 }
 
 function simpleLegalPage({ title, description, path, h1, intro, sections }) {
-  return pageLayout({ title, description, path, h1, intro, heroLabel: "Legal information", body: sections.map((section) => `<section class="content-section article-body"><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.text)}</p></section>`).join("") });
+  return pageLayout({ title, description, path, h1, intro, heroLabel: "Legal information", body: sections.map((section) => `<section class="content-section article-body"><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.text)}</p></section>`).join("") + supplementalLegalBlock(path) });
 }
 
 await writePage("/", pageLayout({
@@ -676,6 +1045,39 @@ await writePage("/red-chinese-knot/", supportArticle({
   related: [guides[2], guides[8], guides[15], guides[7], guides[9]].filter(Boolean)
 }));
 
+await writePage("/chinese-knot-wall-decor/", supportArticle({
+  title: "Chinese Knot Wall Decor: Size, Placement, Meaning, and Buying Guide",
+  description: "Choose Chinese knot wall decor by size, cord quality, tassel finish, color symbolism, room placement, and gift or festival use.",
+  path: "/chinese-knot-wall-decor/",
+  h1: "Chinese Knot Wall Decor",
+  intro: "Chinese knot wall decor connects cultural meaning, home decoration, lightweight shipping, and visual product choice.",
+  answer: "Chinese knot wall decor should be chosen by size, knot symmetry, tassel finish, hanging method, color tone, and where the piece will be placed.",
+  details: ["Wall decor needs different checks than bracelets or keychains. Scale, tassel length, hanging loop, and visual balance matter more than wearable comfort.", "Red and gold designs often feel festive, but product recommendations should explain size, material, finishing, and placement rather than relying only on auspicious wording.", "This page can later support product blocks for doorway knots, living-room wall hangings, festival decor, wedding decor, and gift-ready ornaments."],
+  sections: [
+    { title: "Where Chinese knot wall decor works best", paragraphs: ["Chinese knot wall decor is commonly used near doors, in living rooms, above small cabinets, in entry spaces, in shops, at festival displays, and as seasonal or wedding decoration.", "The wall surface also matters. A strong red knot can look excellent against light wood, white walls, neutral stone, or dark furniture, but it may feel too busy on a patterned background."] },
+    { title: "Size, tassel, and hanging quality", paragraphs: ["Size is the first buying check. Product photos often make wall knots look larger than they are, so the listing should state full height, knot width, and tassel length.", "Tassel quality is the second check. A wall hanging with uneven tassels, twisted cord, or weak hanging loops will look cheap even if the knot color is attractive."] },
+    { title: "Meaning and color choices", paragraphs: ["Red is the most common color because it reads as festive and traditional in many Chinese decor contexts. Gold accents can make the piece feel more formal.", "Meaning should be explained as symbolism. A wall knot can express good wishes, continuity, celebration, harmony, or welcome, but the wording should not claim guaranteed outcomes."] },
+    { title: "Buying checklist for wall knots", paragraphs: ["Before buying, check full dimensions, main knot size, tassel length, cord material, backing or hanging loop, whether the piece is handmade, photo scale, packaging, and return policy.", "For future product blocks, separate doorway decor, living-room decor, festival decor, wedding decor, and small gift ornaments."] }
+  ],
+  related: [guides.find((guide) => guide.path === "/chinese-knot-wall-hanging/"), guides.find((guide) => guide.path === "/chinese-knot-ornament/"), guides.find((guide) => guide.path === "/red-chinese-knot/"), guides.find((guide) => guide.path === "/chinese-knot-meaning/")].filter(Boolean)
+}));
+
+await writePage("/adjustable-chinese-knot-bracelet/", supportArticle({
+  title: "Adjustable Chinese Knot Bracelet: Fit, Cord, Meaning, and Buying Guide",
+  description: "Choose an adjustable Chinese knot bracelet by fit range, sliding closure, cord comfort, knot quality, color meaning, and gift use.",
+  path: "/adjustable-chinese-knot-bracelet/",
+  h1: "Adjustable Chinese Knot Bracelet",
+  intro: "Adjustable Chinese knot bracelets are small, giftable, easy to ship, and tied to both craft and symbolic meaning.",
+  answer: "An adjustable Chinese knot bracelet should fit comfortably, slide securely, use smooth cord, and keep the knot centered during wear.",
+  details: ["Adjustable bracelets need stricter checks than wall decor because the cord touches skin, moves all day, and is pulled repeatedly when the wearer changes fit.", "A good product description should state size range, cord material, closure type, charm or bead material, and whether the bracelet is handmade or mass produced.", "Meaning should stay symbolic. A bracelet can express blessing, connection, or celebration, but product copy should not promise luck, wealth, health, or protection."],
+  sections: [
+    { title: "What makes a bracelet adjustable", paragraphs: ["Most adjustable Chinese knot bracelets use sliding knots, braided closures, cord loops, or bead-assisted closures to change wrist size.", "The product page should show the bracelet at its smallest and largest settings. A single close-up photo does not tell the buyer whether the fit range works."] },
+    { title: "Cord comfort and skin contact", paragraphs: ["Cord comfort matters because the bracelet touches skin all day. A rough cord can irritate the wrist, while a cord that is too stiff can keep the knot from sitting naturally.", "Color can be meaningful, but comfort decides whether the item is actually used. A red bracelet that feels scratchy or loosens quickly becomes a drawer item."] },
+    { title: "Knot quality and closure security", paragraphs: ["Check whether the central knot is symmetrical, whether the sliding closure is clean, and whether the cord ends are finished without fraying.", "For handmade bracelets, slight variation is normal, but the structure should still be stable. For mass-produced bracelets, consistency matters."] },
+    { title: "Buying checklist", paragraphs: ["Before buying, check fit range, cord material, closure style, knot symmetry, charm weight, color accuracy, and whether the bracelet should stay dry.", "This topic should connect to broader bracelet, jewelry, cord, and meaning pages so readers can move from symbolism to practical buying checks."] }
+  ],
+  related: [guides.find((guide) => guide.path === "/chinese-knot-bracelet/"), guides.find((guide) => guide.path === "/chinese-knot-bracelet-tutorial/"), guides.find((guide) => guide.path === "/chinese-knot-jewelry/"), guides.find((guide) => guide.path === "/chinese-knot-cord/")].filter(Boolean)
+}));
 await writePage("/chinese-knot-earrings/", supportArticle({
   title: "Chinese Knot Earrings: Style, Comfort, Meaning, and Buying Checks",
   description: "Compare Chinese knot earrings by cord style, weight, hook quality, color symbolism, gift use, and practical buying details.",
@@ -753,6 +1155,42 @@ for (const knot of knots) {
 }
 
 await writePage("/chinese-knot-faq/", pageLayout({ title: "Chinese Knot FAQ: Tutorials, Meanings, Cord, Gifts, and Knot Types", description: "Browse common questions about Chinese knot tutorials, meanings, cord choice, bracelets, keychains, and symbolic uses.", path: "/chinese-knot-faq/", h1: "Chinese Knot FAQ", intro: "Use this FAQ for quick answers about Chinese knots, tutorials, meanings, and supplies.", faqs: standardFaqs(), body: `${articleSearchBlock()}${knotFaqIntroBlock()}${faqBlock(standardFaqs())}<section class="content-section article-body"><h2>What to open after the FAQ</h2><p>If you want to learn, open the tutorial and cord guides first. If you want meaning, open Chinese knot meaning, endless knot meaning, and Pan Chang knot pages. If you want a gift or product idea, compare bracelet, keychain, and ornament pages separately because each item has different material and finishing requirements.</p><p>The FAQ gives fast answers, while the guide pages give the full decision path. That keeps the site useful for craft learners, gift buyers, and readers who want cultural context without exaggerated claims.</p><p>For learners, the next step should be specific. Choose a medium cord, practice on a flat surface, keep the loops loose at first, and tighten gradually. A knot can be technically correct but still look poor if the tension is uneven or the cord is too slippery for the pattern.</p><p>For buyers, the quality check is different. Look at symmetry, cord thickness, tassel alignment, color consistency, hardware strength, and whether the product photo shows the full item. A bracelet should feel comfortable, a keychain should be durable, and a wall ornament should have enough size and visual balance for the space.</p><p>For meaning-focused readers, treat red, gold, endless-knot shapes, double-coin shapes, and lucky-knot names as cultural symbols. They can express blessing, continuity, celebration, or gift intention, but they should not be written as guaranteed outcomes. Keeping that boundary clear makes the site safer, more credible, and better suited for long-term SEO and product pages.</p><p>That is why the FAQ links outward instead of trying to answer everything in one place. Tutorials, meaning pages, cord guides, bracelet pages, keychain pages, and ornament pages each solve a different visitor problem. The FAQ should help the reader choose the right next page.</p><p>For future product pages, the same separation matters. A cord kit should explain size, color, texture, and beginner suitability. A bracelet page should explain comfort, adjustability, closure quality, and gift use. A keychain page should explain hardware strength and durability. A wall ornament page should explain size, tassel finish, and where it can be displayed.</p><p>For SEO and user trust, every recommendation should connect cultural meaning with practical checks. A red knot may look festive, but the product still needs clean finishing. An endless knot may symbolize continuity, but the page should still explain where it works best. This is the standard the site should use when adding affiliate blocks or direct product cards later.</p><p>If the reader is choosing a first project, the simplest path is medium cord, a small knot, a plain background, and slow tightening. If the reader is choosing a product, the simplest path is full-size photos, clear material notes, visible finishing, and a use case that matches the item.</p></section>` }));
+await writePage("/faq/", pageLayout({
+  title: "FAQ | Chinese Knot Guide",
+  description: "Quick access to common questions about Chinese knot tutorials, meanings, cord choice, bracelets, keychains, and symbolic uses.",
+  path: "/faq/",
+  h1: "Chinese Knot FAQ",
+  intro: "Use this page as the general FAQ entry for Chinese Knot Guide.",
+  faqs: standardFaqs(),
+  body: `${articleSearchBlock()}
+    <section class="content-section article-body">
+      <h2>How this FAQ is organized</h2>
+      <p>This general FAQ keeps the simple /faq/ address available for visitors and search engines. The deeper reference version is also available at <a href="/chinese-knot-faq/">Chinese Knot FAQ</a>. Both routes help readers reach practical answers about tutorials, knot meanings, cord choices, bracelets, keychains, wall ornaments, and gift use.</p>
+      <p>Chinese knot content works best when cultural meaning and practical craft decisions stay together. A visitor may want to learn a knot, understand a red ornament, choose cord, compare a bracelet, or buy a small handmade gift. Each question needs a different next page.</p>
+    </section>
+    ${faqBlock(standardFaqs())}
+    <section class="content-section article-body">
+      <h2>Tutorial questions</h2>
+      <p>For learning, the main challenge is not only memorizing the path of the cord. The final result depends on cord thickness, loop size, hand tension, tightening order, and whether the pattern stays symmetrical while being pulled into shape.</p>
+      <p>Beginners should start with medium cord, a visible color, a flat surface, and a small project. Keep the loops loose at first, then tighten gradually. A technically correct knot can still look poor if the tension is uneven.</p>
+      <h2>Meaning questions</h2>
+      <p>Chinese knots are often connected with blessing, continuity, celebration, harmony, and decorative symbolism. Red, gold, endless-knot shapes, double-coin forms, and lucky-knot names can all carry cultural meaning, but they should not be written as guaranteed luck or fixed outcomes.</p>
+      <p>A credible meaning page should explain the symbol, the context, and the limitation. This keeps the site useful for readers without making exaggerated claims.</p>
+      <h2>Product and gift questions</h2>
+      <p>Bracelets, keychains, ornaments, pendants, and wall hangings need different quality checks. A bracelet should be comfortable and adjustable. A keychain needs stronger hardware. A wall ornament needs clean tassels, balanced size, and good display proportions.</p>
+      <p>For future product pages, the same standard applies: full-size photos, material notes, visible finishing, clear dimensions, and a use case that matches the item. Symbolism can support the page, but product quality still matters.</p>
+      <h2>Best next page</h2>
+      <p>If you want to learn, open tutorial and cord pages. If you want meaning, open Chinese knot meaning, endless knot, and Pan Chang pages. If you want a gift idea, compare bracelet, keychain, ornament, and wall hanging pages separately.</p>      <h2>FAQ quality note</h2>
+      <p>A strong Chinese knot FAQ should connect symbolic meaning with visible craft quality. A red knot may carry festive or blessing symbolism, but the final item still needs balanced loops, even tension, clean tassels, durable cord, and a shape that matches its use. Readers should learn both the cultural context and the practical checks.</p>
+      <p>For tutorials, the answer should guide the learner toward a realistic first project. Medium cord, a clear color, a flat surface, and slow tightening usually matter more than choosing an advanced pattern too early. A beginner can follow the right path and still get a messy result if the tightening order is rushed or the cord is too slippery.</p>
+      <p>For meanings, the page should avoid exaggerated promises. Chinese knots can express blessing, continuity, harmony, celebration, or gift intention, but they do not guarantee luck or a specific personal outcome. A credible explanation names the symbol, describes the setting, and keeps the limitation clear.</p>
+      <p>For future products, each item needs its own decision rule. A bracelet needs comfort and adjustability. A keychain needs strong hardware. A pendant needs clean finishing. A wall ornament needs size and display balance. Product pages should use cultural meaning as support, while photos, dimensions, materials, and finishing quality carry the buying decision.</p>      <h2>Cord and material questions</h2>
+      <p>Cord choice affects both learning and product quality. Thin cord can make a small knot look delicate, but it is harder for beginners to control. Very thick cord can make the knot bulky or distort the pattern. Medium cord is usually the safest starting point because the loops remain visible and the finished shape is easier to adjust.</p>
+      <p>Material also changes the result. Nylon cord is common because it is flexible and holds color well. Softer cord may feel easier at first but can lose structure. Slippery cord may look polished but can move while the learner tightens the knot. These practical details should sit beside meaning notes so the page helps both learners and buyers.</p>
+      <h2>Display and use questions</h2>
+      <p>A Chinese knot used as wall decor needs a different standard from a bracelet or keychain. Wall pieces need enough size, straight hanging lines, and balanced tassels. Small items need durability and comfort. The FAQ should help readers choose the correct project before they compare styles or prices.</p><h2>Beginner project examples</h2><p>Good starter projects include a small lucky knot, a simple bracelet closure, a compact keychain, or a practice ornament. These projects are small enough to finish, but still reveal whether the cord, tension, and finishing method are suitable.</p>
+    </section>`
+}));
 await writePage("/about/", simpleInfoPage({ title: "About Chinese Knot Guide and Its Tutorial Reference Scope", description: "Learn what Chinese Knot Guide covers, including tutorials, meanings, knot types, cord choices, bracelets, keychains, and symbolic use.", path: "/about/", h1: "About Chinese Knot Guide", intro: "This site explains Chinese knots for learners, craft buyers, and content researchers.", body: `<section class="content-section article-body"><h2>What this site covers</h2><p>Chinese Knot Guide covers beginner tutorials, symbolic meanings, common knot types, cord choices, bracelet projects, keychain ideas, and future supply or gift pages.</p><p>The site is built for practical learning first, then product and gift expansion after traffic data is available.</p></section><section class="content-section article-body"><h2>How to use the site</h2><p>Start with tutorials if you want to make knots. Start with meaning pages if you are researching symbols, gifts, or decorations.</p></section>` }));
 await writePage("/contact/", simpleInfoPage({ title: "Contact Chinese Knot Guide for Corrections and Craft Feedback", description: "Contact Chinese Knot Guide for page corrections, tutorial feedback, cord notes, product suggestions, or relevant partnership discussion.", path: "/contact/", h1: "Contact", intro: "Use this page for corrections, feedback, or site-related discussion.", body: `<section class="content-section article-body"><h2>Email</h2><p>Email: <a href="mailto:guan@shanyuegroup.com">guan@shanyuegroup.com</a></p><p>Please include the page URL and the knot type if your message is about a tutorial correction.</p></section><section class="content-section article-body"><h2>Scope</h2><p>The site can review tutorial clarity, meaning notes, and product category ideas, but it does not guarantee craft outcomes for every cord or project.</p></section>` }));
 await writePage("/privacy/", simpleLegalPage({ title: "Privacy Policy for Chinese Knot Guide Website Visitors", description: "Read the Chinese Knot Guide privacy policy covering analytics, email contact use, and standard website visitor data handling.", path: "/privacy/", h1: "Privacy Policy", intro: "This page explains what data may be handled through normal site usage.", sections: [{ title: "Analytics", text: "The site may use analytics tools to understand visits, pages viewed, and general content performance." }, { title: "Contact", text: "If you contact the site by email, the information you send is used only for that communication." }, { title: "No user accounts", text: "The current site does not provide public user accounts, subscriptions, or checkout forms." }] }));
@@ -1252,6 +1690,7 @@ function dailyArticlePage20260706(article) {
     ${articleSearchBlock()}
     <section class="content-section article-body">
       <p class="lead-answer">${escapeHtml(article.answer)}</p>
+      ${geoPatchBlock(article)}
       ${article.details.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}
     </section>
     ${article.sections.map((section) => `<section class="content-section article-body"><h2>${escapeHtml(section.title)}</h2>${section.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}</section>`).join("")}
@@ -1271,6 +1710,12 @@ function dailyArticlePage20260706(article) {
     heroLabel: "New guide",
     body
   });
+}
+
+function geoPatchBlock(article) {
+  if (!article.geoPatch) return "";
+  const facts = article.geoPatch.facts.map((row) => `<tr><td>${escapeHtml(row[0])}</td><td>${escapeHtml(row[1])}</td></tr>`).join("");
+  return `<div class="table-wrap"><table><thead><tr><th>Basic fact</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div><p><strong>${escapeHtml(article.geoPatch.noteLabel)}:</strong> ${escapeHtml(article.geoPatch.note)}</p><p><strong>Data anchor:</strong> ${escapeHtml(article.geoPatch.dataAnchor)}</p>`;
 }
 
 for (const article of dailyArticles20260706) {
@@ -1800,17 +2245,301 @@ for (const article of dailyArticles20260709) {
   await writePage(article.path, dailyArticlePage20260706(article));
 }
 
+
+
+const dailyArticles20260711 = [
+  {
+    "title": "Chinese Knot Supplies: Cord, Beads, Tassels, Tools, and Buying Checks",
+    "path": "/chinese-knot-supplies/",
+    "description": "Choose Chinese knot supplies by cord type, thickness, beads, tassels, clasps, tools, beginner projects, and quality checks.",
+    "h1": "Chinese Knot Supplies: Cord, Beads, Tassels, Tools, and Buying Checks",
+    "intro": "Chinese knot supplies should be chosen by project type, cord thickness, finishing method, and beginner control rather than color alone.",
+    "answer": "Good Chinese knot supplies include suitable cord, scissors, clips or pins, beads or charms when needed, tassel materials, and hardware that matches the final project.",
+    "details": [
+      "Chinese knot supplies is a useful topic because the visitor usually wants a practical answer, not a decorative paragraph. The page should explain the main idea early, then show what changes the result, what should be checked, and which related guide should be opened next.",
+      "The search intent is commercial craft supply research with beginner guidance. That means the article should be concrete enough for a reader to act on it, but careful enough to avoid claims that are stronger than the evidence. Cultural reference pages need this balance because they often mix tradition, modern search behavior, and possible commercial paths.",
+      "The first check is the cord thickness and texture for the project size. If this point is missing, the visitor may leave with an answer that looks complete but fails in the exact situation that brought them to the page. The strongest article makes that check visible near the beginning.",
+      "The second check is whether beads, tassels, clasps, or keychain hardware match the intended use. This gives the page a practical decision layer and keeps it from becoming a thin definition. A strong page should help the reader compare options, identify risk, and move to a better next step.",
+      "The page should also support future monetization without becoming sales copy. Advertising, affiliate products, paid reports, printable guides, or direct products can be added later only if the free page already gives a useful answer on its own.",
+      "Use this article as part of the wider site cluster. It should answer one focused question, link naturally to broader guides, and avoid unsupported promises. That structure helps both visitors and search engines understand why the page exists."
+    ],
+    "sections": [
+      {
+        "title": "Start with the real question behind Chinese knot supplies",
+        "paragraphs": [
+          "Most visitors searching for Chinese knot supplies are trying to reduce uncertainty. They may need a year result, a buying path, a research clue, a craft decision, or a way to compare several similar pages. A useful opening should tell them what the topic means and what they should verify before trusting a simple answer.",
+          "The article should not hide the answer under broad background. Start with the direct answer, then explain the condition that can change it. This makes the page easier to read and more reliable when it is quoted by search snippets or answer engines."
+        ]
+      },
+      {
+        "title": "What to check first",
+        "paragraphs": [
+          "Check the cord thickness and texture for the project size before making a decision. This is the point most likely to change the answer, especially for visitors who arrive from a short keyword and do not yet know the full context.",
+          "Then check whether beads, tassels, clasps, or keychain hardware match the intended use. The second check gives the reader a way to compare alternatives instead of treating the article as a one-line definition. It also creates a natural internal-link path to the next guide."
+        ]
+      },
+      {
+        "title": "How to read the answer responsibly",
+        "paragraphs": [
+          "Responsible wording matters. The page can explain symbolic meaning, product fit, family-name evidence, or calendar logic, but it should not promise guaranteed luck, confirmed ancestry, perfect results, or one universal choice for every reader.",
+          "This is also important for business use. A page that gives cautious, useful guidance can later support an ad, product card, report, or checklist. A page that exaggerates claims may create distrust and weaken the site even if it attracts clicks."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "A common mistake is buying a large mixed kit before knowing which cord size the first project needs. This mistake usually happens when the reader sees a familiar word and assumes the rest of the context is already known. The article should slow that step down and show what evidence or product detail is still needed.",
+          "Another mistake is choosing only by red color while ignoring texture, fraying, hardware strength, and finish quality. The better approach is to record the uncertain detail, compare the related guide, and make the next action explicit. That keeps the page useful instead of vague."
+        ]
+      },
+      {
+        "title": "Best use cases",
+        "paragraphs": [
+          "The best use case for this page is a reader who needs a focused answer before moving deeper into the site. It should work for quick reference, but it should also give enough context for people who care about accuracy, comparison, or buying decisions.",
+          "A second use case is topical authority. The page supports the site cluster by covering a specific long-tail question in depth and linking it to larger guides. That is stronger than publishing many short pages that repeat the same few sentences."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "Start with the cord guide, choose one small project, then add beads, tassels, or hardware only after the knot shape is stable. This next step should be visible before the article ends so the visitor does not have to return to search immediately.",
+          "If the topic later receives product blocks, report offers, or downloadable resources, keep the same decision logic. The commercial layer should support the reader's decision, not replace clear free guidance."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Practical decision table",
+      "headers": [
+        "Reader goal",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Quick answer",
+          "Direct definition and first condition",
+          "Prevents a vague answer"
+        ],
+        [
+          "Accuracy",
+          "Date, character, material, source, or use case",
+          "Small details can change the result"
+        ],
+        [
+          "Buying or planning",
+          "Quality signals and practical fit",
+          "The best option depends on real use"
+        ],
+        [
+          "Further research",
+          "Related guide and evidence level",
+          "Keeps the next step clear"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "What is the short answer for Chinese knot supplies?",
+        "a": "Good Chinese knot supplies include suitable cord, scissors, clips or pins, beads or charms when needed, tassel materials, and hardware that matches the final project."
+      },
+      {
+        "q": "What should I check first for Chinese knot supplies?",
+        "a": "Check the cord thickness and texture for the project size first, then compare whether beads, tassels, clasps, or keychain hardware match the intended use."
+      },
+      {
+        "q": "Is Chinese knot supplies enough for a final decision?",
+        "a": "It is enough for a starting point, but important decisions should use the practical checks and related guides."
+      },
+      {
+        "q": "What should I read next?",
+        "a": "Start with the cord guide, choose one small project, then add beads, tassels, or hardware only after the knot shape is stable"
+      }
+    ],
+    "related": [
+      {
+        "title": "Chinese Knot Cord",
+        "path": "/chinese-knot-cord/",
+        "category": "Supplies",
+        "description": "Choose cord by size and material."
+      },
+      {
+        "title": "Chinese Knot Tutorial",
+        "path": "/chinese-knot-tutorial/",
+        "category": "Tutorial",
+        "description": "Start with basic practice."
+      },
+      {
+        "title": "Chinese Knot Bracelet",
+        "path": "/chinese-knot-bracelet/",
+        "category": "Project",
+        "description": "Apply supplies to bracelets."
+      }
+    ]
+  },
+  {
+    "title": "Chinese Knot for Beginners: First Projects, Cord Choice, and Mistakes",
+    "path": "/chinese-knot-for-beginners/",
+    "description": "Learn Chinese knot basics for beginners, including first projects, cord choice, loop control, tightening, mistakes, and next tutorials.",
+    "h1": "Chinese Knot for Beginners: First Projects, Cord Choice, and Mistakes",
+    "intro": "Beginners should start with visible medium cord, simple knots, slow tightening, and small projects before complex symbolic patterns.",
+    "answer": "The best Chinese knot path for beginners is to choose medium cord, practice one simple knot on a flat surface, tighten slowly, and make a small bracelet, charm, or keychain before attempting larger patterns.",
+    "details": [
+      "Chinese knot for beginners is a useful topic because the visitor usually wants a practical answer, not a decorative paragraph. The page should explain the main idea early, then show what changes the result, what should be checked, and which related guide should be opened next.",
+      "The search intent is beginner tutorial and project planning. That means the article should be concrete enough for a reader to act on it, but careful enough to avoid claims that are stronger than the evidence. Cultural reference pages need this balance because they often mix tradition, modern search behavior, and possible commercial paths.",
+      "The first check is whether the cord is easy to see, loosen, and tighten without slipping. If this point is missing, the visitor may leave with an answer that looks complete but fails in the exact situation that brought them to the page. The strongest article makes that check visible near the beginning.",
+      "The second check is whether the first project is small enough to finish without complex loop control. This gives the page a practical decision layer and keeps it from becoming a thin definition. A strong page should help the reader compare options, identify risk, and move to a better next step.",
+      "The page should also support future monetization without becoming sales copy. Advertising, affiliate products, paid reports, printable guides, or direct products can be added later only if the free page already gives a useful answer on its own.",
+      "Use this article as part of the wider site cluster. It should answer one focused question, link naturally to broader guides, and avoid unsupported promises. That structure helps both visitors and search engines understand why the page exists."
+    ],
+    "sections": [
+      {
+        "title": "Start with the real question behind Chinese knot for beginners",
+        "paragraphs": [
+          "Most visitors searching for Chinese knot for beginners are trying to reduce uncertainty. They may need a year result, a buying path, a research clue, a craft decision, or a way to compare several similar pages. A useful opening should tell them what the topic means and what they should verify before trusting a simple answer.",
+          "The article should not hide the answer under broad background. Start with the direct answer, then explain the condition that can change it. This makes the page easier to read and more reliable when it is quoted by search snippets or answer engines."
+        ]
+      },
+      {
+        "title": "What to check first",
+        "paragraphs": [
+          "Check whether the cord is easy to see, loosen, and tighten without slipping before making a decision. This is the point most likely to change the answer, especially for visitors who arrive from a short keyword and do not yet know the full context.",
+          "Then check whether the first project is small enough to finish without complex loop control. The second check gives the reader a way to compare alternatives instead of treating the article as a one-line definition. It also creates a natural internal-link path to the next guide."
+        ]
+      },
+      {
+        "title": "How to read the answer responsibly",
+        "paragraphs": [
+          "Responsible wording matters. The page can explain symbolic meaning, product fit, family-name evidence, or calendar logic, but it should not promise guaranteed luck, confirmed ancestry, perfect results, or one universal choice for every reader.",
+          "This is also important for business use. A page that gives cautious, useful guidance can later support an ad, product card, report, or checklist. A page that exaggerates claims may create distrust and weaken the site even if it attracts clicks."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "A common mistake is starting with a complex Pan Chang or wall ornament before learning basic tension. This mistake usually happens when the reader sees a familiar word and assumes the rest of the context is already known. The article should slow that step down and show what evidence or product detail is still needed.",
+          "Another mistake is tightening too early and distorting the loops before the shape is checked. The better approach is to record the uncertain detail, compare the related guide, and make the next action explicit. That keeps the page useful instead of vague."
+        ]
+      },
+      {
+        "title": "Best use cases",
+        "paragraphs": [
+          "The best use case for this page is a reader who needs a focused answer before moving deeper into the site. It should work for quick reference, but it should also give enough context for people who care about accuracy, comparison, or buying decisions.",
+          "A second use case is topical authority. The page supports the site cluster by covering a specific long-tail question in depth and linking it to larger guides. That is stronger than publishing many short pages that repeat the same few sentences."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "Begin with the tutorial page and cord guide, then move into bracelet, keychain, or lucky knot projects after basic tension improves. This next step should be visible before the article ends so the visitor does not have to return to search immediately.",
+          "If the topic later receives product blocks, report offers, or downloadable resources, keep the same decision logic. The commercial layer should support the reader's decision, not replace clear free guidance."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Practical decision table",
+      "headers": [
+        "Reader goal",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Quick answer",
+          "Direct definition and first condition",
+          "Prevents a vague answer"
+        ],
+        [
+          "Accuracy",
+          "Date, character, material, source, or use case",
+          "Small details can change the result"
+        ],
+        [
+          "Buying or planning",
+          "Quality signals and practical fit",
+          "The best option depends on real use"
+        ],
+        [
+          "Further research",
+          "Related guide and evidence level",
+          "Keeps the next step clear"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "What is the short answer for Chinese knot for beginners?",
+        "a": "The best Chinese knot path for beginners is to choose medium cord, practice one simple knot on a flat surface, tighten slowly, and make a small bracelet, charm, or keychain before attempting larger patterns."
+      },
+      {
+        "q": "What should I check first for Chinese knot for beginners?",
+        "a": "Check whether the cord is easy to see, loosen, and tighten without slipping first, then compare whether the first project is small enough to finish without complex loop control."
+      },
+      {
+        "q": "Is Chinese knot for beginners enough for a final decision?",
+        "a": "It is enough for a starting point, but important decisions should use the practical checks and related guides."
+      },
+      {
+        "q": "What should I read next?",
+        "a": "Begin with the tutorial page and cord guide, then move into bracelet, keychain, or lucky knot projects after basic tension improves"
+      }
+    ],
+    "related": [
+      {
+        "title": "Chinese Knot Tutorial",
+        "path": "/chinese-knot-tutorial/",
+        "category": "Tutorial",
+        "description": "Start with basic practice."
+      },
+      {
+        "title": "How to Tie Chinese Knot",
+        "path": "/how-to-tie-chinese-knot/",
+        "category": "Tutorial",
+        "description": "Learn the tying workflow."
+      },
+      {
+        "title": "Chinese Knot Cord",
+        "path": "/chinese-knot-cord/",
+        "category": "Supplies",
+        "description": "Choose beginner cord."
+      }
+    ]
+  }
+];
+
+for (const article of dailyArticles20260711) {
+  await writePage(article.path, dailyArticlePage20260706(article));
+}
+
 await writeFile("dist/toolkit.js", clientScript(), "utf8");
 await writeFile("dist/styles.css", css() + themeCss(), "utf8");
 await writeFile("dist/sitemap.xml", sitemapXml(), "utf8");
 await writeFile("dist/robots.txt", robotsTxt(), "utf8");
+await writeFile("dist/ads.txt", "google.com, pub-1609779333813540, DIRECT, f08c47fec0942fa0\n", "utf8");
 await writeFile("dist/llms.txt", llmsTxt(), "utf8");
 await buildSeoReport();
+
+
+
+
+
+
+function enhanceThinContent(path, html) {
+  let extra = "";
+  if (["/chinese-knot-faq/", "/faq/"].includes(path)) {
+    extra = `<section class="content-section article-body"><h2>How to use this Chinese knot FAQ</h2><p>The FAQ should direct readers to the right practical page. If the reader wants to make a knot, start with the tutorial, cord, and step-by-step pages. If the reader wants meaning, open the knot meaning, endless knot, lucky knot, or red knot pages. If the reader wants a gift or product idea, compare bracelets, keychains, pendants, wall ornaments, and cord kits separately because each item has different quality signals.</p><p>A strong Chinese knot page must combine symbolism with practical checks. Red and gold can express blessing and celebration, but the item still needs symmetry, clean tension, durable cord, good tassel alignment, and a size that fits its use. This boundary helps future product pages stay credible and keeps cultural meaning from becoming exaggerated sales language.</p></section>`;
+  } else if (path === "/guides/") {
+    extra = `<section class="content-section article-body"><h2>Choosing a Chinese knot guide</h2><p>Use tutorial pages for making, meaning pages for symbolism, cord pages for supplies, and product pages for gift decisions. Keeping these paths separate helps beginners avoid confusion and gives buyers a clearer way to judge quality before choosing a bracelet, keychain, ornament, or decorative knot.</p></section>`;
+  } else if (path === "/step-by-step-chinese-knots/") {
+    extra = `<section class="content-section article-body"><h2>Before starting a step-by-step knot project</h2><p>Prepare the cord, pin board or flat surface, good lighting, and a reference photo before tightening the first loop. Most beginner mistakes come from pulling too early, using cord that is too slippery, or judging the knot before the final adjustment. Work slowly and compare symmetry at each stage.</p></section>`;
+  }
+  if (extra) extra = extra.replace("</section>", `<p>Before adding product recommendations, the page should explain whether the reader is learning a knot, researching meaning, buying a finished item, or choosing supplies. Each path needs different evidence, so the FAQ should point to the correct next guide.</p><p>A final check is whether the reader knows whether to continue with tutorial practice, symbolic meaning, cord selection, or product comparison. That choice is the real purpose of the FAQ.</p></section>`);
+  return extra && html.includes("</main>") ? html.replace("</main>", `${extra}</main>`) : html;
+}
 
 async function writePage(path, html) {
   const file = path === "/" ? join("dist", "index.html") : join("dist", path, "index.html");
   await mkdir(join(file, ".."), { recursive: true });
-  await writeFile(file, html, "utf8");
+  await writeFile(file, applyGeoMicroPatch20260716(path, applyGeoMicroPatch20260715(path, applyGeoMicroPatch20260714(path, enhanceThinContent(path, html)))), "utf8");
 }
 
 function sitemapXml() {
@@ -2170,6 +2899,1598 @@ function css() {
   return `:root{--ink:#211d18;--muted:#62594e;--paper:#f7f2ea;--panel:#fffdfa;--line:#e3d6c7;--red:#a83228;--red-dark:#82251e;--gold:#b88c4a;--jade:#286b61;--shadow:0 10px 28px rgba(47,37,23,.08)}*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--paper);font-size:16px;line-height:1.62}a{color:inherit}.site-header{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:13px clamp(18px,4vw,52px);background:rgba(247,242,234,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-size:17px;font-weight:780;white-space:nowrap}.brand-logo{display:block;width:34px;height:34px;border-radius:8px;box-shadow:0 8px 18px rgba(168,50,40,.18)}.nav{display:flex;align-items:center;justify-content:flex-end;gap:18px;flex-wrap:wrap}.nav a{text-decoration:none;color:#554d45;font-size:15px;font-weight:720;line-height:1.2;padding:4px 0}.nav a:hover{color:var(--red)}main{min-height:70vh}.page-hero{padding:28px clamp(18px,4vw,52px) 16px;max-width:1160px;margin:auto}.page-hero h1{font-family:Georgia,serif;font-size:clamp(31px,3.6vw,46px);line-height:1.08;margin:9px 0 10px;color:#211b17}.intro{font-size:16px;max-width:760px;color:var(--muted)}.eyebrow{display:inline-flex;align-items:center;min-height:28px;padding:0 11px;border-radius:999px;background:rgba(40,107,97,.08);border:1px solid rgba(40,107,97,.18);text-transform:uppercase;letter-spacing:.05em;color:var(--jade);font-size:12px;line-height:1;font-weight:780;margin:0}.hero-grid,.content-section{max-width:1160px;margin:0 auto 22px;padding:0 clamp(18px,4vw,52px)}.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);gap:22px;align-items:stretch}.tool-page{max-width:820px;margin:0 auto 22px;padding:0 clamp(18px,4vw,40px)}.tool-panel,.visual-panel,.content-section:not(.split),.fact-card{background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:8px}.tool-panel{padding:22px;border-top:4px solid var(--red)}.tool-copy h2,.section-heading h2,.content-section h2{font-family:Georgia,serif;font-size:clamp(22px,2.2vw,27px);line-height:1.18;margin:8px 0 10px;color:#241f1a}.content-section p{max-width:820px}.calculator-form{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:end;margin-top:16px;max-width:620px}.calculator-form button{grid-column:1/-1;width:100%}.calculator-form label{display:grid;gap:7px;font-size:14px;font-weight:720}.calculator-form input,.calculator-form select{height:43px;border:1px solid var(--line);border-radius:8px;padding:0 12px;font:inherit;background:#fff;width:100%;min-width:0}.calculator-form button,.button-link{min-height:43px;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:8px;background:var(--red);color:#fff;font-size:14px;font-weight:780;text-decoration:none;padding:0 15px;cursor:pointer;white-space:nowrap}.button-link.secondary{background:#f2eadf;color:#3a3028;border:1px solid #dfd1bd}.result-card{margin-top:16px;padding:16px;border-left:4px solid var(--jade);background:#eff7f3;border-radius:8px}.result-card h3{margin:0 0 10px;font-size:20px}.result-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.visual-panel{position:relative;margin:0;display:grid;place-items:center;overflow:hidden;background:linear-gradient(145deg,#fffaf0,#f1eadb);padding:18px}.visual-panel img{width:92%;height:92%;object-fit:contain;filter:drop-shadow(0 18px 28px rgba(80,50,25,.12))}.ad-slot{max-width:1056px;margin:0 auto 22px;border:1px dashed #d7c8b5;background:#fffaf1;color:#8a7257;border-radius:8px;min-height:70px;display:grid;place-items:center;font-size:13px;font-weight:720}.section-heading{margin-bottom:14px}.animal-grid,.guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.guide-grid.compact{grid-template-columns:repeat(2,minmax(0,1fr))}.animal-card,.guide-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px}.animal-card{text-decoration:none;min-height:180px;display:grid;gap:7px;position:relative;grid-template-columns:50px minmax(0,1fr);grid-template-rows:auto auto 1fr;column-gap:16px;row-gap:6px;padding:20px 22px;overflow:hidden}.animal-card strong{grid-column:2;grid-row:1;padding-right:34px;margin-top:1px;color:#12100e;font-size:18px;font-weight:740}.animal-card>span:not(.animal-order):not(.animal-seal){grid-column:2;grid-row:2;color:#4d463f;font-size:14px}.animal-card p{grid-column:2;grid-row:3;margin-top:8px;color:var(--muted)}.animal-seal{grid-column:1;grid-row:1/3;align-self:start;display:grid;place-items:center;width:50px;height:50px;border-radius:12px;background:#fff2e7;border:1px solid rgba(168,50,40,.24);color:var(--red);font-family:Georgia,serif;font-size:26px;font-weight:850;line-height:1;box-shadow:0 8px 16px rgba(60,40,20,.08)}.animal-order{position:absolute;right:18px;top:18px;color:#4f463d;font-size:13px;font-weight:760}.guide-card{text-decoration:none;display:grid;gap:8px;min-height:172px;background:linear-gradient(180deg,#fffefa,#fffaf2)}.guide-card span{font-size:12px;color:var(--jade);font-weight:780;text-transform:uppercase;letter-spacing:.05em}.guide-card strong{font-size:18px;font-weight:740}.guide-card p{margin:0;color:var(--muted)}.guide-filter-nav{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}.guide-filter-nav button{border:1px solid var(--line);background:#fff;border-radius:999px;min-height:37px;padding:0 14px;font:inherit;font-weight:720;color:#4f463d;cursor:pointer}.guide-filter-nav button.is-active,.guide-filter-nav button:hover{background:#f3ebe0;border-color:#d6b57d;color:#352b22}.section-action{display:flex;justify-content:flex-start;margin-top:16px}.split{display:grid;grid-template-columns:1fr 1fr;gap:22px}.split>div{background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:8px;padding:22px}.fact-card{display:grid;gap:8px}.fact-card strong{font-size:20px}.fact-card span{display:block;color:var(--muted)}.table-wrap{overflow:auto}.content-section table{width:100%;border-collapse:collapse;background:#fff;font-size:15px}.content-section th,.content-section td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.content-section th{background:#f1eadc;color:#352b22}.article-shell{max-width:1160px;margin:0 auto 22px;padding:0 clamp(18px,4vw,52px);display:grid;grid-template-columns:minmax(0,.96fr) minmax(270px,.44fr);gap:22px;align-items:start}.article-main{min-width:0}.article-sidebar{display:grid;gap:18px;position:sticky;top:92px}.sidebar-card{background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:8px;padding:18px}.sidebar-card.compact{display:grid;gap:12px}.sidebar-link-list{display:grid;gap:12px}.sidebar-link-list a{text-decoration:none;display:grid;gap:4px;padding-bottom:12px;border-bottom:1px solid #ece2d4}.sidebar-link-list a:last-child{padding-bottom:0;border-bottom:0}.sidebar-link-list strong{font-size:15px}.sidebar-link-list span{font-size:14px;color:var(--muted)}.article-search{display:grid;grid-template-columns:minmax(260px,.9fr) minmax(300px,1.1fr);gap:22px;align-items:end}.article-search h2{margin-bottom:0}.site-search-form{display:grid;grid-template-columns:minmax(220px,1fr) auto;gap:12px;align-items:end}.site-search-form label{display:grid;gap:7px;font-size:14px;font-weight:720}.site-search-form input{height:43px;border:1px solid var(--line);border-radius:8px;padding:0 12px;font:inherit;background:#fff;width:100%;min-width:0}.site-search-form button{min-height:43px;border:0;border-radius:8px;background:var(--jade);color:#fff;font-size:14px;font-weight:780;padding:0 16px;cursor:pointer;white-space:nowrap}.article-body{background:transparent!important;border:0!important;box-shadow:none!important;padding-top:0;padding-bottom:0}.lead-answer{font-size:18px;line-height:1.72;color:#302820}.faq-list h2{margin-bottom:18px}.faq-categories{display:grid;gap:12px}.faq-category{background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}.faq-category summary{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 18px;cursor:pointer;font-weight:780;color:#2f2922;background:#fbf7ef}.faq-category summary small{color:var(--muted);font-size:13px;font-weight:720;white-space:nowrap}.faq-grid{display:grid;gap:12px;border-top:1px solid var(--line);padding:16px 18px 18px;background:#fffdf9}.faq-item{display:grid;grid-template-columns:minmax(260px,.36fr) minmax(0,.64fr);gap:0;overflow:hidden;border:1px solid #e6dac8;border-radius:8px;background:#fff;box-shadow:0 6px 16px rgba(47,37,23,.04)}.faq-item h3{display:flex;align-items:center;margin:0;padding:18px 20px;background:#f5efe5;border-right:1px solid #e2d4c0;font-size:16px;line-height:1.38;color:#211b17}.faq-item p{margin:0;padding:18px 20px;color:var(--muted);max-width:none;border-left:4px solid rgba(40,107,97,.2);background:#fff}.site-footer{display:grid;grid-template-columns:minmax(260px,1.15fr) minmax(420px,.85fr);align-items:start;margin-top:44px;padding:34px clamp(18px,4vw,52px);background:#24201b;color:#fffaf0;gap:28px}.footer-about strong{display:block;font-size:18px;margin-bottom:10px}.footer-about p{margin:0;color:#d7cbbd;line-height:1.72;font-size:14px}.footer-nav{display:grid!important;grid-template-columns:repeat(3,minmax(110px,1fr));gap:24px!important;align-items:start!important}.footer-nav div{display:grid;gap:8px}.footer-nav span{color:#bfae98;font-size:12px;font-weight:780;text-transform:uppercase;letter-spacing:.06em}.footer-nav a{text-decoration:none;font-size:14px;color:#fffaf0}.report-hero,.seo-table{background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow)}.report-hero{padding:22px}.report-summary{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:16px}.report-summary div{background:#fbf7ef;border:1px solid var(--line);border-radius:8px;padding:12px}.report-summary strong{display:block;font-size:24px}.report-summary span{color:var(--muted)}body:not(.page-home):not(.page-guides):not(.seo-report-page) .tool-page,body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-body,body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-search,body:not(.page-home):not(.page-guides):not(.seo-report-page) .content-section{max-width:980px;margin-left:auto;margin-right:auto}@media(max-width:980px){.guide-grid,.animal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.article-shell{grid-template-columns:1fr}.article-sidebar{position:static}}@media(max-width:820px){body{font-size:15px}.site-header{align-items:flex-start;flex-direction:column}.nav{justify-content:flex-start;gap:14px}.nav a{font-size:14px}.hero-grid,.split{grid-template-columns:1fr}.calculator-form,.site-search-form,.article-search{grid-template-columns:1fr}.animal-grid,.guide-grid,.guide-grid.compact,.report-summary{grid-template-columns:1fr}.page-hero h1{font-size:31px}.faq-category summary{align-items:flex-start;flex-direction:column;gap:4px}.faq-grid{padding:12px}.faq-item{grid-template-columns:1fr}.faq-item h3{border-right:0;border-bottom:1px solid #e2d4c0}.faq-item p{border-left:0;border-top:4px solid rgba(40,107,97,.16)}.site-footer{grid-template-columns:1fr}.footer-nav{grid-template-columns:1fr 1fr!important}}`;
 }
 
+
+const dailyArticles20260713 = [
+  {
+    "title": "Chinese Knot Gifts: Meaning, Occasions, Quality Checks, and Buying Ideas",
+    "path": "/chinese-knot-gifts/",
+    "description": "Choose Chinese knot gifts by meaning, occasion, color, size, tassel quality, packaging, and practical buying checks.",
+    "h1": "Chinese Knot Gifts: Meaning, Occasions, Quality Checks, and Buying Ideas",
+    "intro": "Chinese knot gifts work best when the design, color, size, and occasion match the recipient rather than relying on lucky wording alone.",
+    "answer": "A good Chinese knot gift should have clean knot symmetry, suitable size, durable cord, balanced tassels, and meaning that fits the occasion without exaggerated promises.",
+    "geoPatch": {
+      "noteLabel": "Practice note",
+      "note": "Chinese knot gift guidance should separate symbolic meaning from practical quality checks. Color and knot names can express a wish, but they should not be described as guaranteeing luck, wealth, or protection.",
+      "dataAnchor": "Chinese knot gift quality = symmetry + cord finish + tassel balance + suitable size + occasion fit.",
+      "facts": [
+        ["Main use", "Gift, decor, bracelet, keychain, or hanging ornament"],
+        ["Quality check", "Symmetry, cord durability, tassel balance, and packaging"],
+        ["Meaning boundary", "Symbolic wish, not guaranteed luck"],
+        ["Use limit", "Gift selection guidance, not a promise of outcome"]
+      ]
+    },
+    "details": [
+      "Chinese knot gifts should be read through meaning, occasion, quality, size, and gift presentation, not as a loose label that can be copied from one chart to another. The practical value of the page is that it slows the decision down at the exact point where readers usually make mistakes: whether the gift occasion matches the knot style, color, and size. A useful guide gives the quick answer first, then explains the condition, comparison, or buying check that can change the final choice. That structure helps a visitor act with confidence while still respecting the limits of cultural reference content.",
+      "Search intent for Chinese knot gifts is usually practical. The reader may want a fast answer, a purchase decision, a family research clue, or a way to compare several similar pages. That is why the article should separate the stable reference point from the interpretation. For this topic, the stable point is whether the gift occasion matches the knot style, color, and size; the interpretation comes after that, once the reader knows what is being compared.",
+      "The second layer is cord quality, tassel balance, hardware, packaging, and display use before buying. This is where thin articles often fail because they repeat a definition without showing how someone should use it. A better page names the tradeoff, gives a concrete example, and points to a related page that can answer the next question. That is also the safest way to prepare the page for ads, affiliate blocks, paid reports, or product cards later.",
+      "Commercial intent should be handled carefully. The free article must be useful before any paid product or recommendation appears. If the visitor can understand the decision without buying anything, the page earns trust. If a product or report is added later, it should extend the decision path instead of replacing the answer.",
+      "The language should stay specific and modest. Cultural symbols, names, materials, or calendar labels can be meaningful, but they should not be presented as guaranteed luck, verified ancestry, perfect compatibility, or one universal product choice. This makes the page stronger for readers and safer for long-term SEO.",
+      "Use this page as part of a cluster. It should connect Chinese knot gifts to broader guides, tools, and comparison pages so the visitor does not have to return to search immediately. A focused long-tail page works best when it answers one question deeply and then offers a clear next step."
+    ],
+    "sections": [
+      {
+        "title": "Start with the real question behind Chinese knot gifts",
+        "paragraphs": [
+          "Most visitors searching for Chinese knot gifts are not looking for a decorative encyclopedia entry. They are trying to decide what something means, what to buy, what to check, or whether a quick answer is safe to trust. That is why this guide begins with the direct answer and then explains whether the gift occasion matches the knot style, color, and size.",
+          "The best page experience is simple but not shallow. Give the reader the answer, show the condition that can change it, and avoid burying the practical guidance under a long history section. Background matters, but it should support the decision rather than delay it."
+        ]
+      },
+      {
+        "title": "What to check first",
+        "paragraphs": [
+          "Check whether the gift occasion matches the knot style, color, and size before making the final decision. This is the detail most likely to change the answer, especially when the keyword looks simple but the real situation has a date, material, character, spelling, or use-case condition hidden inside it.",
+          "Then check cord quality, tassel balance, hardware, packaging, and display use before buying. The second check helps the reader compare alternatives and prevents the page from becoming a one-line definition. It also creates a natural path to internal links, tools, product categories, or a paid report entry if the visitor wants deeper help."
+        ]
+      },
+      {
+        "title": "How to avoid over-reading the answer",
+        "paragraphs": [
+          "A responsible guide should explain what the tradition, object, or name can reasonably say and what it cannot prove. A zodiac label does not prove character, a surname meaning does not prove a private family origin, and a craft symbol does not guarantee an outcome.",
+          "This boundary improves trust. Readers can still enjoy the cultural meaning, choose a gift, compare a material, or record a family clue, but they are not pushed into exaggerated claims. That tone is better for SEO quality, ad review, and future commercial pages."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "A common mistake is buying the largest red ornament without considering where it will be displayed. This usually happens when a reader sees a familiar phrase and assumes the missing detail is not important. The page should slow down that moment and show exactly what still needs to be checked.",
+          "Another mistake is claiming the knot guarantees luck instead of presenting it as a meaningful wish. The better approach is to record the uncertain detail, compare the related guide, and make the next action explicit. This keeps the article useful instead of vague and helps prevent duplicate thin pages."
+        ]
+      },
+      {
+        "title": "Where this topic becomes useful",
+        "paragraphs": [
+          "Chinese knot gifts is most useful when it helps someone move from uncertainty to a clear next step. That may mean checking a date, choosing a material, confirming a Chinese character, comparing spellings, or deciding whether a gift or product page is relevant.",
+          "The page should also support topical authority. A single focused article can strengthen a whole cluster when it links back to the main guide and forward to the next practical resource. This is stronger than publishing several short pages that repeat the same answer."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "The best next step is to choose the occasion first, then compare ornament, bracelet, keychain, pendant, and wall decor pages. This gives the reader a practical route after the quick answer and reduces the chance that they leave the site to repeat the same search elsewhere.",
+          "If this topic later receives product blocks, report offers, downloadable checklists, or affiliate recommendations, keep the same decision logic. The commercial layer should support the reader's decision, not replace clear free guidance."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Practical decision table",
+      "headers": [
+        "Reader goal",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Quick answer",
+          "Direct definition and first condition",
+          "Prevents a vague answer"
+        ],
+        [
+          "Accuracy",
+          "whether the gift occasion matches the knot style, color, and size",
+          "Small details can change the result"
+        ],
+        [
+          "Comparison",
+          "cord quality, tassel balance, hardware, packaging, and display use before buying",
+          "Helps readers choose between similar options"
+        ],
+        [
+          "Commercial next step",
+          "Product, report, or related guide fit",
+          "Keeps monetization aligned with user intent"
+        ]
+      ]
+    },
+    "related": [
+      {
+        "title": "Chinese Knot Meaning",
+        "path": "/chinese-knot-meaning/",
+        "description": "Read symbolic meaning carefully."
+      },
+      {
+        "title": "Chinese Knot Ornament",
+        "path": "/chinese-knot-ornament/",
+        "description": "Compare hanging ornament choices."
+      },
+      {
+        "title": "Chinese Knot Bracelet",
+        "path": "/chinese-knot-bracelet/",
+        "description": "Consider wearable gift options."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What occasion fits a Chinese knot gift?",
+        "a": "Common occasions include Lunar New Year, housewarming, weddings, business gifts, travel souvenirs, and small friendship gifts."
+      },
+      {
+        "q": "Does a Chinese knot gift guarantee luck?",
+        "a": "No. It expresses good wishes and cultural symbolism; it should not be described as a guaranteed result."
+      },
+      {
+        "q": "What quality checks matter most?",
+        "a": "Check symmetry, cord tightness, tassel finish, attachment strength, size, and whether the product photos show the back and hanging point."
+      }
+    ]
+  },
+  {
+    "title": "Chinese Knot Car Hanging: Meaning, Size, Tassel, and Safety Checks",
+    "path": "/chinese-knot-car-hanging/",
+    "description": "Choose a Chinese knot car hanging by meaning, size, tassel length, cord quality, visibility, safety, and gift suitability.",
+    "h1": "Chinese Knot Car Hanging: Meaning, Size, Tassel, and Safety Checks",
+    "intro": "A Chinese knot car hanging should be small, secure, visually balanced, and positioned so it does not block the driver's view.",
+    "answer": "Choose a Chinese knot car hanging only if the cord, tassel, size, and attachment are safe for the vehicle; the meaning is decorative and symbolic, not a guarantee of protection.",
+    "geoPatch": {
+      "noteLabel": "Safety and cultural note",
+      "note": "A car hanging is a decorative object, so safety and visibility come before symbolism. Local rules, mirror position, swing length, attachment strength, and driver visibility should be checked before use.",
+      "dataAnchor": "Chinese knot car hanging choice = small size + secure attachment + short tassel + clear driver view + symbolic meaning only.",
+      "facts": [
+        ["Main safety check", "Does not block driver visibility"],
+        ["Product check", "Secure cord, short tassel, balanced weight"],
+        ["Meaning boundary", "Decoration and symbolic wish, not protection guarantee"],
+        ["Use limit", "Check local vehicle rules and actual placement"]
+      ]
+    },
+    "details": [
+      "Chinese knot car hanging should be read through symbolic meaning, size, tassel length, attachment, and safe display, not as a loose label that can be copied from one chart to another. The practical value of the page is that it slows the decision down at the exact point where readers usually make mistakes: whether the hanging is small enough and secure enough for the car interior. A useful guide gives the quick answer first, then explains the condition, comparison, or buying check that can change the final choice. That structure helps a visitor act with confidence while still respecting the limits of cultural reference content.",
+      "Search intent for Chinese knot car hanging is usually practical. The reader may want a fast answer, a purchase decision, a family research clue, or a way to compare several similar pages. That is why the article should separate the stable reference point from the interpretation. For this topic, the stable point is whether the hanging is small enough and secure enough for the car interior; the interpretation comes after that, once the reader knows what is being compared.",
+      "The second layer is whether tassel length, swing, mirror position, and local rules make the item practical. This is where thin articles often fail because they repeat a definition without showing how someone should use it. A better page names the tradeoff, gives a concrete example, and points to a related page that can answer the next question. That is also the safest way to prepare the page for ads, affiliate blocks, paid reports, or product cards later.",
+      "Commercial intent should be handled carefully. The free article must be useful before any paid product or recommendation appears. If the visitor can understand the decision without buying anything, the page earns trust. If a product or report is added later, it should extend the decision path instead of replacing the answer.",
+      "The language should stay specific and modest. Cultural symbols, names, materials, or calendar labels can be meaningful, but they should not be presented as guaranteed luck, verified ancestry, perfect compatibility, or one universal product choice. This makes the page stronger for readers and safer for long-term SEO.",
+      "Use this page as part of a cluster. It should connect Chinese knot car hanging to broader guides, tools, and comparison pages so the visitor does not have to return to search immediately. A focused long-tail page works best when it answers one question deeply and then offers a clear next step."
+    ],
+    "sections": [
+      {
+        "title": "Start with the real question behind Chinese knot car hanging",
+        "paragraphs": [
+          "Most visitors searching for Chinese knot car hanging are not looking for a decorative encyclopedia entry. They are trying to decide what something means, what to buy, what to check, or whether a quick answer is safe to trust. That is why this guide begins with the direct answer and then explains whether the hanging is small enough and secure enough for the car interior.",
+          "The best page experience is simple but not shallow. Give the reader the answer, show the condition that can change it, and avoid burying the practical guidance under a long history section. Background matters, but it should support the decision rather than delay it."
+        ]
+      },
+      {
+        "title": "What to check first",
+        "paragraphs": [
+          "Check whether the hanging is small enough and secure enough for the car interior before making the final decision. This is the detail most likely to change the answer, especially when the keyword looks simple but the real situation has a date, material, character, spelling, or use-case condition hidden inside it.",
+          "Then check whether tassel length, swing, mirror position, and local rules make the item practical. The second check helps the reader compare alternatives and prevents the page from becoming a one-line definition. It also creates a natural path to internal links, tools, product categories, or a paid report entry if the visitor wants deeper help."
+        ]
+      },
+      {
+        "title": "How to avoid over-reading the answer",
+        "paragraphs": [
+          "A responsible guide should explain what the tradition, object, or name can reasonably say and what it cannot prove. A zodiac label does not prove character, a surname meaning does not prove a private family origin, and a craft symbol does not guarantee an outcome.",
+          "This boundary improves trust. Readers can still enjoy the cultural meaning, choose a gift, compare a material, or record a family clue, but they are not pushed into exaggerated claims. That tone is better for SEO quality, ad review, and future commercial pages."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "A common mistake is choosing an oversized ornament that blocks visibility or swings too much. This usually happens when a reader sees a familiar phrase and assumes the missing detail is not important. The page should slow down that moment and show exactly what still needs to be checked.",
+          "Another mistake is presenting the hanging as protection instead of symbolic decoration. The better approach is to record the uncertain detail, compare the related guide, and make the next action explicit. This keeps the article useful instead of vague and helps prevent duplicate thin pages."
+        ]
+      },
+      {
+        "title": "Where this topic becomes useful",
+        "paragraphs": [
+          "Chinese knot car hanging is most useful when it helps someone move from uncertainty to a clear next step. That may mean checking a date, choosing a material, confirming a Chinese character, comparing spellings, or deciding whether a gift or product page is relevant.",
+          "The page should also support topical authority. A single focused article can strengthen a whole cluster when it links back to the main guide and forward to the next practical resource. This is stronger than publishing several short pages that repeat the same answer."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "The best next step is to compare small knot charms, keychains, tassels, and ornament pages before choosing a car display item. This gives the reader a practical route after the quick answer and reduces the chance that they leave the site to repeat the same search elsewhere.",
+          "If this topic later receives product blocks, report offers, downloadable checklists, or affiliate recommendations, keep the same decision logic. The commercial layer should support the reader's decision, not replace clear free guidance."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Practical decision table",
+      "headers": [
+        "Reader goal",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Quick answer",
+          "Direct definition and first condition",
+          "Prevents a vague answer"
+        ],
+        [
+          "Accuracy",
+          "whether the hanging is small enough and secure enough for the car interior",
+          "Small details can change the result"
+        ],
+        [
+          "Comparison",
+          "whether tassel length, swing, mirror position, and local rules make the item practical",
+          "Helps readers choose between similar options"
+        ],
+        [
+          "Commercial next step",
+          "Product, report, or related guide fit",
+          "Keeps monetization aligned with user intent"
+        ]
+      ]
+    },
+    "related": [
+      {
+        "title": "Chinese Knot Keychain",
+        "path": "/chinese-knot-keychain/",
+        "description": "Small durable knot gift ideas."
+      },
+      {
+        "title": "Chinese Knot Tassel",
+        "path": "/chinese-knot-tassel/",
+        "description": "Check tassel length and finishing."
+      },
+      {
+        "title": "Chinese Lucky Knot",
+        "path": "/chinese-lucky-knot/",
+        "description": "Read lucky knot symbolism responsibly."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a Chinese knot car hanging safe?",
+        "a": "It can be safe only when it is small, secure, and does not block visibility or distract the driver."
+      },
+      {
+        "q": "What does a car hanging knot mean?",
+        "a": "It is usually a decorative symbol of good wishes, travel blessing language, and festive style, not a guarantee of safety."
+      },
+      {
+        "q": "What size should I choose?",
+        "a": "Choose a compact knot with a short tassel and secure cord, then check how it hangs before driving."
+      }
+    ]
+  }
+];
+
+for (const article of dailyArticles20260713) {
+  await writePage(article.path, dailyArticlePage20260706(article));
+}
+
+const dailyArticles20260714 = [
+  {
+    "title": "Chinese Knot Wedding Favors: Meaning, Packaging, and Buying Checks",
+    "path": "/chinese-knot-wedding-favors/",
+    "description": "Choose Chinese knot wedding favors by meaning, color, packaging, cord quality, guest use, and safe buying checks.",
+    "h1": "Chinese Knot Wedding Favors: Meaning, Packaging, and Buying Checks",
+    "intro": "Chinese knot wedding favors is a practical search because the reader usually wants a clear decision, not only a definition. The safest answer starts with the key check and then explains how to use the result responsibly.",
+    "answer": "Quick answer: Chinese knot wedding favors work best when the knot meaning, red or accent color, size, packaging, and cord quality match the wedding setting; use them as symbolic gifts or decor, not as promises of guaranteed luck.",
+    "geoPatch": {
+      "noteLabel": "Source note",
+      "note": "The buying evidence is the knot type, cord material, finished size, packaging photo, sample quality, and shipping protection. This page treats tradition, product use, and family records as reference evidence. Meanings are explained as cultural or practical guidance, not as verified promises about luck, ancestry, personality, health, money, or relationships.",
+      "dataAnchor": "Chinese knot wedding favor decision = symbolic fit + knot type + color choice + cord finish + packaging and bulk sample check.",
+      "facts": [
+        [
+          "Main keyword",
+          "Chinese knot wedding favors"
+        ],
+        [
+          "First check",
+          "decide whether the knot will be a table favor, hanging decor, invitation accent, or gift-bag item"
+        ],
+        [
+          "Evidence point",
+          "The buying evidence is the knot type, cord material, finished size, packaging photo, sample quality, and shipping protection."
+        ],
+        [
+          "Use limit",
+          "Cultural, educational, product, or family-reference guidance; not a guaranteed outcome claim."
+        ]
+      ]
+    },
+    "details": [
+      "Chinese knot wedding favors should begin with the decision the visitor is trying to make. Some readers want to buy something, some want to teach a class, some want to check a family clue, and some want wording that feels respectful. The page is strongest when it gives the direct answer first, then names the detail that can change the result. For this topic, that detail is to decide whether the knot will be a table favor, hanging decor, invitation accent, or gift-bag item.",
+      "The second step is to check cord finish, tassel neatness, color consistency, package protection, and bulk sample quality. This keeps the page from becoming a plain definition. It also gives the reader a clear way to compare similar options. A person can look at the same symbol, name, gift, or cultural object and still need different advice depending on the occasion, material, audience, price, or evidence available.",
+      "The strongest pages in this group separate stable facts from interpretation. Stable facts are things such as a date boundary, written character, product material, finished size, visible knot form, or teaching rule. Interpretation is the meaning, gift message, classroom discussion, or symbolic wording built on top of those facts. Mixing the two makes the content sound confident but less useful.",
+      "Readers also need a safe limit. Traditional culture can carry rich meaning, but a page should not claim that a symbol guarantees luck, a surname spelling proves ancestry, a birthday sign fixes personality, or a product automatically solves a personal problem. Modest wording is not weaker. It is more credible because it tells the reader what can be checked and what should stay symbolic.",
+      "Commercial use should be handled through decision support. If a product, paid report, checklist, or recommendation is added later, the free section should still answer the question on its own. A visitor should understand why one choice is better than another before seeing any buying prompt. That is also the best structure for long-term trust and repeat visits.",
+      "Good examples for this topic include place-card charms, favor bags, invitation ties, tea ceremony gifts, guest keepsakes, and small wall hangings. These examples make the advice concrete. They also create natural internal links to tools, product categories, tutorials, and related guides without forcing the reader through a sales page. The article should help first and only then offer the next step.",
+      "The most common mistake is buying the cheapest bulk knot without checking finish or packaging. A clear article prevents that mistake by showing the check before the conclusion. When the answer has uncertainty, the wording should say what is likely, what is confirmed, and what still needs evidence. That approach works better than a short answer that sounds complete but leaves the real decision unresolved."
+    ],
+    "sections": [
+      {
+        "title": "What Chinese knot wedding favors really needs to answer",
+        "paragraphs": [
+          "The search phrase sounds simple, but the real need is usually practical. A reader may be choosing a gift, planning a lesson, checking a family record, comparing materials, or preparing wording for a product page. The article should not start by showing off background knowledge. It should first identify the decision and make the next action obvious.",
+          "For this page, the first action is to decide whether the knot will be a table favor, hanging decor, invitation accent, or gift-bag item. After that, the reader can use the rest of the guide with fewer mistakes. This order matters because many culture-related topics look familiar on the surface while hiding a detail that changes the final answer."
+        ]
+      },
+      {
+        "title": "Basic facts before interpretation",
+        "paragraphs": [
+          "A responsible explanation gives the facts before the meaning. The fact may be a date range, a character, a material, a knot form, a package size, a classroom rule, or a visible product feature. The meaning comes later and should be written as a careful reading of those facts.",
+          "This is also useful for AI answers and search snippets. If the page states the fact clearly, then repeats the decision rule in normal language, answer engines can summarize it without turning the page into a vague cultural claim. The reader also gets a better experience because the important condition is easy to find."
+        ]
+      },
+      {
+        "title": "Examples and use cases",
+        "paragraphs": [
+          "Chinese knot wedding favors can appear in place-card charms, favor bags, invitation ties, tea ceremony gifts, guest keepsakes, and small wall hangings. Each case has a different risk. A gift needs safe wording and decent presentation. A product needs material and quality checks. A family clue needs evidence. A classroom activity needs respectful boundaries. The same cultural idea should be adapted to the situation instead of copied word for word.",
+          "When a page gives examples, it should explain why the example works. A short list alone is not enough. The better pattern is to name the example, show the check, then tell the reader what to avoid. That turns background information into something the visitor can use immediately."
+        ]
+      },
+      {
+        "title": "Buying, teaching, or research checks",
+        "paragraphs": [
+          "If the reader is buying something, ask for proof: material, size, finish, sample photos, package protection, care instructions, or personalization preview. If the reader is teaching, keep the activity inclusive and avoid ranking students by a cultural label. If the reader is researching family history, preserve the original spelling and look for written evidence before choosing a meaning.",
+          "These checks are simple, but they prevent most poor decisions. They also help the site connect informational pages with product pages, tools, or paid reports later. The connection should feel natural because the article has already explained the problem that the next page solves."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "The main mistake is buying the cheapest bulk knot without checking finish or packaging. Another mistake is treating a symbolic meaning as a fixed result. A third mistake is copying a phrase from another site without checking whether it fits the reader's situation. These errors create thin pages and weak user trust.",
+          "The fix is to write with conditions. Say when the answer applies, what evidence supports it, and when the reader should slow down. This creates a more natural article because it sounds like practical guidance rather than a list of claims."
+        ]
+      },
+      {
+        "title": "Best next step",
+        "paragraphs": [
+          "After reading this guide, the best next step is to compare the related guide or tool that answers the next practical question. A reader who needs a date check should use the calculator. A reader choosing a product should compare the buying guide. A reader checking a character should collect family evidence before finalizing a design.",
+          "This page should also be updated when new examples, products, or questions appear. The core answer can stay stable, while the examples and FAQ can grow from real article clusters. That gives the site a stronger topical structure without publishing many short pages that repeat the same point."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Practical decision table",
+      "headers": [
+        "Reader goal",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Fast answer",
+          "decide whether the knot will be a table favor, hanging decor, invitation accent, or gift-bag item",
+          "Prevents the most common wrong conclusion"
+        ],
+        [
+          "Better choice",
+          "check cord finish, tassel neatness, color consistency, package protection, and bulk sample quality",
+          "Turns a definition into a usable decision"
+        ],
+        [
+          "Evidence",
+          "The buying evidence is the knot type, cord material, finished size, packaging photo, sample quality, and shipping protection.",
+          "Keeps the page grounded in checkable details"
+        ],
+        [
+          "Safe wording",
+          "Use symbolic, educational, or practical language",
+          "Avoids exaggerated claims"
+        ],
+        [
+          "Next step",
+          "Open the related guide, tool, or product comparison",
+          "Keeps the visitor inside the topic cluster"
+        ]
+      ]
+    },
+    "related": [
+      {
+        "title": "Related Guide",
+        "path": "/",
+        "category": "Related",
+        "description": "Continue with a related guide that supports this topic cluster."
+      },
+      {
+        "title": "Chinese Knot Gifts",
+        "path": "/chinese-knot-gifts/",
+        "category": "Related",
+        "description": "Continue with a related guide that supports this topic cluster."
+      },
+      {
+        "title": "Chinese Knot Meaning",
+        "path": "/chinese-knot-meaning/",
+        "category": "Related",
+        "description": "Continue with a related guide that supports this topic cluster."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the quick answer for Chinese knot wedding favors?",
+        "a": "Chinese knot wedding favors work best when the knot meaning, red or accent color, size, packaging, and cord quality match the wedding setting; use them as symbolic gifts or decor, not as promises of guaranteed luck."
+      },
+      {
+        "q": "What should I check first for Chinese knot wedding favors?",
+        "a": "Check whether you need to decide whether the knot will be a table favor, hanging decor, invitation accent, or gift-bag item. This is the condition most likely to change the final answer or product choice."
+      },
+      {
+        "q": "Can I use Chinese knot wedding favors for gifts, products, or teaching?",
+        "a": "Yes, but adapt the wording to the situation. Use cultural, practical, or educational language and avoid promising guaranteed luck, verified ancestry, fixed personality, or certain outcomes."
+      },
+      {
+        "q": "What is the biggest mistake with Chinese knot wedding favors?",
+        "a": "The biggest mistake is buying the cheapest bulk knot without checking finish or packaging. A careful page prevents that mistake by showing the evidence and the decision rule before the conclusion."
+      },
+      {
+        "q": "Where should I go after reading this Chinese knot wedding favors guide?",
+        "a": "Use the related guide, calculator, product comparison, or research checklist that answers the next practical question. That gives a clearer result than repeating the same broad search."
+      }
+    ]
+  },
+  {
+    "title": "Chinese Knot Bracelet Meaning: Colors, Gifts, and Safe Wording",
+    "path": "/chinese-knot-bracelet-meaning/",
+    "description": "Understand Chinese knot bracelet meaning, color symbolism, gift wording, cord choices, fit, and responsible buying notes.",
+    "h1": "Chinese Knot Bracelet Meaning: Colors, Gifts, and Safe Wording",
+    "intro": "Chinese knot bracelet meaning is a practical search because the reader usually wants a clear decision, not only a definition. The safest answer starts with the key check and then explains how to use the result responsibly.",
+    "answer": "Quick answer: A Chinese knot bracelet usually expresses connection, blessing, protection, friendship, or good wishes through knot form and color, but the meaning should be written as symbolism rather than a guaranteed effect.",
+    "geoPatch": {
+      "noteLabel": "Source note",
+      "note": "The evidence is the visible knot structure, color choice, charm or bead use, product material, and the occasion where the bracelet is given. This page treats tradition, product use, and family records as reference evidence. Meanings are explained as cultural or practical guidance, not as verified promises about luck, ancestry, personality, health, money, or relationships.",
+      "dataAnchor": "Chinese knot bracelet meaning decision = knot form + color symbolism + gift context + cord comfort + modest wording.",
+      "facts": [
+        [
+          "Main keyword",
+          "Chinese knot bracelet meaning"
+        ],
+        [
+          "First check",
+          "identify the knot form, color, charm, and gift context before assigning meaning"
+        ],
+        [
+          "Evidence point",
+          "The evidence is the visible knot structure, color choice, charm or bead use, product material, and the occasion where the bracelet is given."
+        ],
+        [
+          "Use limit",
+          "Cultural, educational, product, or family-reference guidance; not a guaranteed outcome claim."
+        ]
+      ]
+    },
+    "details": [
+      "Chinese knot bracelet meaning should begin with the decision the visitor is trying to make. Some readers want to buy something, some want to teach a class, some want to check a family clue, and some want wording that feels respectful. The page is strongest when it gives the direct answer first, then names the detail that can change the result. For this topic, that detail is to identify the knot form, color, charm, and gift context before assigning meaning.",
+      "The second step is to check bracelet fit, adjustable closure, cord comfort, and whether the seller describes materials clearly. This keeps the page from becoming a plain definition. It also gives the reader a clear way to compare similar options. A person can look at the same symbol, name, gift, or cultural object and still need different advice depending on the occasion, material, audience, price, or evidence available.",
+      "The strongest pages in this group separate stable facts from interpretation. Stable facts are things such as a date boundary, written character, product material, finished size, visible knot form, or teaching rule. Interpretation is the meaning, gift message, classroom discussion, or symbolic wording built on top of those facts. Mixing the two makes the content sound confident but less useful.",
+      "Readers also need a safe limit. Traditional culture can carry rich meaning, but a page should not claim that a symbol guarantees luck, a surname spelling proves ancestry, a birthday sign fixes personality, or a product automatically solves a personal problem. Modest wording is not weaker. It is more credible because it tells the reader what can be checked and what should stay symbolic.",
+      "Commercial use should be handled through decision support. If a product, paid report, checklist, or recommendation is added later, the free section should still answer the question on its own. A visitor should understand why one choice is better than another before seeing any buying prompt. That is also the best structure for long-term trust and repeat visits.",
+      "Good examples for this topic include friendship bracelets, couple gifts, festival bracelets, travel charms, small jewelry products, and cultural souvenir sets. These examples make the advice concrete. They also create natural internal links to tools, product categories, tutorials, and related guides without forcing the reader through a sales page. The article should help first and only then offer the next step.",
+      "The most common mistake is claiming a bracelet guarantees protection, wealth, or romance. A clear article prevents that mistake by showing the check before the conclusion. When the answer has uncertainty, the wording should say what is likely, what is confirmed, and what still needs evidence. That approach works better than a short answer that sounds complete but leaves the real decision unresolved."
+    ],
+    "sections": [
+      {
+        "title": "What Chinese knot bracelet meaning really needs to answer",
+        "paragraphs": [
+          "The search phrase sounds simple, but the real need is usually practical. A reader may be choosing a gift, planning a lesson, checking a family record, comparing materials, or preparing wording for a product page. The article should not start by showing off background knowledge. It should first identify the decision and make the next action obvious.",
+          "For this page, the first action is to identify the knot form, color, charm, and gift context before assigning meaning. After that, the reader can use the rest of the guide with fewer mistakes. This order matters because many culture-related topics look familiar on the surface while hiding a detail that changes the final answer."
+        ]
+      },
+      {
+        "title": "Basic facts before interpretation",
+        "paragraphs": [
+          "A responsible explanation gives the facts before the meaning. The fact may be a date range, a character, a material, a knot form, a package size, a classroom rule, or a visible product feature. The meaning comes later and should be written as a careful reading of those facts.",
+          "This is also useful for AI answers and search snippets. If the page states the fact clearly, then repeats the decision rule in normal language, answer engines can summarize it without turning the page into a vague cultural claim. The reader also gets a better experience because the important condition is easy to find."
+        ]
+      },
+      {
+        "title": "Examples and use cases",
+        "paragraphs": [
+          "Chinese knot bracelet meaning can appear in friendship bracelets, couple gifts, festival bracelets, travel charms, small jewelry products, and cultural souvenir sets. Each case has a different risk. A gift needs safe wording and decent presentation. A product needs material and quality checks. A family clue needs evidence. A classroom activity needs respectful boundaries. The same cultural idea should be adapted to the situation instead of copied word for word.",
+          "When a page gives examples, it should explain why the example works. A short list alone is not enough. The better pattern is to name the example, show the check, then tell the reader what to avoid. That turns background information into something the visitor can use immediately."
+        ]
+      },
+      {
+        "title": "Buying, teaching, or research checks",
+        "paragraphs": [
+          "If the reader is buying something, ask for proof: material, size, finish, sample photos, package protection, care instructions, or personalization preview. If the reader is teaching, keep the activity inclusive and avoid ranking students by a cultural label. If the reader is researching family history, preserve the original spelling and look for written evidence before choosing a meaning.",
+          "These checks are simple, but they prevent most poor decisions. They also help the site connect informational pages with product pages, tools, or paid reports later. The connection should feel natural because the article has already explained the problem that the next page solves."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "The main mistake is claiming a bracelet guarantees protection, wealth, or romance. Another mistake is treating a symbolic meaning as a fixed result. A third mistake is copying a phrase from another site without checking whether it fits the reader's situation. These errors create thin pages and weak user trust.",
+          "The fix is to write with conditions. Say when the answer applies, what evidence supports it, and when the reader should slow down. This creates a more natural article because it sounds like practical guidance rather than a list of claims."
+        ]
+      },
+      {
+        "title": "Best next step",
+        "paragraphs": [
+          "After reading this guide, the best next step is to compare the related guide or tool that answers the next practical question. A reader who needs a date check should use the calculator. A reader choosing a product should compare the buying guide. A reader checking a character should collect family evidence before finalizing a design.",
+          "This page should also be updated when new examples, products, or questions appear. The core answer can stay stable, while the examples and FAQ can grow from real article clusters. That gives the site a stronger topical structure without publishing many short pages that repeat the same point."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Practical decision table",
+      "headers": [
+        "Reader goal",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Fast answer",
+          "identify the knot form, color, charm, and gift context before assigning meaning",
+          "Prevents the most common wrong conclusion"
+        ],
+        [
+          "Better choice",
+          "check bracelet fit, adjustable closure, cord comfort, and whether the seller describes materials clearly",
+          "Turns a definition into a usable decision"
+        ],
+        [
+          "Evidence",
+          "The evidence is the visible knot structure, color choice, charm or bead use, product material, and the occasion where the bracelet is given.",
+          "Keeps the page grounded in checkable details"
+        ],
+        [
+          "Safe wording",
+          "Use symbolic, educational, or practical language",
+          "Avoids exaggerated claims"
+        ],
+        [
+          "Next step",
+          "Open the related guide, tool, or product comparison",
+          "Keeps the visitor inside the topic cluster"
+        ]
+      ]
+    },
+    "related": [
+      {
+        "title": "Related Guide",
+        "path": "/",
+        "category": "Related",
+        "description": "Continue with a related guide that supports this topic cluster."
+      },
+      {
+        "title": "Chinese Knot Bracelet",
+        "path": "/chinese-knot-bracelet/",
+        "category": "Related",
+        "description": "Continue with a related guide that supports this topic cluster."
+      },
+      {
+        "title": "Red Chinese Knot",
+        "path": "/red-chinese-knot/",
+        "category": "Related",
+        "description": "Continue with a related guide that supports this topic cluster."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the quick answer for Chinese knot bracelet meaning?",
+        "a": "A Chinese knot bracelet usually expresses connection, blessing, protection, friendship, or good wishes through knot form and color, but the meaning should be written as symbolism rather than a guaranteed effect."
+      },
+      {
+        "q": "What should I check first for Chinese knot bracelet meaning?",
+        "a": "Check whether you need to identify the knot form, color, charm, and gift context before assigning meaning. This is the condition most likely to change the final answer or product choice."
+      },
+      {
+        "q": "Can I use Chinese knot bracelet meaning for gifts, products, or teaching?",
+        "a": "Yes, but adapt the wording to the situation. Use cultural, practical, or educational language and avoid promising guaranteed luck, verified ancestry, fixed personality, or certain outcomes."
+      },
+      {
+        "q": "What is the biggest mistake with Chinese knot bracelet meaning?",
+        "a": "The biggest mistake is claiming a bracelet guarantees protection, wealth, or romance. A careful page prevents that mistake by showing the evidence and the decision rule before the conclusion."
+      },
+      {
+        "q": "Where should I go after reading this Chinese knot bracelet meaning guide?",
+        "a": "Use the related guide, calculator, product comparison, or research checklist that answers the next practical question. That gives a clearer result than repeating the same broad search."
+      }
+    ]
+  }
+];
+
+for (const article of dailyArticles20260714) {
+  await writePage(article.path, dailyArticlePage20260706(article));
+}
+
+const dailyArticles20260715 = [
+  {
+    "title": "Chinese Knot Keychain Gifts: Meaning, Hardware, Size, and Buying Checks",
+    "path": "/chinese-knot-keychain-gifts/",
+    "description": "Choose Chinese knot keychain gifts by meaning, cord quality, hardware, size, packaging, durability, and safe gift wording.",
+    "h1": "Chinese Knot Keychain Gifts: Meaning, Hardware, Size, and Buying Checks",
+    "intro": "Chinese knot keychain gifts is a practical topic because readers usually want to make a decision: what to buy, what to customize, what to print, or what wording is safe to use.",
+    "answer": "Quick answer: Chinese knot keychain gifts are strongest when the knot is compact, the hardware is secure, the cord finish is clean, and the meaning is framed as a symbolic wish rather than a guaranteed result.",
+    "geoPatch": {
+      "noteLabel": "Source note",
+      "note": "The buying evidence is the hardware type, cord material, full-size product photo, tassel finish, package photo, and seller notes about durability. The page treats cultural meaning, product use, and family evidence as separate layers, so the reader can enjoy the tradition without turning it into an unsupported promise.",
+      "dataAnchor": "The buying evidence is the hardware type, cord material, full-size product photo, tassel finish, package photo, and seller notes about durability. Chinese knot keychain gifts decision = decide whether the keychain is a souvenir, wedding favor, festival gift, bag charm, or daily-use accessory + check ring strength, cord thickness, tassel length, knot symmetry, finished size, and package protection.",
+      "facts": [
+        [
+          "Main keyword",
+          "Chinese knot keychain gifts"
+        ],
+        [
+          "First check",
+          "decide whether the keychain is a souvenir, wedding favor, festival gift, bag charm, or daily-use accessory"
+        ],
+        [
+          "Second check",
+          "check ring strength, cord thickness, tassel length, knot symmetry, finished size, and package protection"
+        ],
+        [
+          "Use limit",
+          "Use cultural, practical, or family-reference wording; do not promise guaranteed luck, ancestry, personality, health, wealth, or relationship outcomes."
+        ]
+      ]
+    },
+    "details": [
+      "Chinese knot keychain gifts should start with the real decision behind the search. The visitor may be choosing a product, preparing a personalized design, planning a gift, or trying to avoid a cultural mistake. The direct answer helps, but the useful part is the check that comes next: decide whether the keychain is a souvenir, wedding favor, festival gift, bag charm, or daily-use accessory.",
+      "After that first check, the page needs a second practical step: check ring strength, cord thickness, tassel length, knot symmetry, finished size, and package protection. This is where many thin pages fail. They explain the symbol or product in a pleasant way, but they do not show the reader what can go wrong before money, time, or trust is spent.",
+      "The safest structure is to separate facts from interpretation. A fact might be a birth date, a written surname character, a product material, a finished size, a proof image, a cord type, or a package photo. Interpretation is the meaning, gift message, color choice, or design story built from those facts.",
+      "That separation also makes the page easier to expand later. If a product card, downloadable template, paid report, or comparison table is added, it should support the decision already explained on the page. The free answer still needs to stand on its own.",
+      "Good use cases include small cultural souvenirs, wedding favor bags, travel gifts, Lunar New Year bundles, friendship gifts, craft kits, and lightweight product add-ons. These examples are not filler. They show where the advice changes. A keepsake gift needs different wording from a classroom chart. A personalized product needs a proof step. A wall item needs dimensions. A surname design needs evidence before style.",
+      "The main risk is simple: A common mistake is buying a pretty close-up photo without checking the full length, key ring quality, or whether the tassel will fray during daily use. The best way to prevent that mistake is to make the check visible before the conclusion. Readers should know what is confirmed, what is symbolic, and what still needs evidence.",
+      "Use modest language. A zodiac animal can mark a birth year, a surname character can carry family meaning, a knot can express a wish, and a pair of chopsticks can make a gift feel thoughtful. None of those details should be written as a guarantee of luck, identity, success, or origin."
+    ],
+    "sections": [
+      {
+        "title": "What to check first",
+        "paragraphs": [
+          "Start by asking what the reader is trying to do. If the goal is a gift, the check is accuracy, wording, and presentation. If the goal is a product, the check is material, size, proof, and durability. If the goal is a family-name design, the check is evidence before style.",
+          "For this topic, the first check is to decide whether the keychain is a souvenir, wedding favor, festival gift, bag charm, or daily-use accessory. That step should happen before buying, printing, engraving, framing, or publishing a design. It is easier to fix uncertainty before the item is made than after it has been shipped or shared."
+        ]
+      },
+      {
+        "title": "Source, origin, evidence, and practice notes",
+        "paragraphs": [
+          "The buying evidence is the hardware type, cord material, full-size product photo, tassel finish, package photo, and seller notes about durability. That evidence does not need to be complicated, but it needs to be visible. A date boundary, product proof, family record, package photo, or material listing can prevent a page from becoming a vague meaning article.",
+          "Practice also matters. For a gift, practice means checking the wording with a real recipient in mind. For a product, it means looking at how the object will be used, cleaned, worn, hung, or stored. For a name or surname, it means recording where the character or spelling came from."
+        ]
+      },
+      {
+        "title": "Examples and use cases",
+        "paragraphs": [
+          "Chinese knot keychain gifts can appear in small cultural souvenirs, wedding favor bags, travel gifts, Lunar New Year bundles, friendship gifts, craft kits, and lightweight product add-ons. Each case asks for a slightly different decision. A family gift needs warmth and evidence. A decor item needs size and placement. A personalized item needs proofing. A classroom or reference item needs clarity and limits.",
+          "When these use cases are mixed together, the advice becomes weak. The better route is to tell the reader which detail matters for the situation they actually have. That is what makes the page useful for search visitors and for later product or paid-report entry points."
+        ]
+      },
+      {
+        "title": "Buying and customization checks",
+        "paragraphs": [
+          "Before paying for a physical or custom item, check the proof. Names, years, characters, dates, dimensions, materials, and colors should be confirmed from the listing or preview. If the seller does not show the full item, close-up photos, or care details, the buyer is taking on more risk.",
+          "For personalized products, a small mistake becomes permanent. Check spelling, character shape, engraving size, print layout, and whether the design still reads clearly at the final scale. For simple products, check whether the item will survive normal handling, cleaning, shipping, or hanging."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "A common mistake is buying a pretty close-up photo without checking the full length, key ring quality, or whether the tassel will fray during daily use. Another mistake is using wording that sounds stronger than the evidence. A cultural symbol can be meaningful without being written as a promise. A family character can be special without proving a complete genealogy.",
+          "A third mistake is buying by appearance alone. Beautiful photos can hide weak materials, poor sizing, unclear personalization, or unsupported claims. A stronger page teaches the reader to inspect the exact detail that changes the choice."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "The next step is to open the related guide that solves the next piece of uncertainty. If the issue is date accuracy, use a calculator or year guide. If the issue is a surname character, use the lookup or research page. If the issue is product quality, compare material, size, packaging, and proof details.",
+          "Keep a short decision note before buying or publishing: what is confirmed, what source supports it, what the item is for, and what wording will be used. That small note prevents most avoidable mistakes and makes future updates to the site easier."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Decision checklist",
+      "headers": [
+        "Decision point",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Accuracy",
+          "decide whether the keychain is a souvenir, wedding favor, festival gift, bag charm, or daily-use accessory",
+          "Prevents the most visible wrong answer"
+        ],
+        [
+          "Practical fit",
+          "check ring strength, cord thickness, tassel length, knot symmetry, finished size, and package protection",
+          "Connects meaning to real use"
+        ],
+        [
+          "Evidence",
+          "The buying evidence is the hardware type, cord material, full-size product photo, tassel finish, package photo, and seller notes about durability.",
+          "Keeps the page trustworthy"
+        ],
+        [
+          "Use case",
+          "small cultural souvenirs, wedding favor bags, travel gifts, Lunar New Year bundles, friendship gifts, craft kits, and lightweight product add-ons",
+          "Shows where advice changes"
+        ],
+        [
+          "Risk",
+          "A common mistake is buying a pretty close-up photo without checking the full length, key ring quality, or whether the tassel will fray during daily use.",
+          "Prevents common product or wording errors"
+        ]
+      ]
+    },
+    "related": [
+      {
+        "title": "Chinese Knot Keychain",
+        "path": "/chinese-knot-keychain/",
+        "category": "Craft Ideas",
+        "description": "Compare keychain use, cord, and small product ideas."
+      },
+      {
+        "title": "Chinese Knot Gifts",
+        "path": "/chinese-knot-gifts/",
+        "category": "Gift & Decor",
+        "description": "Choose knot gifts by occasion and quality."
+      },
+      {
+        "title": "Chinese Knot Charms",
+        "path": "/chinese-knot-charms/",
+        "category": "Product Guides",
+        "description": "Check small charms, hardware, and meaning."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the quick answer for Chinese knot keychain gifts?",
+        "a": "Chinese knot keychain gifts are strongest when the knot is compact, the hardware is secure, the cord finish is clean, and the meaning is framed as a symbolic wish rather than a guaranteed result."
+      },
+      {
+        "q": "What should I check first for Chinese knot keychain gifts?",
+        "a": "First, decide whether the keychain is a souvenir, wedding favor, festival gift, bag charm, or daily-use accessory. This is the detail most likely to change the final answer or buying decision."
+      },
+      {
+        "q": "Can Chinese knot keychain gifts be used for gifts or products?",
+        "a": "Yes, if the wording stays modest and the product or design is checked for accuracy, quality, size, and real use."
+      },
+      {
+        "q": "What is the common mistake with Chinese knot keychain gifts?",
+        "a": "A common mistake is buying a pretty close-up photo without checking the full length, key ring quality, or whether the tassel will fray during daily use."
+      },
+      {
+        "q": "What evidence matters most for Chinese knot keychain gifts?",
+        "a": "The buying evidence is the hardware type, cord material, full-size product photo, tassel finish, package photo, and seller notes about durability."
+      }
+    ]
+  },
+  {
+    "title": "Chinese Knot Wall Decor Meaning: Placement, Color, Size, and Gift Use",
+    "path": "/chinese-knot-wall-decor-meaning/",
+    "description": "Understand Chinese knot wall decor meaning with placement, color symbolism, size, tassel quality, gift use, and buying checks.",
+    "h1": "Chinese Knot Wall Decor Meaning: Placement, Color, Size, and Gift Use",
+    "intro": "Chinese knot wall decor meaning is a practical topic because readers usually want to make a decision: what to buy, what to customize, what to print, or what wording is safe to use.",
+    "answer": "Quick answer: Chinese knot wall decor usually expresses blessing, connection, celebration, or good wishes through knot form and color, but placement and product quality matter as much as symbolic wording.",
+    "geoPatch": {
+      "noteLabel": "Source note",
+      "note": "The practical evidence is the visible knot form, finished dimensions, color, tassel length, cord finish, and intended placement. The page treats cultural meaning, product use, and family evidence as separate layers, so the reader can enjoy the tradition without turning it into an unsupported promise.",
+      "dataAnchor": "The practical evidence is the visible knot form, finished dimensions, color, tassel length, cord finish, and intended placement. Chinese knot wall decor meaning decision = match the wall decor size, color, and hanging length to the room, doorway, festival setting, or gift occasion + check knot symmetry, tassel balance, cord finish, wall scale, and whether the product photo shows the entire hanging.",
+      "facts": [
+        [
+          "Main keyword",
+          "Chinese knot wall decor meaning"
+        ],
+        [
+          "First check",
+          "match the wall decor size, color, and hanging length to the room, doorway, festival setting, or gift occasion"
+        ],
+        [
+          "Second check",
+          "check knot symmetry, tassel balance, cord finish, wall scale, and whether the product photo shows the entire hanging"
+        ],
+        [
+          "Use limit",
+          "Use cultural, practical, or family-reference wording; do not promise guaranteed luck, ancestry, personality, health, wealth, or relationship outcomes."
+        ]
+      ]
+    },
+    "details": [
+      "Chinese knot wall decor meaning should start with the real decision behind the search. The visitor may be choosing a product, preparing a personalized design, planning a gift, or trying to avoid a cultural mistake. The direct answer helps, but the useful part is the check that comes next: match the wall decor size, color, and hanging length to the room, doorway, festival setting, or gift occasion.",
+      "After that first check, the page needs a second practical step: check knot symmetry, tassel balance, cord finish, wall scale, and whether the product photo shows the entire hanging. This is where many thin pages fail. They explain the symbol or product in a pleasant way, but they do not show the reader what can go wrong before money, time, or trust is spent.",
+      "The safest structure is to separate facts from interpretation. A fact might be a birth date, a written surname character, a product material, a finished size, a proof image, a cord type, or a package photo. Interpretation is the meaning, gift message, color choice, or design story built from those facts.",
+      "That separation also makes the page easier to expand later. If a product card, downloadable template, paid report, or comparison table is added, it should support the decision already explained on the page. The free answer still needs to stand on its own.",
+      "Good use cases include entryway decor, Lunar New Year displays, wedding room accents, housewarming gifts, shop decor, festival backdrops, and cultural wall art. These examples are not filler. They show where the advice changes. A keepsake gift needs different wording from a classroom chart. A personalized product needs a proof step. A wall item needs dimensions. A surname design needs evidence before style.",
+      "The main risk is simple: Do not choose wall decor only because it is red or labeled lucky; poor scale, twisted tassels, or weak cord can make the piece look cheap. The best way to prevent that mistake is to make the check visible before the conclusion. Readers should know what is confirmed, what is symbolic, and what still needs evidence.",
+      "Use modest language. A zodiac animal can mark a birth year, a surname character can carry family meaning, a knot can express a wish, and a pair of chopsticks can make a gift feel thoughtful. None of those details should be written as a guarantee of luck, identity, success, or origin."
+    ],
+    "sections": [
+      {
+        "title": "What to check first",
+        "paragraphs": [
+          "Start by asking what the reader is trying to do. If the goal is a gift, the check is accuracy, wording, and presentation. If the goal is a product, the check is material, size, proof, and durability. If the goal is a family-name design, the check is evidence before style.",
+          "For this topic, the first check is to match the wall decor size, color, and hanging length to the room, doorway, festival setting, or gift occasion. That step should happen before buying, printing, engraving, framing, or publishing a design. It is easier to fix uncertainty before the item is made than after it has been shipped or shared."
+        ]
+      },
+      {
+        "title": "Source, origin, evidence, and practice notes",
+        "paragraphs": [
+          "The practical evidence is the visible knot form, finished dimensions, color, tassel length, cord finish, and intended placement. That evidence does not need to be complicated, but it needs to be visible. A date boundary, product proof, family record, package photo, or material listing can prevent a page from becoming a vague meaning article.",
+          "Practice also matters. For a gift, practice means checking the wording with a real recipient in mind. For a product, it means looking at how the object will be used, cleaned, worn, hung, or stored. For a name or surname, it means recording where the character or spelling came from."
+        ]
+      },
+      {
+        "title": "Examples and use cases",
+        "paragraphs": [
+          "Chinese knot wall decor meaning can appear in entryway decor, Lunar New Year displays, wedding room accents, housewarming gifts, shop decor, festival backdrops, and cultural wall art. Each case asks for a slightly different decision. A family gift needs warmth and evidence. A decor item needs size and placement. A personalized item needs proofing. A classroom or reference item needs clarity and limits.",
+          "When these use cases are mixed together, the advice becomes weak. The better route is to tell the reader which detail matters for the situation they actually have. That is what makes the page useful for search visitors and for later product or paid-report entry points."
+        ]
+      },
+      {
+        "title": "Buying and customization checks",
+        "paragraphs": [
+          "Before paying for a physical or custom item, check the proof. Names, years, characters, dates, dimensions, materials, and colors should be confirmed from the listing or preview. If the seller does not show the full item, close-up photos, or care details, the buyer is taking on more risk.",
+          "For personalized products, a small mistake becomes permanent. Check spelling, character shape, engraving size, print layout, and whether the design still reads clearly at the final scale. For simple products, check whether the item will survive normal handling, cleaning, shipping, or hanging."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "Do not choose wall decor only because it is red or labeled lucky; poor scale, twisted tassels, or weak cord can make the piece look cheap. Another mistake is using wording that sounds stronger than the evidence. A cultural symbol can be meaningful without being written as a promise. A family character can be special without proving a complete genealogy.",
+          "A third mistake is buying by appearance alone. Beautiful photos can hide weak materials, poor sizing, unclear personalization, or unsupported claims. A stronger page teaches the reader to inspect the exact detail that changes the choice."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "The next step is to open the related guide that solves the next piece of uncertainty. If the issue is date accuracy, use a calculator or year guide. If the issue is a surname character, use the lookup or research page. If the issue is product quality, compare material, size, packaging, and proof details.",
+          "Keep a short decision note before buying or publishing: what is confirmed, what source supports it, what the item is for, and what wording will be used. That small note prevents most avoidable mistakes and makes future updates to the site easier."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Decision checklist",
+      "headers": [
+        "Decision point",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "Accuracy",
+          "match the wall decor size, color, and hanging length to the room, doorway, festival setting, or gift occasion",
+          "Prevents the most visible wrong answer"
+        ],
+        [
+          "Practical fit",
+          "check knot symmetry, tassel balance, cord finish, wall scale, and whether the product photo shows the entire hanging",
+          "Connects meaning to real use"
+        ],
+        [
+          "Evidence",
+          "The practical evidence is the visible knot form, finished dimensions, color, tassel length, cord finish, and intended placement.",
+          "Keeps the page trustworthy"
+        ],
+        [
+          "Use case",
+          "entryway decor, Lunar New Year displays, wedding room accents, housewarming gifts, shop decor, festival backdrops, and cultural wall art",
+          "Shows where advice changes"
+        ],
+        [
+          "Risk",
+          "Do not choose wall decor only because it is red or labeled lucky; poor scale, twisted tassels, or weak cord can make the piece look cheap.",
+          "Prevents common product or wording errors"
+        ]
+      ]
+    },
+    "related": [
+      {
+        "title": "Chinese Knot Wall Decor",
+        "path": "/chinese-knot-wall-decor/",
+        "category": "Gift & Decor",
+        "description": "Choose wall decor by size and placement."
+      },
+      {
+        "title": "Chinese Knot Meaning",
+        "path": "/chinese-knot-meaning/",
+        "category": "Meanings",
+        "description": "Understand symbolic readings and limits."
+      },
+      {
+        "title": "Red Chinese Knot",
+        "path": "/red-chinese-knot/",
+        "category": "Meaning Guides",
+        "description": "Use red color symbolism responsibly."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the quick answer for Chinese knot wall decor meaning?",
+        "a": "Chinese knot wall decor usually expresses blessing, connection, celebration, or good wishes through knot form and color, but placement and product quality matter as much as symbolic wording."
+      },
+      {
+        "q": "What should I check first for Chinese knot wall decor meaning?",
+        "a": "First, match the wall decor size, color, and hanging length to the room, doorway, festival setting, or gift occasion. This is the detail most likely to change the final answer or buying decision."
+      },
+      {
+        "q": "Can Chinese knot wall decor meaning be used for gifts or products?",
+        "a": "Yes, if the wording stays modest and the product or design is checked for accuracy, quality, size, and real use."
+      },
+      {
+        "q": "What is the common mistake with Chinese knot wall decor meaning?",
+        "a": "Do not choose wall decor only because it is red or labeled lucky; poor scale, twisted tassels, or weak cord can make the piece look cheap."
+      },
+      {
+        "q": "What evidence matters most for Chinese knot wall decor meaning?",
+        "a": "The practical evidence is the visible knot form, finished dimensions, color, tassel length, cord finish, and intended placement."
+      }
+    ]
+  }
+];
+
+for (const article of dailyArticles20260715) {
+  await writePage(article.path, dailyArticlePage20260706(article));
+}
+
+const dailyArticles20260716 = [
+  {
+    "title": "Chinese Knot Phone Charm: Meaning, Cord Quality, Size, and Buying Checks",
+    "path": "/chinese-knot-phone-charm/",
+    "description": "Choose a Chinese knot phone charm by meaning, cord quality, attachment loop, tassel length, phone case fit, and gift use.",
+    "h1": "Chinese Knot Phone Charm: Meaning, Cord Quality, Size, and Buying Checks",
+    "intro": "Chinese knot phone charm is a practical topic because the reader usually wants to buy, print, gift, customize, or verify something before taking action.",
+    "answer": "Quick answer: A Chinese knot phone charm should be lightweight, securely attached, comfortable to hold, and described as a symbolic accessory rather than a guaranteed good-luck item.",
+    "geoPatch": {
+      "noteLabel": "Source note",
+      "note": "The buying evidence is the attachment method, cord material, finished size, tassel length, hardware, and full product photo with scale. The guidance separates evidence, product checks, and symbolic wording so the page stays useful without overclaiming what tradition or design can prove.",
+      "dataAnchor": "Chinese knot phone charm decision = decide whether the charm is for a phone case loop, bag charm, zipper pull, souvenir, festival gift, or small retail product + check cord strength, attachment loop, tassel length, knot symmetry, bead weight, and whether it interferes with phone use.",
+      "facts": [
+        [
+          "Main keyword",
+          "Chinese knot phone charm"
+        ],
+        [
+          "First check",
+          "decide whether the charm is for a phone case loop, bag charm, zipper pull, souvenir, festival gift, or small retail product"
+        ],
+        [
+          "Second check",
+          "check cord strength, attachment loop, tassel length, knot symmetry, bead weight, and whether it interferes with phone use"
+        ],
+        [
+          "Use limit",
+          "Use cultural, educational, product, or family-reference wording; avoid guaranteed claims about luck, ancestry, personality, health, money, or relationships."
+        ]
+      ]
+    },
+    "details": [
+      "Chinese knot phone charm should begin with the action the reader is about to take. A visitor may be comparing a product, preparing a personalized gift, designing a printable, checking a family character, or deciding whether a symbolic phrase is safe to use. The page should answer that action before adding background.",
+      "The first decision point is to decide whether the charm is for a phone case loop, bag charm, zipper pull, souvenir, festival gift, or small retail product. This check prevents the most visible mistake. It also makes the article more useful than a short definition because it gives the reader a concrete step before they buy, print, engrave, hang, carry, or share anything.",
+      "The second decision point is to check cord strength, attachment loop, tassel length, knot symmetry, bead weight, and whether it interferes with phone use. This is where commercial and informational intent meet. A product page needs materials, size, proof, and care details. A family-name page needs records and uncertainty notes. A cultural page needs modest wording and a clear boundary between symbolism and fact.",
+      "The strongest content separates stable evidence from interpretation. Stable evidence can be a date boundary, a written character, a material listing, a finished size, a product proof, a package photo, or a family record. Interpretation is the meaning, gift message, design choice, or style note built on top of that evidence.",
+      "Useful examples include phone charms, bag charms, festival accessories, travel souvenirs, friendship gifts, small add-on products, and DIY charm kits. These use cases make the page practical because they show how the same cultural object can require different checks. A classroom chart is not the same as a necklace. A travel case is not the same as a table rest. A surname printable is not the same as a verified family tree.",
+      "The main mistake to prevent is this: A common mistake is choosing a charm that looks good in a close-up but is too long, heavy, or weakly attached for daily phone use. A good page puts that warning near the decision point, not only at the end. Readers should understand what to verify while they still have time to change the product, wording, or design.",
+      "Commercial additions can come later, but they should not replace the answer. Affiliate products, direct products, paid reports, printable downloads, or comparison cards should extend the decision path already explained here. That keeps the page useful for readers and safer for long-term SEO."
+    ],
+    "sections": [
+      {
+        "title": "Start with the decision, not the decoration",
+        "paragraphs": [
+          "Many pages about Chinese knot phone charm become decorative too quickly. They talk about beauty, tradition, or meaning before helping the reader decide what to check. A stronger page begins with the practical action: choose the sign, confirm the character, inspect the product, compare the case, or review the design proof.",
+          "That order matters because mistakes usually happen before purchase or personalization. Once a necklace is engraved, a printable is shared, a case is ordered, or a seal is carved, a small uncertainty becomes harder to fix."
+        ]
+      },
+      {
+        "title": "Evidence and source anchor",
+        "paragraphs": [
+          "The buying evidence is the attachment method, cord material, finished size, tassel length, hardware, and full product photo with scale. This source layer is what keeps the page from becoming a vague cultural explanation. The reader should see which facts are stable and which parts are interpretation or personal choice.",
+          "For search and AI answer quality, the page should repeat the decision rule in plain language. The reader needs to know what to check first, what can change the answer, and where the evidence comes from. That is more useful than a long history section with no action step."
+        ]
+      },
+      {
+        "title": "Examples and use cases",
+        "paragraphs": [
+          "Chinese knot phone charm can be used in phone charms, bag charms, festival accessories, travel souvenirs, friendship gifts, small add-on products, and DIY charm kits. The best page does not treat those situations as identical. Each use case changes the risk: wrong sign, unclear character, bad fit, weak material, poor packaging, or overconfident wording.",
+          "When the use case is clear, the next link becomes natural. A product shopper needs a buying guide. A family researcher needs a lookup or evidence page. A teacher needs a classroom-safe explanation. A gift buyer needs wording that feels warm without making unsupported promises."
+        ]
+      },
+      {
+        "title": "Buying, printing, and personalization checks",
+        "paragraphs": [
+          "Before buying or producing anything, review the proof. Check names, dates, character shapes, animal signs, material, size, dimensions, package photos, care instructions, and whether the item will be used, worn, hung, stored, or carried. A small proof step prevents most avoidable problems.",
+          "For personalized or printable items, keep a record of what was confirmed. The note can be simple: source, spelling, character, date, product size, and wording. This makes the decision easier to review later and helps the site add templates or product blocks without rewriting the page."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "A common mistake is choosing a charm that looks good in a close-up but is too long, heavy, or weakly attached for daily phone use. Another mistake is writing a symbolic phrase as though it guarantees a result. Cultural meaning can be valuable without being overstated. A gift can express a wish without promising luck, identity, or destiny.",
+          "A third mistake is judging from one attractive photo. Product photos can hide scale, attachment quality, engraving readability, cleaning limits, or weak packaging. The safer approach is to compare the exact detail that affects real use."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "After reading this page, open the related guide that resolves the next uncertainty. If the question is accuracy, use a calculator, lookup, or year guide. If the question is product quality, compare material, size, finish, case, packaging, and proof. If the question is family meaning, collect the source record first.",
+          "This topic can grow into product recommendations, printable downloads, paid checks, or bundle pages later. The foundation should stay the same: answer the practical question first, keep evidence visible, and use careful wording for cultural meaning."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Decision checklist",
+      "headers": [
+        "Decision point",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "First check",
+          "decide whether the charm is for a phone case loop, bag charm, zipper pull, souvenir, festival gift, or small retail product",
+          "Prevents the main wrong answer"
+        ],
+        [
+          "Practical fit",
+          "check cord strength, attachment loop, tassel length, knot symmetry, bead weight, and whether it interferes with phone use",
+          "Connects meaning to real use"
+        ],
+        [
+          "Evidence",
+          "The buying evidence is the attachment method, cord material, finished size, tassel length, hardware, and full product photo with scale.",
+          "Keeps the page trustworthy"
+        ],
+        [
+          "Use cases",
+          "phone charms, bag charms, festival accessories, travel souvenirs, friendship gifts, small add-on products, and DIY charm kits",
+          "Shows where advice changes"
+        ],
+        [
+          "Common risk",
+          "A common mistake is choosing a charm that looks good in a close-up but is too long, heavy, or weakly attached for daily phone use.",
+          "Prevents preventable buying or wording errors"
+        ]
+      ]
+    },
+    "related": [
+      {
+        "title": "Chinese Knot Charms",
+        "path": "/chinese-knot-charms/",
+        "category": "Product Guides",
+        "description": "Compare small charms and hardware."
+      },
+      {
+        "title": "Chinese Knot Keychain Gifts",
+        "path": "/chinese-knot-keychain-gifts/",
+        "category": "Product Guides",
+        "description": "Check small knot gift quality."
+      },
+      {
+        "title": "Chinese Knot Bracelet",
+        "path": "/chinese-knot-bracelet/",
+        "category": "Craft Ideas",
+        "description": "Compare wearable knot products."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the quick answer for Chinese knot phone charm?",
+        "a": "A Chinese knot phone charm should be lightweight, securely attached, comfortable to hold, and described as a symbolic accessory rather than a guaranteed good-luck item."
+      },
+      {
+        "q": "What should I check first for Chinese knot phone charm?",
+        "a": "First, decide whether the charm is for a phone case loop, bag charm, zipper pull, souvenir, festival gift, or small retail product. That is the detail most likely to change the final decision."
+      },
+      {
+        "q": "Can Chinese knot phone charm be used for gifts, products, or downloads?",
+        "a": "Yes, if the evidence is checked, the product or file is practical, and the wording stays modest rather than promising a guaranteed outcome."
+      },
+      {
+        "q": "What is the biggest mistake with Chinese knot phone charm?",
+        "a": "A common mistake is choosing a charm that looks good in a close-up but is too long, heavy, or weakly attached for daily phone use."
+      },
+      {
+        "q": "What evidence matters most for Chinese knot phone charm?",
+        "a": "The buying evidence is the attachment method, cord material, finished size, tassel length, hardware, and full product photo with scale."
+      }
+    ]
+  },
+  {
+    "title": "Chinese Knot Gift Box Ideas: Packaging, Meaning Cards, and Product Bundles",
+    "path": "/chinese-knot-gift-box-ideas/",
+    "description": "Plan Chinese knot gift box ideas with packaging, meaning cards, bracelet bundles, keychains, charms, and safe symbolic wording.",
+    "h1": "Chinese Knot Gift Box Ideas: Packaging, Meaning Cards, and Product Bundles",
+    "intro": "Chinese knot gift box ideas is a practical topic because the reader usually wants to buy, print, gift, customize, or verify something before taking action.",
+    "answer": "Quick answer: A Chinese knot gift box works best when the knot product, packaging, meaning card, and occasion fit together without relying on exaggerated luck claims.",
+    "geoPatch": {
+      "noteLabel": "Source note",
+      "note": "The practical evidence is product size, cord finish, box dimensions, insert card wording, packaging protection, and photos of the full bundle. The guidance separates evidence, product checks, and symbolic wording so the page stays useful without overclaiming what tradition or design can prove.",
+      "dataAnchor": "Chinese knot gift box ideas decision = choose the main product first, such as a bracelet, keychain, ornament, phone charm, tassel, or wall hanging + match the box size, insert card, color palette, protection, and wording to the product and gift occasion.",
+      "facts": [
+        [
+          "Main keyword",
+          "Chinese knot gift box ideas"
+        ],
+        [
+          "First check",
+          "choose the main product first, such as a bracelet, keychain, ornament, phone charm, tassel, or wall hanging"
+        ],
+        [
+          "Second check",
+          "match the box size, insert card, color palette, protection, and wording to the product and gift occasion"
+        ],
+        [
+          "Use limit",
+          "Use cultural, educational, product, or family-reference wording; avoid guaranteed claims about luck, ancestry, personality, health, money, or relationships."
+        ]
+      ]
+    },
+    "details": [
+      "Chinese knot gift box ideas should begin with the action the reader is about to take. A visitor may be comparing a product, preparing a personalized gift, designing a printable, checking a family character, or deciding whether a symbolic phrase is safe to use. The page should answer that action before adding background.",
+      "The first decision point is to choose the main product first, such as a bracelet, keychain, ornament, phone charm, tassel, or wall hanging. This check prevents the most visible mistake. It also makes the article more useful than a short definition because it gives the reader a concrete step before they buy, print, engrave, hang, carry, or share anything.",
+      "The second decision point is to match the box size, insert card, color palette, protection, and wording to the product and gift occasion. This is where commercial and informational intent meet. A product page needs materials, size, proof, and care details. A family-name page needs records and uncertainty notes. A cultural page needs modest wording and a clear boundary between symbolism and fact.",
+      "The strongest content separates stable evidence from interpretation. Stable evidence can be a date boundary, a written character, a material listing, a finished size, a product proof, a package photo, or a family record. Interpretation is the meaning, gift message, design choice, or style note built on top of that evidence.",
+      "Useful examples include wedding favor boxes, Lunar New Year gift boxes, friendship bundles, bracelet sets, keychain gift packs, souvenir boxes, and small ecommerce product kits. These use cases make the page practical because they show how the same cultural object can require different checks. A classroom chart is not the same as a necklace. A travel case is not the same as a table rest. A surname printable is not the same as a verified family tree.",
+      "The main mistake to prevent is this: The main mistake is using premium packaging to hide weak knot quality, unclear meaning, or poor product fit. A good page puts that warning near the decision point, not only at the end. Readers should understand what to verify while they still have time to change the product, wording, or design.",
+      "Commercial additions can come later, but they should not replace the answer. Affiliate products, direct products, paid reports, printable downloads, or comparison cards should extend the decision path already explained here. That keeps the page useful for readers and safer for long-term SEO."
+    ],
+    "sections": [
+      {
+        "title": "Start with the decision, not the decoration",
+        "paragraphs": [
+          "Many pages about Chinese knot gift box ideas become decorative too quickly. They talk about beauty, tradition, or meaning before helping the reader decide what to check. A stronger page begins with the practical action: choose the sign, confirm the character, inspect the product, compare the case, or review the design proof.",
+          "That order matters because mistakes usually happen before purchase or personalization. Once a necklace is engraved, a printable is shared, a case is ordered, or a seal is carved, a small uncertainty becomes harder to fix."
+        ]
+      },
+      {
+        "title": "Evidence and source anchor",
+        "paragraphs": [
+          "The practical evidence is product size, cord finish, box dimensions, insert card wording, packaging protection, and photos of the full bundle. This source layer is what keeps the page from becoming a vague cultural explanation. The reader should see which facts are stable and which parts are interpretation or personal choice.",
+          "For search and AI answer quality, the page should repeat the decision rule in plain language. The reader needs to know what to check first, what can change the answer, and where the evidence comes from. That is more useful than a long history section with no action step."
+        ]
+      },
+      {
+        "title": "Examples and use cases",
+        "paragraphs": [
+          "Chinese knot gift box ideas can be used in wedding favor boxes, Lunar New Year gift boxes, friendship bundles, bracelet sets, keychain gift packs, souvenir boxes, and small ecommerce product kits. The best page does not treat those situations as identical. Each use case changes the risk: wrong sign, unclear character, bad fit, weak material, poor packaging, or overconfident wording.",
+          "When the use case is clear, the next link becomes natural. A product shopper needs a buying guide. A family researcher needs a lookup or evidence page. A teacher needs a classroom-safe explanation. A gift buyer needs wording that feels warm without making unsupported promises."
+        ]
+      },
+      {
+        "title": "Buying, printing, and personalization checks",
+        "paragraphs": [
+          "Before buying or producing anything, review the proof. Check names, dates, character shapes, animal signs, material, size, dimensions, package photos, care instructions, and whether the item will be used, worn, hung, stored, or carried. A small proof step prevents most avoidable problems.",
+          "For personalized or printable items, keep a record of what was confirmed. The note can be simple: source, spelling, character, date, product size, and wording. This makes the decision easier to review later and helps the site add templates or product blocks without rewriting the page."
+        ]
+      },
+      {
+        "title": "Common mistakes",
+        "paragraphs": [
+          "The main mistake is using premium packaging to hide weak knot quality, unclear meaning, or poor product fit. Another mistake is writing a symbolic phrase as though it guarantees a result. Cultural meaning can be valuable without being overstated. A gift can express a wish without promising luck, identity, or destiny.",
+          "A third mistake is judging from one attractive photo. Product photos can hide scale, attachment quality, engraving readability, cleaning limits, or weak packaging. The safer approach is to compare the exact detail that affects real use."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "After reading this page, open the related guide that resolves the next uncertainty. If the question is accuracy, use a calculator, lookup, or year guide. If the question is product quality, compare material, size, finish, case, packaging, and proof. If the question is family meaning, collect the source record first.",
+          "This topic can grow into product recommendations, printable downloads, paid checks, or bundle pages later. The foundation should stay the same: answer the practical question first, keep evidence visible, and use careful wording for cultural meaning."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Decision checklist",
+      "headers": [
+        "Decision point",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "First check",
+          "choose the main product first, such as a bracelet, keychain, ornament, phone charm, tassel, or wall hanging",
+          "Prevents the main wrong answer"
+        ],
+        [
+          "Practical fit",
+          "match the box size, insert card, color palette, protection, and wording to the product and gift occasion",
+          "Connects meaning to real use"
+        ],
+        [
+          "Evidence",
+          "The practical evidence is product size, cord finish, box dimensions, insert card wording, packaging protection, and photos of the full bundle.",
+          "Keeps the page trustworthy"
+        ],
+        [
+          "Use cases",
+          "wedding favor boxes, Lunar New Year gift boxes, friendship bundles, bracelet sets, keychain gift packs, souvenir boxes, and small ecommerce product kits",
+          "Shows where advice changes"
+        ],
+        [
+          "Common risk",
+          "The main mistake is using premium packaging to hide weak knot quality, unclear meaning, or poor product fit.",
+          "Prevents preventable buying or wording errors"
+        ]
+      ]
+    },
+    "related": [
+      {
+        "title": "Chinese Knot Gifts",
+        "path": "/chinese-knot-gifts/",
+        "category": "Gift & Decor",
+        "description": "Choose gifts by occasion and quality."
+      },
+      {
+        "title": "Chinese Knot Keychain Gifts",
+        "path": "/chinese-knot-keychain-gifts/",
+        "category": "Product Guides",
+        "description": "Build small gift bundles."
+      },
+      {
+        "title": "Chinese Knot Wedding Favors",
+        "path": "/chinese-knot-wedding-favors/",
+        "category": "Gift & Decor",
+        "description": "Use knot gifts in event packaging."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the quick answer for Chinese knot gift box ideas?",
+        "a": "A Chinese knot gift box works best when the knot product, packaging, meaning card, and occasion fit together without relying on exaggerated luck claims."
+      },
+      {
+        "q": "What should I check first for Chinese knot gift box ideas?",
+        "a": "First, choose the main product first, such as a bracelet, keychain, ornament, phone charm, tassel, or wall hanging. That is the detail most likely to change the final decision."
+      },
+      {
+        "q": "Can Chinese knot gift box ideas be used for gifts, products, or downloads?",
+        "a": "Yes, if the evidence is checked, the product or file is practical, and the wording stays modest rather than promising a guaranteed outcome."
+      },
+      {
+        "q": "What is the biggest mistake with Chinese knot gift box ideas?",
+        "a": "The main mistake is using premium packaging to hide weak knot quality, unclear meaning, or poor product fit."
+      },
+      {
+        "q": "What evidence matters most for Chinese knot gift box ideas?",
+        "a": "The practical evidence is product size, cord finish, box dimensions, insert card wording, packaging protection, and photos of the full bundle."
+      }
+    ]
+  }
+];
+
+for (const article of dailyArticles20260716) {
+  await writePage(article.path, dailyArticlePage20260706(article));
+}
+
+
+
+
+
+const dailyArticles20260717 = [
+  {
+    "title": "Chinese Knot Wedding Favors: Meaning, Packaging, and Buying Checks",
+    "path": "/chinese-knot-wedding-favors/",
+    "description": "Choose Chinese knot wedding favors by knot type, color, packaging, meaning card, guest use, and safe symbolic wording.",
+    "h1": "Chinese Knot Wedding Favors: Meaning, Packaging, and Buying Checks",
+    "intro": "If you are comparing Chinese knot wedding favors, start with the practical decision in front of you: what needs to be checked before a purchase, lookup, gift, report, or design becomes final.",
+    "answer": "Quick answer: Chinese knot wedding favors work best when the knot is small, well finished, easy for guests to keep, and paired with a simple meaning card.",
+    "geoPatch": {
+      "noteLabel": "Evidence note",
+      "note": "The practical evidence is finished size, cord material, knot symmetry, tassel quality, packaging dimensions, and a clear photo of the full favor.",
+      "dataAnchor": "Chinese knot wedding favors decision = decide whether the favor is a keychain, bracelet, ornament, bookmark, phone charm, or boxed keepsake + check cord quality, size, tassel finish, packaging, guest transport, and whether the meaning card avoids exaggerated promises.",
+      "facts": [
+        [
+          "Main keyword",
+          "Chinese knot wedding favors"
+        ],
+        [
+          "First check",
+          "decide whether the favor is a keychain, bracelet, ornament, bookmark, phone charm, or boxed keepsake"
+        ],
+        [
+          "Second check",
+          "check cord quality, size, tassel finish, packaging, guest transport, and whether the meaning card avoids exaggerated promises"
+        ],
+        [
+          "Use limit",
+          "Use cultural, educational, product, or family-reference wording; avoid guaranteed claims about luck, ancestry, personality, health, money, or relationships."
+        ]
+      ]
+    },
+    "details": [
+      "Chinese knot wedding favors is a practical search because the reader is usually close to an action. They may be choosing a product, checking a birth date, comparing a report, preparing a gift, confirming a written character, or deciding whether a symbolic phrase is safe to use. The page needs to answer the real decision first, then add cultural context.",
+      "The first decision is to decide whether the favor is a keychain, bracelet, ornament, bookmark, phone charm, or boxed keepsake. This is the step most likely to change the final answer. If it is skipped, the reader may buy the wrong item, assign the wrong sign, choose the wrong character, or repeat a meaning that sounds neat but is not supported by evidence.",
+      "The second decision is to check cord quality, size, tassel finish, packaging, guest transport, and whether the meaning card avoids exaggerated promises. This is where a short definition becomes useful. A real reader needs to know what to inspect, what to compare, and which detail should stop the decision until it is confirmed.",
+      "The evidence layer matters. The practical evidence is finished size, cord material, knot symmetry, tassel quality, packaging dimensions, and a clear photo of the full favor. That evidence does not remove all uncertainty, but it gives the reader a stable base before interpretation, design, packaging, or purchase wording is added.",
+      "Common use cases include wedding favors, tea ceremony gifts, guest table settings, destination wedding souvenirs, family gifts, and small reception bundles. Those situations should not be treated as identical. A gift buyer, beginner, teacher, family researcher, and product shopper all need different checks even when they search the same keyword.",
+      "The main risk is simple: The common mistake is choosing a favor that looks impressive in close-up photos but is too large, fragile, or confusing for guests to carry home. Put that warning near the decision point, not after a long background section, because the reader still has time to change the product, wording, or next step.",
+      "Commercial offers can be added only when the free answer is already useful. A paid report, product card, printable, or gift bundle should support the decision path rather than replace clear guidance."
+    ],
+    "sections": [
+      {
+        "title": "Start with the reader's actual decision",
+        "paragraphs": [
+          "The best first step is not a history lesson. For Chinese knot wedding favors, the reader needs to know what to check before committing to a purchase, report, printable, gift, or interpretation. A direct answer saves time and prevents the kind of small error that becomes expensive after engraving, printing, shipping, or sharing.",
+          "That decision-first structure also makes the content easier to trust. Once the practical check is clear, cultural meaning can be added without making the page feel like a dictionary entry or a generic shopping paragraph."
+        ]
+      },
+      {
+        "title": "What to verify before you rely on it",
+        "paragraphs": [
+          "Start by asking whether the important fact has been confirmed. In this case, the first check is to decide whether the favor is a keychain, bracelet, ornament, bookmark, phone charm, or boxed keepsake. If that evidence is missing, the safest answer is to slow down and gather it before treating the result as final.",
+          "Next, apply the practical check: check cord quality, size, tassel finish, packaging, guest transport, and whether the meaning card avoids exaggerated promises. This turns the topic into a usable decision. It also helps separate a strong page, product, or report from one that looks attractive but does not give enough proof."
+        ]
+      },
+      {
+        "title": "Examples that change the answer",
+        "paragraphs": [
+          "Chinese knot wedding favors can appear in wedding favors, tea ceremony gifts, guest table settings, destination wedding souvenirs, family gifts, and small reception bundles. Each context changes the standard. A classroom or family-reference use needs clarity. A product use needs materials, size, and care details. A symbolic gift needs careful wording. A personal report needs correct input before interpretation.",
+          "This is why a single broad answer is rarely enough. The right next step depends on what the reader is trying to do and what evidence is already available."
+        ]
+      },
+      {
+        "title": "Quality checks and warning signs",
+        "paragraphs": [
+          "A reliable choice should make the key evidence visible. The practical evidence is finished size, cord material, knot symmetry, tassel quality, packaging dimensions, and a clear photo of the full favor. If those details are hidden or vague, the reader should not treat the result as final.",
+          "The warning sign to remember is this: The common mistake is choosing a favor that looks impressive in close-up photos but is too large, fragile, or confusing for guests to carry home. A polished design, confident phrase, or attractive photo does not solve that problem by itself."
+        ]
+      },
+      {
+        "title": "How to use the result responsibly",
+        "paragraphs": [
+          "Use the result as a practical reference, not as an absolute promise. Cultural symbols, zodiac signs, surname characters, tableware choices, and craft gifts can all carry meaning, but the meaning should stay connected to evidence and real use.",
+          "After the first answer is clear, move to the most specific related page. That keeps the reader from getting stuck on a broad topic when the real question is about a material, date boundary, character source, compatibility pair, gift format, or tutorial step."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "If accuracy is the concern, open the calculator, lookup, year chart, surname profile, or material comparison before buying or sharing. If product quality is the concern, compare dimensions, material, care, photos, and packaging. If wording is the concern, keep the message warm but modest.",
+          "This approach gives the topic room to support products, paid reports, printables, or gift bundles later while still leaving the current page useful on its own."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Decision checklist",
+      "headers": [
+        "Decision point",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "First check",
+          "decide whether the favor is a keychain, bracelet, ornament, bookmark, phone charm, or boxed keepsake",
+          "Prevents the most visible wrong answer"
+        ],
+        [
+          "Practical fit",
+          "check cord quality, size, tassel finish, packaging, guest transport, and whether the meaning card avoids exaggerated promises",
+          "Connects the topic to real use"
+        ],
+        [
+          "Evidence",
+          "The practical evidence is finished size, cord material, knot symmetry, tassel quality, packaging dimensions, and a clear photo of the full favor.",
+          "Keeps the answer trustworthy"
+        ],
+        [
+          "Use cases",
+          "wedding favors, tea ceremony gifts, guest table settings, destination wedding souvenirs, family gifts, and small reception bundles",
+          "Shows where the advice changes"
+        ],
+        [
+          "Common risk",
+          "The common mistake is choosing a favor that looks impressive in close-up photos but is too large, fragile, or confusing for guests to carry home.",
+          "Prevents avoidable buying, wording, or lookup errors"
+        ]
+      ]
+    },
+    "related": [
+      {
+        "title": "Chinese Knot Gifts",
+        "path": "/chinese-knot-gifts/",
+        "category": "Gift & Decor",
+        "description": "Choose knot gifts by use and quality."
+      },
+      {
+        "title": "Chinese Knot Gift Box Ideas",
+        "path": "/chinese-knot-gift-box-ideas/",
+        "category": "Gift & Decor",
+        "description": "Plan packaging and inserts."
+      },
+      {
+        "title": "Chinese Knot Meaning",
+        "path": "/chinese-knot-meaning/",
+        "category": "Meanings",
+        "description": "Explain symbolism carefully."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the quick answer for Chinese knot wedding favors?",
+        "a": "Chinese knot wedding favors work best when the knot is small, well finished, easy for guests to keep, and paired with a simple meaning card."
+      },
+      {
+        "q": "What should I check first for Chinese knot wedding favors?",
+        "a": "First, decide whether the favor is a keychain, bracelet, ornament, bookmark, phone charm, or boxed keepsake. That is the detail most likely to change the final answer."
+      },
+      {
+        "q": "What is the biggest mistake with Chinese knot wedding favors?",
+        "a": "The common mistake is choosing a favor that looks impressive in close-up photos but is too large, fragile, or confusing for guests to carry home."
+      },
+      {
+        "q": "What evidence matters most for Chinese knot wedding favors?",
+        "a": "The practical evidence is finished size, cord material, knot symmetry, tassel quality, packaging dimensions, and a clear photo of the full favor."
+      },
+      {
+        "q": "Can Chinese knot wedding favors support products, gifts, or paid reports?",
+        "a": "Yes, but only when the free explanation gives a complete decision path and the offer does not replace the core answer."
+      }
+    ]
+  },
+  {
+    "title": "Chinese Knot Keychain Gifts: Cord, Hardware, Meaning, and Durability",
+    "path": "/chinese-knot-keychain-gifts/",
+    "description": "Choose Chinese knot keychain gifts by cord strength, ring hardware, knot symmetry, tassel quality, meaning, and packaging.",
+    "h1": "Chinese Knot Keychain Gifts: Cord, Hardware, Meaning, and Durability",
+    "intro": "If you are comparing Chinese knot keychain gifts, start with the practical decision in front of you: what needs to be checked before a purchase, lookup, gift, report, or design becomes final.",
+    "answer": "Quick answer: A Chinese knot keychain gift should be durable enough for daily friction, light enough to carry, and symbolic without claiming guaranteed luck.",
+    "geoPatch": {
+      "noteLabel": "Evidence note",
+      "note": "The buying evidence is hardware type, cord material, finished length, tassel quality, knot symmetry, product scale photo, and packaging notes.",
+      "dataAnchor": "Chinese knot keychain gifts decision = decide whether the keychain is for everyday keys, a bag charm, wedding favor, souvenir, stocking gift, or small retail bundle + check ring hardware, cord strength, tassel finish, knot symmetry, charm weight, packaging, and whether the color fits the occasion.",
+      "facts": [
+        [
+          "Main keyword",
+          "Chinese knot keychain gifts"
+        ],
+        [
+          "First check",
+          "decide whether the keychain is for everyday keys, a bag charm, wedding favor, souvenir, stocking gift, or small retail bundle"
+        ],
+        [
+          "Second check",
+          "check ring hardware, cord strength, tassel finish, knot symmetry, charm weight, packaging, and whether the color fits the occasion"
+        ],
+        [
+          "Use limit",
+          "Use cultural, educational, product, or family-reference wording; avoid guaranteed claims about luck, ancestry, personality, health, money, or relationships."
+        ]
+      ]
+    },
+    "details": [
+      "Chinese knot keychain gifts is a practical search because the reader is usually close to an action. They may be choosing a product, checking a birth date, comparing a report, preparing a gift, confirming a written character, or deciding whether a symbolic phrase is safe to use. The page needs to answer the real decision first, then add cultural context.",
+      "The first decision is to decide whether the keychain is for everyday keys, a bag charm, wedding favor, souvenir, stocking gift, or small retail bundle. This is the step most likely to change the final answer. If it is skipped, the reader may buy the wrong item, assign the wrong sign, choose the wrong character, or repeat a meaning that sounds neat but is not supported by evidence.",
+      "The second decision is to check ring hardware, cord strength, tassel finish, knot symmetry, charm weight, packaging, and whether the color fits the occasion. This is where a short definition becomes useful. A real reader needs to know what to inspect, what to compare, and which detail should stop the decision until it is confirmed.",
+      "The evidence layer matters. The buying evidence is hardware type, cord material, finished length, tassel quality, knot symmetry, product scale photo, and packaging notes. That evidence does not remove all uncertainty, but it gives the reader a stable base before interpretation, design, packaging, or purchase wording is added.",
+      "Common use cases include souvenir gifts, wedding favors, bag charms, festival gifts, friendship gifts, craft kits, and small ecommerce products. Those situations should not be treated as identical. A gift buyer, beginner, teacher, family researcher, and product shopper all need different checks even when they search the same keyword.",
+      "The main risk is simple: The common mistake is buying a decorative keychain with weak hardware or fraying cord because the photo only shows the knot from the front. Put that warning near the decision point, not after a long background section, because the reader still has time to change the product, wording, or next step.",
+      "Commercial offers can be added only when the free answer is already useful. A paid report, product card, printable, or gift bundle should support the decision path rather than replace clear guidance."
+    ],
+    "sections": [
+      {
+        "title": "Start with the reader's actual decision",
+        "paragraphs": [
+          "The best first step is not a history lesson. For Chinese knot keychain gifts, the reader needs to know what to check before committing to a purchase, report, printable, gift, or interpretation. A direct answer saves time and prevents the kind of small error that becomes expensive after engraving, printing, shipping, or sharing.",
+          "That decision-first structure also makes the content easier to trust. Once the practical check is clear, cultural meaning can be added without making the page feel like a dictionary entry or a generic shopping paragraph."
+        ]
+      },
+      {
+        "title": "What to verify before you rely on it",
+        "paragraphs": [
+          "Start by asking whether the important fact has been confirmed. In this case, the first check is to decide whether the keychain is for everyday keys, a bag charm, wedding favor, souvenir, stocking gift, or small retail bundle. If that evidence is missing, the safest answer is to slow down and gather it before treating the result as final.",
+          "Next, apply the practical check: check ring hardware, cord strength, tassel finish, knot symmetry, charm weight, packaging, and whether the color fits the occasion. This turns the topic into a usable decision. It also helps separate a strong page, product, or report from one that looks attractive but does not give enough proof."
+        ]
+      },
+      {
+        "title": "Examples that change the answer",
+        "paragraphs": [
+          "Chinese knot keychain gifts can appear in souvenir gifts, wedding favors, bag charms, festival gifts, friendship gifts, craft kits, and small ecommerce products. Each context changes the standard. A classroom or family-reference use needs clarity. A product use needs materials, size, and care details. A symbolic gift needs careful wording. A personal report needs correct input before interpretation.",
+          "This is why a single broad answer is rarely enough. The right next step depends on what the reader is trying to do and what evidence is already available."
+        ]
+      },
+      {
+        "title": "Quality checks and warning signs",
+        "paragraphs": [
+          "A reliable choice should make the key evidence visible. The buying evidence is hardware type, cord material, finished length, tassel quality, knot symmetry, product scale photo, and packaging notes. If those details are hidden or vague, the reader should not treat the result as final.",
+          "The warning sign to remember is this: The common mistake is buying a decorative keychain with weak hardware or fraying cord because the photo only shows the knot from the front. A polished design, confident phrase, or attractive photo does not solve that problem by itself."
+        ]
+      },
+      {
+        "title": "How to use the result responsibly",
+        "paragraphs": [
+          "Use the result as a practical reference, not as an absolute promise. Cultural symbols, zodiac signs, surname characters, tableware choices, and craft gifts can all carry meaning, but the meaning should stay connected to evidence and real use.",
+          "After the first answer is clear, move to the most specific related page. That keeps the reader from getting stuck on a broad topic when the real question is about a material, date boundary, character source, compatibility pair, gift format, or tutorial step."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "If accuracy is the concern, open the calculator, lookup, year chart, surname profile, or material comparison before buying or sharing. If product quality is the concern, compare dimensions, material, care, photos, and packaging. If wording is the concern, keep the message warm but modest.",
+          "This approach gives the topic room to support products, paid reports, printables, or gift bundles later while still leaving the current page useful on its own."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Decision checklist",
+      "headers": [
+        "Decision point",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "First check",
+          "decide whether the keychain is for everyday keys, a bag charm, wedding favor, souvenir, stocking gift, or small retail bundle",
+          "Prevents the most visible wrong answer"
+        ],
+        [
+          "Practical fit",
+          "check ring hardware, cord strength, tassel finish, knot symmetry, charm weight, packaging, and whether the color fits the occasion",
+          "Connects the topic to real use"
+        ],
+        [
+          "Evidence",
+          "The buying evidence is hardware type, cord material, finished length, tassel quality, knot symmetry, product scale photo, and packaging notes.",
+          "Keeps the answer trustworthy"
+        ],
+        [
+          "Use cases",
+          "souvenir gifts, wedding favors, bag charms, festival gifts, friendship gifts, craft kits, and small ecommerce products",
+          "Shows where the advice changes"
+        ],
+        [
+          "Common risk",
+          "The common mistake is buying a decorative keychain with weak hardware or fraying cord because the photo only shows the knot from the front.",
+          "Prevents avoidable buying, wording, or lookup errors"
+        ]
+      ]
+    },
+    "related": [
+      {
+        "title": "Chinese Knot Keychain",
+        "path": "/chinese-knot-keychain/",
+        "category": "Craft Ideas",
+        "description": "Understand keychain structure and use."
+      },
+      {
+        "title": "Chinese Knot Charms",
+        "path": "/chinese-knot-charms/",
+        "category": "Product Guides",
+        "description": "Compare small charms and hardware."
+      },
+      {
+        "title": "Chinese Knot Cord",
+        "path": "/chinese-knot-cord/",
+        "category": "Supplies",
+        "description": "Choose cord thickness and material."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the quick answer for Chinese knot keychain gifts?",
+        "a": "A Chinese knot keychain gift should be durable enough for daily friction, light enough to carry, and symbolic without claiming guaranteed luck."
+      },
+      {
+        "q": "What should I check first for Chinese knot keychain gifts?",
+        "a": "First, decide whether the keychain is for everyday keys, a bag charm, wedding favor, souvenir, stocking gift, or small retail bundle. That is the detail most likely to change the final answer."
+      },
+      {
+        "q": "What is the biggest mistake with Chinese knot keychain gifts?",
+        "a": "The common mistake is buying a decorative keychain with weak hardware or fraying cord because the photo only shows the knot from the front."
+      },
+      {
+        "q": "What evidence matters most for Chinese knot keychain gifts?",
+        "a": "The buying evidence is hardware type, cord material, finished length, tassel quality, knot symmetry, product scale photo, and packaging notes."
+      },
+      {
+        "q": "Can Chinese knot keychain gifts support products, gifts, or paid reports?",
+        "a": "Yes, but only when the free explanation gives a complete decision path and the offer does not replace the core answer."
+      }
+    ]
+  }
+];
+
+for (const article of dailyArticles20260717) {
+  await writePage(article.path, dailyArticlePage20260706(article));
+}
+
 function themeCss() {
   return `
 html,body{overflow-x:hidden}
@@ -2244,6 +4565,10 @@ body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-item p{backgro
 @media(max-width:640px){.knot-hero-copy h2{font-size:38px}.knot-hero-visual{min-height:330px}.knot-float-card{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;margin:10px;justify-self:start;align-self:end}.knot-stats,.animal-grid,.guide-grid{grid-template-columns:1fr}.knot-actions{display:grid}.knot-actions .button-link{width:100%}.page-guides .content-section:not(.article-search){padding:24px!important}.page-guides .guide-card{padding:20px!important}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.content-section{padding:24px!important}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-shell{gap:22px}}
 `;
 }
+
+
+
+
 
 
 
