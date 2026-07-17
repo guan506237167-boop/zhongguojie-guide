@@ -104,6 +104,105 @@ const guides = [
 
 const pages = [];
 
+const geoMicroPatches20260717 = new Map([
+  [
+    "/chinese-knot-wall-hanging/",
+    {
+      "path": "/chinese-knot-wall-hanging/",
+      "quick": "Quick answer: Choose a Chinese knot wall hanging by measuring the display area, checking cord and tassel quality, matching attachment hardware to the weight, and treating symbolic descriptions as cultural meanings rather than guarantees.",
+      "facts": [
+        [
+          "Measure first",
+          "Available width, drop length, and clearance"
+        ],
+        [
+          "Quality checks",
+          "Knot symmetry, cord finish, tassel alignment, and color consistency"
+        ],
+        [
+          "Installation",
+          "Hook or fastener rated for the finished weight"
+        ],
+        [
+          "Meaning limit",
+          "Symbolic wish, not a promised outcome"
+        ]
+      ],
+      "evidence": "Use listed dimensions, material details, close-up photos, finished weight, and mounting instructions as buying evidence.",
+      "examples": "entryways, living rooms, festival decor, wedding displays, shops, and gift presentation",
+      "mistakes": "Do not buy from a tightly cropped image without checking scale, backside finishing, tassel length, and mounting needs.",
+      "faq": [
+        [
+          "Where should a Chinese knot wall hanging go?",
+          "Choose a visible, dry location with enough clearance and a secure mounting point."
+        ],
+        [
+          "How large should it be?",
+          "Measure the wall and nearby furniture, then compare the full listed width and hanging length."
+        ]
+      ],
+      "dataAnchor": "Wall-hanging fit = measured space + full dimensions + finished weight + secure mounting + verified materials."
+    }
+  ],
+  [
+    "/chinese-knot-jewelry/",
+    {
+      "path": "/chinese-knot-jewelry/",
+      "quick": "Quick answer: Evaluate Chinese knot jewelry by cord condition, knot symmetry, closure security, metal and bead disclosures, skin comfort, and whether the piece's dimensions suit the wearer.",
+      "facts": [
+        [
+          "Product types",
+          "Bracelets, necklaces, earrings, pendants, and charms"
+        ],
+        [
+          "Wear checks",
+          "Closure, cord abrasion, loose beads, sharp edges, and weight"
+        ],
+        [
+          "Material checks",
+          "Cord fiber, metal components, coatings, and care guidance"
+        ],
+        [
+          "Meaning limit",
+          "Cultural symbolism does not guarantee luck or protection"
+        ]
+      ],
+      "evidence": "Compare exact dimensions, component materials, close-up finishing photos, closure design, and seller care instructions.",
+      "examples": "daily bracelets, pendant necklaces, festival accessories, wedding gifts, and keepsake charms",
+      "mistakes": "Do not judge only by symbolic wording; confirm comfort, durability, allergens, and repairability.",
+      "faq": [
+        [
+          "Can Chinese knot jewelry be worn every day?",
+          "It can be if the cord, closure, and components suit regular wear and are inspected for abrasion or loosening."
+        ],
+        [
+          "How should knotted jewelry be cleaned?",
+          "Follow the component care guidance; gentle spot cleaning and complete air drying are safer for many mixed-material pieces."
+        ]
+      ],
+      "dataAnchor": "Jewelry choice = wearer fit + disclosed materials + secure closure + finished weight + care method."
+    }
+  ]
+]);
+
+function applyGeoMicroPatch20260717(path, html) {
+  const patch = geoMicroPatches20260717.get(path);
+  if (!patch || html.includes('data-geo-micro-patch="20260717"')) return html;
+  const facts = patch.facts.map((row) => `<tr><td>${escapeHtml(row[0])}</td><td>${escapeHtml(row[1])}</td></tr>`).join("");
+  const faq = patch.faq.map((item) => `<h3>${escapeHtml(item[0])}</h3><p>${escapeHtml(item[1])}</p>`).join("");
+  const block = `<section class="content-section article-body geo-micro-patch" data-geo-micro-patch="20260717">
+    <h2>Quick Answer and Evidence Check</h2><p>${escapeHtml(patch.quick)}</p>
+    <div class="table-wrap"><table><thead><tr><th>Basic fact</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div>
+    <p><strong>Source note:</strong> ${escapeHtml(patch.evidence)}</p>
+    <p><strong>Examples and use cases:</strong> ${escapeHtml(patch.examples)}.</p>
+    <p><strong>Common mistake:</strong> ${escapeHtml(patch.mistakes)}</p>
+    <h2>GEO FAQ</h2>${faq}
+    <p><strong>Data anchor:</strong> ${escapeHtml(patch.dataAnchor)}</p>
+  </section>`;
+  return html.includes("</main>") ? html.replace("</main>", `${block}</main>`) : `${html}${block}`;
+}
+
+
 const geoMicroPatches20260716 = new Map([
   [
     "/chinese-knot-bracelet-tutorial/",
@@ -2123,7 +2222,7 @@ const dailyArticles20260709 = [
       "The topic can look simple, but the useful answer depends on details such as material, use case, spelling, source evidence, scale, or construction quality. A short page would miss those details.",
       "This article is built to work as a standalone answer and as part of the larger site cluster. It links broader guides and gives enough context for the reader to decide what to read next.",
       "Use the information as educational guidance. It can support buying, research, cultural learning, or craft planning, but it should not be treated as a guarantee, certification, or professional advice.",
-      "For Chinese knot charms, meaning and construction should be read together. A charm may use red cord, coins, beads, jade-colored pendants, tassels, or metal fittings, but the useful buying question is whether those parts support the intended use. A car hanging, phone charm, gift box ornament, and bracelet charm all face different movement and wear.",
+      "For Chinese knot charms, meaning and construction should be read together. A charm may use red cord, coins, beads, jade-colored pendants, tassels, or metal fittings, but the useful buying question is whether those parts support the intended use. A car hanging, phone charm, gift box ornament, and bracelet charm all face different movement and wear. Check connector thickness, edge finishing, and pull resistance before regular daily use.",
       "The best product pages show scale, back side, hardware, and close-up knot detail. If a listing only shows a beautiful front photo, check reviews or choose a simpler charm with clearer construction. This keeps the cultural symbolism visible without ignoring the practical quality that decides whether the charm will actually last."
     ],
     "sections": [
@@ -2523,6 +2622,7 @@ await buildSeoReport();
 
 
 
+
 function enhanceThinContent(path, html) {
   let extra = "";
   if (["/chinese-knot-faq/", "/faq/"].includes(path)) {
@@ -2539,9 +2639,46 @@ function enhanceThinContent(path, html) {
 async function writePage(path, html) {
   const file = path === "/" ? join("dist", "index.html") : join("dist", path, "index.html");
   await mkdir(join(file, ".."), { recursive: true });
-  await writeFile(file, applyGeoMicroPatch20260716(path, applyGeoMicroPatch20260715(path, applyGeoMicroPatch20260714(path, enhanceThinContent(path, html)))), "utf8");
+  await writeFile(file, sanitizePublicHtml(applyGeoMicroPatch20260717(path, applyGeoMicroPatch20260716(path, applyGeoMicroPatch20260715(path, applyGeoMicroPatch20260714(path, enhanceThinContent(path, html)))))), "utf8");
 }
 
+
+function sanitizePublicHtml(html) {
+  return html
+    .replace(/GEO FAQ/g, "FAQ")
+    .replace(/SEO quality/g, "content quality")
+    .replace(/For SEO and user trust/g, "For reader trust")
+    .replace(/For long-term SEO and reader trust/g, "For long-term reader trust")
+    .replace(/long-term SEO/g, "long-term reader trust")
+    .replace(/\bSEO\b/g, "search quality")
+    .replace(/For search quality/g, "For clear reader decisions")
+    .replace(/for search quality/g, "for clear reader decisions")
+    .replace(/\bGEO\b/g, "answer quality")
+    .replace(/AI citations/g, "reader references")
+    .replace(/paid report entry points/g, "downloadable guide entry points")
+    .replace(/paid reports/g, "downloadable guides")
+    .replace(/paid report/g, "downloadable guide")
+    .replace(/report offers/g, "downloadable guides")
+    .replace(/affiliate recommendations/g, "partner recommendations")
+    .replace(/affiliate products/g, "partner products")
+    .replace(/affiliate links/g, "partner links")
+    .replace(/affiliate blocks/g, "partner product blocks")
+    .replace(/\baffiliate\b/g, "partner")
+    .replace(/future monetization/g, "commercial planning")
+    .replace(/monetization/g, "commercial planning")
+    .replace(/Commercial additions can come later, but they should not replace the answer\./g, "Commercial sections should support the answer rather than replace it.")
+    .replace(/For future updates, this article can support/g, "This article can support")
+    .replace(/For future product recommendations/g, "For product recommendations")
+    .replace(/For future product pages/g, "For product pages")
+    .replace(/future product/g, "product")
+    .replace(/can be added later/g, "can be added")
+    .replace(/This page should/g, "This guide should")
+    .replace(/this page should/g, "this guide should")
+    .replace(/The page should/g, "The guide should")
+    .replace(/the page should/g, "the guide should")
+    .replace(/This page also supports/g, "This guide also supports")
+    .replace(/This page can later support/g, "This guide can support");
+}
 function sitemapXml() {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map((page) => `  <url><loc>${absolute(page.path)}</loc></url>`).join("\n")}\n</urlset>\n`;
 }
@@ -4565,6 +4702,7 @@ body:not(.page-home):not(.page-guides):not(.seo-report-page) .faq-item p{backgro
 @media(max-width:640px){.knot-hero-copy h2{font-size:38px}.knot-hero-visual{min-height:330px}.knot-float-card{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;margin:10px;justify-self:start;align-self:end}.knot-stats,.animal-grid,.guide-grid{grid-template-columns:1fr}.knot-actions{display:grid}.knot-actions .button-link{width:100%}.page-guides .content-section:not(.article-search){padding:24px!important}.page-guides .guide-card{padding:20px!important}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.content-section{padding:24px!important}body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-shell{gap:22px}}
 `;
 }
+
 
 
 
