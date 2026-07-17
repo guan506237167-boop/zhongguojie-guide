@@ -2701,7 +2701,8 @@ async function buildSeoReport() {
   const totals = { average: Math.round(reports.reduce((sum, item) => sum + item.score, 0) / reports.length), pages: reports.length, pass: reports.filter((item) => item.score >= 85).length, review: reports.filter((item) => item.score >= 70 && item.score < 85).length, fix: reports.filter((item) => item.score < 70).length };
   const rows = reports.map((item) => `<tr><td><a href="${item.path}">${item.path}</a></td><td>${item.score}</td><td>${item.titleLength}</td><td>${item.descriptionLength}</td><td>${item.wordCount}</td><td>${item.h1}/${item.h2}</td><td>${item.faqs}</td><td>${escapeHtml(item.issues.join("; ") || "None")}</td></tr>`).join("");
   await mkdir("dist/admin", { recursive: true });
-  await writeFile("dist/admin/seo-report.json", JSON.stringify({ generatedAt: new Date().toISOString(), totals, reports }, null, 2), "utf8");
+  // Internal report stays out of the public site build.
+  // await writeFile("dist/admin/seo-report.json", JSON.stringify({ generatedAt: new Date().toISOString(), totals, reports }, null, 2), "utf8");
 }
 
 function auditPage(page, html, sitemap) {
