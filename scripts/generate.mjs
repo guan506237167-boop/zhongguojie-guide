@@ -1,4 +1,4 @@
-﻿import { mkdir, readdir, readFile, rm, writeFile, copyFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, rm, writeFile, copyFile } from "node:fs/promises";
 import { join } from "node:path";
 
 const SITE = {
@@ -25,6 +25,7 @@ const knots = [
 ];
 
 const guides = [
+  { title: "Chinese Knot Gift", path: "/chinese-knot-gift/", category: "Gift & Decor", description: "Choose a Chinese knot gift by occasion, knot type, finish quality, packaging, and careful symbolic wording." },
   {
   "title": "Chinese Knot Bracelet Size Guide: Fit, Cord, Closure, and Gift Checks",
   "path": "/chinese-knot-bracelet-size-guide/",
@@ -4969,6 +4970,9 @@ const dailyArticles20260718 = [
 for (const article of dailyArticles20260718) {
   await writePage(article.path, dailyArticlePage20260706(article));
 }
+
+// dailyArticles20260718 sitemap refresh
+await writeFile("dist/sitemap.xml", sitemapXml(), "utf8");
 
 
 function themeCss() {
