@@ -531,7 +531,7 @@ function applyGeoMicroPatch20260714(path, html) {
 function blockForGeoMicroPatch20260714(patch) {
   const facts = patch.facts.map((row) => `<tr><td>${escapeHtml(row[0])}</td><td>${escapeHtml(row[1])}</td></tr>`).join("");
   const faq = patch.faq.map((item) => `<h3>${escapeHtml(item[0])}</h3><p>${escapeHtml(item[1])}</p>`).join("");
-  return `<section class="content-section article-body geo-micro-patch" data-geo-micro-patch="20260714">
+  return `.daily-visual-block{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin:22px 0;padding:22px;border:1px solid #ead6b8;border-radius:10px;background:linear-gradient(135deg,#fff8ed,#eef7f1);box-shadow:0 12px 28px rgba(47,37,23,.06)}.daily-visual-block span{color:var(--jade);font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.05em}.daily-visual-block h2{margin:8px 0 8px}.daily-visual-block p{margin:0;color:var(--muted)}.daily-visual-steps{display:grid;gap:10px}.daily-visual-step{display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px}.daily-visual-step strong{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#d6b06e;color:#231d18}.daily-visual-step span{font-size:14px;line-height:1.45;color:#2f2922;text-transform:none;letter-spacing:0;font-weight:650}@media(max-width:760px){.daily-visual-block{grid-template-columns:1fr}}<section class="content-section article-body geo-micro-patch" data-geo-micro-patch="20260714">
     <h2>Quick Answer and Evidence Check</h2>
     <p>${escapeHtml(patch.quick)}</p>
     <div class="table-wrap"><table><thead><tr><th>Basic fact</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div>
@@ -1853,12 +1853,18 @@ const dailyArticles20260706 = [
   }
 ];
 
+
+function dailyVisualBlock20260722(article) {
+  const points = (article.visual?.points || []).slice(0, 3).map((point, index) => `<div class="daily-visual-step"><strong>${index + 1}</strong><span>${escapeHtml(point)}</span></div>`).join("");
+  return `<div class="daily-visual-block"><div><span>${escapeHtml(article.visual?.label || "Guide visual")}</span><h2>${escapeHtml(article.keyword || article.title)}</h2><p>Use the visual checklist before acting on the article. It keeps the page scannable and prevents the answer from becoming a plain text block.</p></div><div class="daily-visual-steps">${points}</div></div>`;
+}
+
 function dailyArticlePage20260706(article) {
   const rows = article.table.rows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("");
   const body = `
     ${articleSearchBlock()}
     <section class="content-section article-body">
-      <p class="lead-answer">${escapeHtml(article.answer)}</p>
+      <p class="lead-answer">${escapeHtml(article.answer)}</p>\n      ${dailyVisualBlock20260722(article)}\n      ${dailyVisualBlock20260722(article)}
       ${geoPatchBlock(article)}
       ${article.details.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}
     </section>
@@ -6022,6 +6028,330 @@ for (const article of dailyArticles20260721) {
   await writePage(article.path, dailyArticlePage20260706(article));
 }
 await writeFile("dist/sitemap.xml", sitemapXml(), "utf8");
+
+
+const dailyArticles20260722 = [
+  {
+    "title": "Chinese Knot Bracelet Meaning: Colors, Cord, and Gift Boundaries",
+    "path": "/chinese-knot-bracelet-meaning/",
+    "description": "Understand Chinese knot bracelet meaning through color, cord quality, knot type, gift context, and careful symbolic wording.",
+    "h1": "Chinese Knot Bracelet Meaning: Colors, Cord, and Gift Boundaries",
+    "intro": "If you are comparing Chinese knot bracelet meaning, start with the decision the reader is actually trying to make. The best answer explains what to check first, what evidence matters, and what should not be overclaimed.",
+    "answer": "Quick Answer: A Chinese knot bracelet can carry wishes for connection, protection, smoothness, or good fortune, but it should be described as a cultural symbol rather than a guaranteed result.",
+    "visual": {
+      "label": "Meaning Guides",
+      "points": [
+        "identify the knot type, cord color, and gift occasion",
+        "check cord quality, bracelet size, closure, comfort, and whether the meaning card uses modest wording",
+        "Use modest, practical wording"
+      ]
+    },
+    "geoPatch": {
+      "noteLabel": "Evidence note",
+      "note": "The useful evidence is knot type, cord material, color, finished size, closure detail, product photo, and the wording used to explain the bracelet.",
+      "dataAnchor": "Chinese knot bracelet meaning decision = identify the knot type, cord color, and gift occasion + check cord quality, bracelet size, closure, comfort, and whether the meaning card uses modest wording.",
+      "facts": [
+        [
+          "Main keyword",
+          "Chinese knot bracelet meaning"
+        ],
+        [
+          "First check",
+          "identify the knot type, cord color, and gift occasion"
+        ],
+        [
+          "Second check",
+          "check cord quality, bracelet size, closure, comfort, and whether the meaning card uses modest wording"
+        ],
+        [
+          "Use limit",
+          "Use cultural, educational, product, family-reference, or practical wording; avoid guaranteed claims about luck, ancestry, health, money, or relationships."
+        ]
+      ]
+    },
+    "details": [
+      "Chinese knot bracelet meaning is a practical search because the reader usually needs more than a definition. They may be checking a date, choosing a product, preparing a gift, confirming a character, teaching a cultural topic, or deciding whether a symbolic phrase is safe to use.",
+      "The first decision is to identify the knot type, cord color, and gift occasion. This is the step most likely to change the answer, so it should appear before any decorative meaning or product suggestion.",
+      "The second decision is to check cord quality, bracelet size, closure, comfort, and whether the meaning card uses modest wording. This turns a broad topic into a working checklist that can be used before buying, printing, teaching, sharing, or relying on the result.",
+      "The evidence layer matters. The useful evidence is knot type, cord material, color, finished size, closure detail, product photo, and the wording used to explain the bracelet. That evidence does not remove every uncertainty, but it gives the reader a stable base before interpretation, packaging, design, or purchase wording is added.",
+      "Common use cases include friendship gifts, festival bracelets, wedding favors, souvenir gifts, small retail bundles, and craft projects. These situations should not be treated as identical because each one changes the standard for accuracy, durability, wording, and visual proof.",
+      "The main risk is simple: The common mistake is using dramatic protection or luck claims instead of explaining the bracelet as a symbolic keepsake. Put that warning near the decision point because the reader still has time to change the product, wording, input, or next step.",
+      "This guide uses a visual checklist, a fact table, examples, FAQ, and related links so the page does not become a plain block of text. The goal is a page that is easy to scan, useful to readers, and safer for SEO and GEO extraction."
+    ],
+    "sections": [
+      {
+        "title": "Start with the practical decision",
+        "paragraphs": [
+          "For Chinese knot bracelet meaning, the page should answer what to check, what can go wrong, and which detail should be verified before the next action.",
+          "This structure protects cultural meaning because symbolism can be explained after the practical check is clear. The reader gets context without being pushed into a rigid rule."
+        ]
+      },
+      {
+        "title": "What to verify first",
+        "paragraphs": [
+          "Start by asking whether the key fact has been confirmed. In this case, the first check is to identify the knot type, cord color, and gift occasion.",
+          "Then apply the second check: check cord quality, bracelet size, closure, comfort, and whether the meaning card uses modest wording. This separates a useful recommendation from a page or product that looks attractive but does not provide enough proof."
+        ]
+      },
+      {
+        "title": "Example scenario",
+        "paragraphs": [
+          "Imagine a reader using this page for friendship gifts. The safest answer starts with the visible facts, then compares context, then chooses the next page or checklist.",
+          "If the answer still feels uncertain, the reader should treat the result as provisional. A modest next step is more useful than a confident claim that ignores missing evidence."
+        ]
+      },
+      {
+        "title": "Quality checks and warning signs",
+        "paragraphs": [
+          "A reliable choice should make the key evidence visible. The useful evidence is knot type, cord material, color, finished size, closure detail, product photo, and the wording used to explain the bracelet.",
+          "The warning sign to remember is this: The common mistake is using dramatic protection or luck claims instead of explaining the bracelet as a symbolic keepsake. A confident phrase, attractive photo, or polished design does not solve that problem by itself."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "If accuracy is the concern, open the calculator, lookup, source guide, material comparison, or meaning page before buying or sharing. If product quality is the concern, compare dimensions, material, care, photos, and packaging.",
+          "After reading, save one sentence that explains what changed in your understanding. This keeps the page useful as a working guide rather than a passive article."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Decision checklist",
+      "headers": [
+        "Decision point",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "First check",
+          "identify the knot type, cord color, and gift occasion",
+          "Prevents the most visible wrong answer"
+        ],
+        [
+          "Practical fit",
+          "check cord quality, bracelet size, closure, comfort, and whether the meaning card uses modest wording",
+          "Connects the topic to real use"
+        ],
+        [
+          "Evidence",
+          "The useful evidence is knot type, cord material, color, finished size, closure detail, product photo, and the wording used to explain the bracelet.",
+          "Keeps the answer trustworthy"
+        ],
+        [
+          "Use cases",
+          "friendship gifts, festival bracelets, wedding favors, souvenir gifts, small retail bundles, and craft projects",
+          "Shows where the advice changes"
+        ],
+        [
+          "Common risk",
+          "The common mistake is using dramatic protection or luck claims instead of explaining the bracelet as a symbolic keepsake.",
+          "Prevents avoidable buying, wording, or lookup errors"
+        ]
+      ]
+    },
+    "related": [
+      {
+        "title": "Chinese Knot Meaning",
+        "path": "/chinese-knot-meaning/",
+        "category": "Meanings",
+        "description": "Read knot symbolism."
+      },
+      {
+        "title": "Red Chinese Knot",
+        "path": "/red-chinese-knot/",
+        "category": "Meanings",
+        "description": "Understand red color."
+      },
+      {
+        "title": "Chinese Knot Keychain Gifts",
+        "path": "/chinese-knot-keychain-gifts/",
+        "category": "Product Guides",
+        "description": "Compare small gifts."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the quick answer for Chinese knot bracelet meaning?",
+        "a": "A Chinese knot bracelet can carry wishes for connection, protection, smoothness, or good fortune, but it should be described as a cultural symbol rather than a guaranteed result."
+      },
+      {
+        "q": "What should I check first for Chinese knot bracelet meaning?",
+        "a": "First, identify the knot type, cord color, and gift occasion."
+      },
+      {
+        "q": "What is the biggest mistake with Chinese knot bracelet meaning?",
+        "a": "The common mistake is using dramatic protection or luck claims instead of explaining the bracelet as a symbolic keepsake."
+      },
+      {
+        "q": "What evidence matters most for Chinese knot bracelet meaning?",
+        "a": "The useful evidence is knot type, cord material, color, finished size, closure detail, product photo, and the wording used to explain the bracelet."
+      }
+    ]
+  },
+  {
+    "title": "Chinese Knot Gift Box Ideas: Packaging, Meaning Cards, and Quality Checks",
+    "path": "/chinese-knot-gift-box-ideas/",
+    "description": "Plan Chinese knot gift box ideas with knot type, box size, meaning cards, color balance, tassel quality, and safe gift wording.",
+    "h1": "Chinese Knot Gift Box Ideas: Packaging, Meaning Cards, and Quality Checks",
+    "intro": "If you are comparing Chinese knot gift box ideas, start with the decision the reader is actually trying to make. The best answer explains what to check first, what evidence matters, and what should not be overclaimed.",
+    "answer": "Quick Answer: A Chinese knot gift box works best when the knot is well finished, the packaging protects the tassel, and the meaning card explains the wish without exaggerated promises.",
+    "visual": {
+      "label": "Gift & Decor",
+      "points": [
+        "choose whether the box is for a wedding, festival, housewarming, souvenir, or business gift",
+        "compare knot size, tassel length, box fit, insert card wording, color balance, and transport protection",
+        "Use modest, practical wording"
+      ]
+    },
+    "geoPatch": {
+      "noteLabel": "Evidence note",
+      "note": "The buying evidence is box dimensions, knot size, cord material, tassel finish, insert card text, product photos, and whether the item can travel safely.",
+      "dataAnchor": "Chinese knot gift box ideas decision = choose whether the box is for a wedding, festival, housewarming, souvenir, or business gift + compare knot size, tassel length, box fit, insert card wording, color balance, and transport protection.",
+      "facts": [
+        [
+          "Main keyword",
+          "Chinese knot gift box ideas"
+        ],
+        [
+          "First check",
+          "choose whether the box is for a wedding, festival, housewarming, souvenir, or business gift"
+        ],
+        [
+          "Second check",
+          "compare knot size, tassel length, box fit, insert card wording, color balance, and transport protection"
+        ],
+        [
+          "Use limit",
+          "Use cultural, educational, product, family-reference, or practical wording; avoid guaranteed claims about luck, ancestry, health, money, or relationships."
+        ]
+      ]
+    },
+    "details": [
+      "Chinese knot gift box ideas is a practical search because the reader usually needs more than a definition. They may be checking a date, choosing a product, preparing a gift, confirming a character, teaching a cultural topic, or deciding whether a symbolic phrase is safe to use.",
+      "The first decision is to choose whether the box is for a wedding, festival, housewarming, souvenir, or business gift. This is the step most likely to change the answer, so it should appear before any decorative meaning or product suggestion.",
+      "The second decision is to compare knot size, tassel length, box fit, insert card wording, color balance, and transport protection. This turns a broad topic into a working checklist that can be used before buying, printing, teaching, sharing, or relying on the result.",
+      "The evidence layer matters. The buying evidence is box dimensions, knot size, cord material, tassel finish, insert card text, product photos, and whether the item can travel safely. That evidence does not remove every uncertainty, but it gives the reader a stable base before interpretation, packaging, design, or purchase wording is added.",
+      "Common use cases include wedding favor boxes, Lunar New Year gifts, guest souvenirs, retail bundles, family gifts, and cultural classroom examples. These situations should not be treated as identical because each one changes the standard for accuracy, durability, wording, and visual proof.",
+      "The main risk is simple: The common mistake is focusing on the box photo while ignoring whether the knot fits safely and the meaning text is appropriate. Put that warning near the decision point because the reader still has time to change the product, wording, input, or next step.",
+      "This guide uses a visual checklist, a fact table, examples, FAQ, and related links so the page does not become a plain block of text. The goal is a page that is easy to scan, useful to readers, and safer for SEO and GEO extraction."
+    ],
+    "sections": [
+      {
+        "title": "Start with the practical decision",
+        "paragraphs": [
+          "For Chinese knot gift box ideas, the page should answer what to check, what can go wrong, and which detail should be verified before the next action.",
+          "This structure protects cultural meaning because symbolism can be explained after the practical check is clear. The reader gets context without being pushed into a rigid rule."
+        ]
+      },
+      {
+        "title": "What to verify first",
+        "paragraphs": [
+          "Start by asking whether the key fact has been confirmed. In this case, the first check is to choose whether the box is for a wedding, festival, housewarming, souvenir, or business gift.",
+          "Then apply the second check: compare knot size, tassel length, box fit, insert card wording, color balance, and transport protection. This separates a useful recommendation from a page or product that looks attractive but does not provide enough proof."
+        ]
+      },
+      {
+        "title": "Example scenario",
+        "paragraphs": [
+          "Imagine a reader using this page for wedding favor boxes. The safest answer starts with the visible facts, then compares context, then chooses the next page or checklist.",
+          "If the answer still feels uncertain, the reader should treat the result as provisional. A modest next step is more useful than a confident claim that ignores missing evidence."
+        ]
+      },
+      {
+        "title": "Quality checks and warning signs",
+        "paragraphs": [
+          "A reliable choice should make the key evidence visible. The buying evidence is box dimensions, knot size, cord material, tassel finish, insert card text, product photos, and whether the item can travel safely.",
+          "The warning sign to remember is this: The common mistake is focusing on the box photo while ignoring whether the knot fits safely and the meaning text is appropriate. A confident phrase, attractive photo, or polished design does not solve that problem by itself."
+        ]
+      },
+      {
+        "title": "Recommended next step",
+        "paragraphs": [
+          "If accuracy is the concern, open the calculator, lookup, source guide, material comparison, or meaning page before buying or sharing. If product quality is the concern, compare dimensions, material, care, photos, and packaging.",
+          "After reading, save one sentence that explains what changed in your understanding. This keeps the page useful as a working guide rather than a passive article."
+        ]
+      }
+    ],
+    "table": {
+      "title": "Decision checklist",
+      "headers": [
+        "Decision point",
+        "What to check",
+        "Why it matters"
+      ],
+      "rows": [
+        [
+          "First check",
+          "choose whether the box is for a wedding, festival, housewarming, souvenir, or business gift",
+          "Prevents the most visible wrong answer"
+        ],
+        [
+          "Practical fit",
+          "compare knot size, tassel length, box fit, insert card wording, color balance, and transport protection",
+          "Connects the topic to real use"
+        ],
+        [
+          "Evidence",
+          "The buying evidence is box dimensions, knot size, cord material, tassel finish, insert card text, product photos, and whether the item can travel safely.",
+          "Keeps the answer trustworthy"
+        ],
+        [
+          "Use cases",
+          "wedding favor boxes, Lunar New Year gifts, guest souvenirs, retail bundles, family gifts, and cultural classroom examples",
+          "Shows where the advice changes"
+        ],
+        [
+          "Common risk",
+          "The common mistake is focusing on the box photo while ignoring whether the knot fits safely and the meaning text is appropriate.",
+          "Prevents avoidable buying, wording, or lookup errors"
+        ]
+      ]
+    },
+    "related": [
+      {
+        "title": "Chinese Knot Wedding Favors",
+        "path": "/chinese-knot-wedding-favors/",
+        "category": "Gift & Decor",
+        "description": "Plan guest favors."
+      },
+      {
+        "title": "Chinese Knot Gifts",
+        "path": "/chinese-knot-gifts/",
+        "category": "Gift & Decor",
+        "description": "Compare gift formats."
+      },
+      {
+        "title": "Chinese Knot Meaning",
+        "path": "/chinese-knot-meaning/",
+        "category": "Meanings",
+        "description": "Explain symbolism."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the quick answer for Chinese knot gift box ideas?",
+        "a": "A Chinese knot gift box works best when the knot is well finished, the packaging protects the tassel, and the meaning card explains the wish without exaggerated promises."
+      },
+      {
+        "q": "What should I check first for Chinese knot gift box ideas?",
+        "a": "First, choose whether the box is for a wedding, festival, housewarming, souvenir, or business gift."
+      },
+      {
+        "q": "What is the biggest mistake with Chinese knot gift box ideas?",
+        "a": "The common mistake is focusing on the box photo while ignoring whether the knot fits safely and the meaning text is appropriate."
+      },
+      {
+        "q": "What evidence matters most for Chinese knot gift box ideas?",
+        "a": "The buying evidence is box dimensions, knot size, cord material, tassel finish, insert card text, product photos, and whether the item can travel safely."
+      }
+    ]
+  }
+];
+
+for (const article of dailyArticles20260722) {
+  await writePage(article.path, dailyArticlePage20260706(article));
+}
 
 function themeCss() {
   return `
