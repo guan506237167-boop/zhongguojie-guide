@@ -25,6 +25,7 @@ body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.arti
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-body p{max-width:none;margin:0 0 15px;color:#f7e8d2}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.content-section h2,body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-body h2{color:#fff4df!important;text-shadow:0 8px 22px rgba(0,0,0,.24)}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.content-section h3,body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-body h3{color:#ffe8b8!important}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .daily-visual-block h2{color:#231d18!important;text-shadow:none!important}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-body p:last-child{margin-bottom:0}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .lead-answer{font-size:17px;line-height:1.78;color:#fff1d8}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.split{padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;gap:18px}
