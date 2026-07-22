@@ -602,7 +602,7 @@ function escapeHtml(value) {
 }
 
 function absolute(path) {
-  return `${SITE.url}${path === "/" ? "" : path}`;
+  return `${SITE.url}${path === "/" ? "/" : path}`;
 }
 
 function slugify(value) {
