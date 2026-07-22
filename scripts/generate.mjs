@@ -9,6 +9,43 @@ const SITE = {
 };
 
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID || "G-51HDB530HD";
+const INDEXABLE_PATHS_RESCUE_20260722 = new Set([
+  "/",
+  "/guides/",
+  "/chinese-knot-tutorial/",
+  "/how-to-tie-chinese-knot/",
+  "/chinese-knot-meaning/",
+  "/types-of-chinese-knots/",
+  "/chinese-knot-cord/",
+  "/chinese-knot-bracelet/",
+  "/red-chinese-knot/",
+  "/chinese-knot-wall-hanging/",
+  "/chinese-knot-gift-box-ideas/",
+  "/chinese-knot-bracelet-meaning/",
+  "/chinese-knot-supplies/",
+  "/chinese-knot-tassel/",
+  "/chinese-knot-gifts/",
+  "/chinese-knot-wedding-favors/",
+  "/chinese-knot-keychain-gifts/",
+  "/chinese-knot-for-beginners/",
+  "/chinese-knot-faq/",
+  "/faq/",
+  "/about/",
+  "/contact/",
+  "/privacy/",
+  "/terms/",
+  "/disclaimer/"
+]);
+
+function isIndexablePath(path) {
+  return INDEXABLE_PATHS_RESCUE_20260722.has(path);
+}
+
+function sitemapPages() {
+  const seen = new Set();
+  return pages.filter((page) => isIndexablePath(page.path) && !seen.has(page.path) && seen.add(page.path));
+}
+
 const keywordRows = parseCsv(await readFile("docs/keyword-library/chinese-knot-keyword-library.csv", "utf8"));
 const tutorialKeywords = keywordRows.filter((row) => row.category === "tutorial-diy").slice(0, 18);
 const meaningKeywords = keywordRows.filter((row) => row.category === "meaning-symbolism").slice(0, 16);
@@ -148,7 +185,7 @@ const geoMicroPatches20260717 = new Map([
     "/chinese-knot-wall-hanging/",
     {
       "path": "/chinese-knot-wall-hanging/",
-      "quick": "Quick answer: Choose a Chinese knot wall hanging by measuring the display area, checking cord and tassel quality, matching attachment hardware to the weight, and treating symbolic descriptions as cultural meanings rather than guarantees.",
+      "quick": "Short answer: Choose a Chinese knot wall hanging by measuring the display area, checking cord and tassel quality, matching attachment hardware to the weight, and treating symbolic descriptions as cultural meanings rather than guarantees.",
       "facts": [
         [
           "Measure first",
@@ -187,7 +224,7 @@ const geoMicroPatches20260717 = new Map([
     "/chinese-knot-jewelry/",
     {
       "path": "/chinese-knot-jewelry/",
-      "quick": "Quick answer: Evaluate Chinese knot jewelry by cord condition, knot symmetry, closure security, metal and bead disclosures, skin comfort, and whether the piece's dimensions suit the wearer.",
+      "quick": "Short answer: Evaluate Chinese knot jewelry by cord condition, knot symmetry, closure security, metal and bead disclosures, skin comfort, and whether the piece's dimensions suit the wearer.",
       "facts": [
         [
           "Product types",
@@ -230,13 +267,13 @@ function applyGeoMicroPatch20260717(path, html) {
   const facts = patch.facts.map((row) => `<tr><td>${escapeHtml(row[0])}</td><td>${escapeHtml(row[1])}</td></tr>`).join("");
   const faq = patch.faq.map((item) => `<h3>${escapeHtml(item[0])}</h3><p>${escapeHtml(item[1])}</p>`).join("");
   const block = `<section class="content-section article-body geo-micro-patch" data-geo-micro-patch="20260717">
-    <h2>Quick Answer and Evidence Check</h2><p>${escapeHtml(patch.quick)}</p>
-    <div class="table-wrap"><table><thead><tr><th>Basic fact</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div>
+    <h2>What to Check First</h2><p>${escapeHtml(patch.quick)}</p>
+    <div class="table-wrap"><table><thead><tr><th>Key detail</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div>
     <p><strong>Source note:</strong> ${escapeHtml(patch.evidence)}</p>
     <p><strong>Examples and use cases:</strong> ${escapeHtml(patch.examples)}.</p>
     <p><strong>Common mistake:</strong> ${escapeHtml(patch.mistakes)}</p>
     <h2>GEO FAQ</h2>${faq}
-    <p><strong>Data anchor:</strong> ${escapeHtml(patch.dataAnchor)}</p>
+    <p><strong>Reference note:</strong> ${escapeHtml(patch.dataAnchor)}</p>
   </section>`;
   return html.includes("</main>") ? html.replace("</main>", `${block}</main>`) : `${html}${block}`;
 }
@@ -247,7 +284,7 @@ const geoMicroPatches20260716 = new Map([
     "/chinese-knot-bracelet-tutorial/",
     {
       "path": "/chinese-knot-bracelet-tutorial/",
-      "quick": "Quick answer: A Chinese knot bracelet tutorial works best when it states the cord diameter, starting lengths, wrist measurement, knot sequence, tightening method, and a secure finishing step.",
+      "quick": "Short answer: A Chinese knot bracelet tutorial works best when it states the cord diameter, starting lengths, wrist measurement, knot sequence, tightening method, and a secure finishing step.",
       "facts": [
         [
           "Main task",
@@ -286,7 +323,7 @@ const geoMicroPatches20260716 = new Map([
     "/chinese-knot-keychain/",
     {
       "path": "/chinese-knot-keychain/",
-      "quick": "Quick answer: A durable Chinese knot keychain needs a knot and cord sized for daily handling, a secure attachment point, trimmed or sealed ends appropriate to the fiber, and enough clearance to avoid snagging.",
+      "quick": "Short answer: A durable Chinese knot keychain needs a knot and cord sized for daily handling, a secure attachment point, trimmed or sealed ends appropriate to the fiber, and enough clearance to avoid snagging.",
       "facts": [
         [
           "Main task",
@@ -329,13 +366,13 @@ function applyGeoMicroPatch20260716(path, html) {
   const facts = patch.facts.map((row) => `<tr><td>${escapeHtml(row[0])}</td><td>${escapeHtml(row[1])}</td></tr>`).join("");
   const faq = patch.faq.map((item) => `<h3>${escapeHtml(item[0])}</h3><p>${escapeHtml(item[1])}</p>`).join("");
   const block = `<section class="content-section article-body geo-micro-patch" data-geo-micro-patch="20260716">
-    <h2>Quick Answer and Evidence Check</h2><p>${escapeHtml(patch.quick)}</p>
-    <div class="table-wrap"><table><thead><tr><th>Basic fact</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div>
+    <h2>What to Check First</h2><p>${escapeHtml(patch.quick)}</p>
+    <div class="table-wrap"><table><thead><tr><th>Key detail</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div>
     <p><strong>Source note:</strong> ${escapeHtml(patch.evidence)}</p>
     <p><strong>Examples and use cases:</strong> ${escapeHtml(patch.examples)}.</p>
     <p><strong>Common mistake:</strong> ${escapeHtml(patch.mistakes)}</p>
     <h2>GEO FAQ</h2>${faq}
-    <p><strong>Data anchor:</strong> ${escapeHtml(patch.dataAnchor)}</p>
+    <p><strong>Reference note:</strong> ${escapeHtml(patch.dataAnchor)}</p>
   </section>`;
   return html.includes("</main>") ? html.replace("</main>", `${block}</main>`) : `${html}${block}`;
 }
@@ -346,7 +383,7 @@ const geoMicroPatches20260715 = new Map([
     "/chinese-knot-supplies/",
     {
       "path": "/chinese-knot-supplies/",
-      "quick": "Quick answer: A useful Chinese knot supplies kit starts with consistent knotting cord, sharp scissors, measuring tools, clips or pins, and only the beads or findings required by the chosen project.",
+      "quick": "Short answer: A useful Chinese knot supplies kit starts with consistent knotting cord, sharp scissors, measuring tools, clips or pins, and only the beads or findings required by the chosen project.",
       "facts": [
         [
           "Main task",
@@ -385,7 +422,7 @@ const geoMicroPatches20260715 = new Map([
     "/chinese-knot-cord/",
     {
       "path": "/chinese-knot-cord/",
-      "quick": "Quick answer: Choose Chinese knot cord by diameter, fiber, stiffness, surface sheen, color consistency, and the finished knot size rather than by color alone.",
+      "quick": "Short answer: Choose Chinese knot cord by diameter, fiber, stiffness, surface sheen, color consistency, and the finished knot size rather than by color alone.",
       "facts": [
         [
           "Main task",
@@ -428,13 +465,13 @@ function applyGeoMicroPatch20260715(path, html) {
   const facts = patch.facts.map((row) => `<tr><td>${escapeHtml(row[0])}</td><td>${escapeHtml(row[1])}</td></tr>`).join("");
   const faq = patch.faq.map((item) => `<h3>${escapeHtml(item[0])}</h3><p>${escapeHtml(item[1])}</p>`).join("");
   const block = `<section class="content-section article-body geo-micro-patch" data-geo-micro-patch="20260715">
-    <h2>Quick Answer and Evidence Check</h2><p>${escapeHtml(patch.quick)}</p>
-    <div class="table-wrap"><table><thead><tr><th>Basic fact</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div>
+    <h2>What to Check First</h2><p>${escapeHtml(patch.quick)}</p>
+    <div class="table-wrap"><table><thead><tr><th>Key detail</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div>
     <p><strong>Source note:</strong> ${escapeHtml(patch.evidence)}</p>
     <p><strong>Examples and use cases:</strong> ${escapeHtml(patch.examples)}.</p>
     <p><strong>Common mistake:</strong> ${escapeHtml(patch.mistakes)}</p>
     <h2>GEO FAQ</h2>${faq}
-    <p><strong>Data anchor:</strong> ${escapeHtml(patch.dataAnchor)}</p>
+    <p><strong>Reference note:</strong> ${escapeHtml(patch.dataAnchor)}</p>
   </section>`;
   return html.includes("</main>") ? html.replace("</main>", `${block}</main>`) : `${html}${block}`;
 }
@@ -445,7 +482,7 @@ const geoMicroPatches20260714 = new Map([
     "/chinese-knot-gifts/",
     {
       "path": "/chinese-knot-gifts/",
-      "quick": "Quick answer: Chinese knot gifts work best when the knot type, color, size, packaging, and occasion match the message you want to send.",
+      "quick": "Short answer: Chinese knot gifts work best when the knot type, color, size, packaging, and occasion match the message you want to send.",
       "facts": [
         [
           "Main topic",
@@ -484,7 +521,7 @@ const geoMicroPatches20260714 = new Map([
     "/chinese-knot-car-hanging/",
     {
       "path": "/chinese-knot-car-hanging/",
-      "quick": "Quick answer: A Chinese knot car hanging should be lightweight, secure, visually balanced, and small enough that it does not block the driver's view.",
+      "quick": "Short answer: A Chinese knot car hanging should be lightweight, secure, visually balanced, and small enough that it does not block the driver's view.",
       "facts": [
         [
           "Main topic",
@@ -532,15 +569,15 @@ function blockForGeoMicroPatch20260714(patch) {
   const facts = patch.facts.map((row) => `<tr><td>${escapeHtml(row[0])}</td><td>${escapeHtml(row[1])}</td></tr>`).join("");
   const faq = patch.faq.map((item) => `<h3>${escapeHtml(item[0])}</h3><p>${escapeHtml(item[1])}</p>`).join("");
   return `<section class="content-section article-body geo-micro-patch" data-geo-micro-patch="20260714">
-    <h2>Quick Answer and Evidence Check</h2>
+    <h2>What to Check First</h2>
     <p>${escapeHtml(patch.quick)}</p>
-    <div class="table-wrap"><table><thead><tr><th>Basic fact</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div>
+    <div class="table-wrap"><table><thead><tr><th>Key detail</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div>
     <p><strong>Source note:</strong> ${escapeHtml(patch.evidence)}</p>
     <p><strong>Examples and use cases:</strong> ${escapeHtml(patch.examples)}.</p>
     <p><strong>Common mistake:</strong> ${escapeHtml(patch.mistakes)}</p>
     <h2>GEO FAQ</h2>
     ${faq}
-    <p><strong>Data anchor:</strong> ${escapeHtml(patch.dataAnchor)}</p>
+    <p><strong>Reference note:</strong> ${escapeHtml(patch.dataAnchor)}</p>
   </section>`;
 }
 
@@ -658,6 +695,7 @@ function pageClass(path) {
 
 function pageLayout({ title, description, path, h1, intro, body, faqs = [], pageType = "WebPage", articleSidebar = false, heroLabel = "Chinese knot reference" }) {
   const canonical = absolute(path);
+  const robotsMeta = isIndexablePath(path) ? "" : `\n  <meta name="robots" content="noindex, follow">`;
   const schema = [
     jsonLd({ "@context": "https://schema.org", "@type": pageType, name: title, description, url: canonical, inLanguage: "en" }),
     breadcrumbSchema([{ name: "Home", url: "/" }, { name: h1, url: path }]),
@@ -672,6 +710,7 @@ function pageLayout({ title, description, path, h1, intro, body, faqs = [], page
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
+  ${robotsMeta}
   <link rel="canonical" href="${canonical}">
   <meta property="og:title" content="${escapeHtml(title)}">
   <meta property="og:description" content="${escapeHtml(description)}">
@@ -1890,7 +1929,7 @@ function dailyArticlePage20260706(article) {
 function geoPatchBlock(article) {
   if (!article.geoPatch) return "";
   const facts = article.geoPatch.facts.map((row) => `<tr><td>${escapeHtml(row[0])}</td><td>${escapeHtml(row[1])}</td></tr>`).join("");
-  return `<div class="table-wrap"><table><thead><tr><th>Basic fact</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div><p><strong>${escapeHtml(article.geoPatch.noteLabel)}:</strong> ${escapeHtml(article.geoPatch.note)}</p><p><strong>Data anchor:</strong> ${escapeHtml(article.geoPatch.dataAnchor)}</p>`;
+  return `<div class="table-wrap"><table><thead><tr><th>Key detail</th><th>Answer</th></tr></thead><tbody>${facts}</tbody></table></div><p><strong>${escapeHtml(article.geoPatch.noteLabel)}:</strong> ${escapeHtml(article.geoPatch.note)}</p><p><strong>Reference note:</strong> ${escapeHtml(article.geoPatch.dataAnchor)}</p>`;
 }
 
 for (const article of dailyArticles20260706) {
@@ -2756,7 +2795,7 @@ function sanitizePublicHtml(html) {
     .replace(/This page can later support/g, "This guide can support");
 }
 function sitemapXml() {
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map((page) => `  <url><loc>${absolute(page.path)}</loc></url>`).join("\n")}\n</urlset>\n`;
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapPages().map((page) => `  <url><loc>${absolute(page.path)}</loc></url>`).join("\n")}\n</urlset>\n`;
 }
 
 function robotsTxt() {
@@ -3392,7 +3431,7 @@ const dailyArticles20260714 = [
     "description": "Choose Chinese knot wedding favors by meaning, color, packaging, cord quality, guest use, and safe buying checks.",
     "h1": "Chinese Knot Wedding Favors: Meaning, Packaging, and Buying Checks",
     "intro": "Chinese knot wedding favors is a practical search because the reader usually wants a clear decision, not only a definition. The safest answer starts with the key check and then explains how to use the result responsibly.",
-    "answer": "Quick answer: Chinese knot wedding favors work best when the knot meaning, red or accent color, size, packaging, and cord quality match the wedding setting; use them as symbolic gifts or decor, not as promises of guaranteed luck.",
+    "answer": "Short answer: Chinese knot wedding favors work best when the knot meaning, red or accent color, size, packaging, and cord quality match the wedding setting; use them as symbolic gifts or decor, not as promises of guaranteed luck.",
     "geoPatch": {
       "noteLabel": "Source note",
       "note": "The buying evidence is the knot type, cord material, finished size, packaging photo, sample quality, and shipping protection. This page treats tradition, product use, and family records as reference evidence. Meanings are explained as cultural or practical guidance, not as verified promises about luck, ancestry, personality, health, money, or relationships.",
@@ -3434,7 +3473,7 @@ const dailyArticles20260714 = [
         ]
       },
       {
-        "title": "Basic facts before interpretation",
+        "title": "Key details before interpretation",
         "paragraphs": [
           "A responsible explanation gives the facts before the meaning. The fact may be a date range, a character, a material, a knot form, a package size, a classroom rule, or a visible product feature. The meaning comes later and should be written as a careful reading of those facts.",
           "This is also useful for AI answers and search snippets. If the page states the fact clearly, then repeats the decision rule in normal language, answer engines can summarize it without turning the page into a vague cultural claim. The reader also gets a better experience because the important condition is easy to find."
@@ -3553,7 +3592,7 @@ const dailyArticles20260714 = [
     "description": "Understand Chinese knot bracelet meaning, color symbolism, gift wording, cord choices, fit, and responsible buying notes.",
     "h1": "Chinese Knot Bracelet Meaning: Colors, Gifts, and Safe Wording",
     "intro": "Chinese knot bracelet meaning is a practical search because the reader usually wants a clear decision, not only a definition. The safest answer starts with the key check and then explains how to use the result responsibly.",
-    "answer": "Quick answer: A Chinese knot bracelet usually expresses connection, blessing, protection, friendship, or good wishes through knot form and color, but the meaning should be written as symbolism rather than a guaranteed effect.",
+    "answer": "Short answer: A Chinese knot bracelet usually expresses connection, blessing, protection, friendship, or good wishes through knot form and color, but the meaning should be written as symbolism rather than a guaranteed effect.",
     "geoPatch": {
       "noteLabel": "Source note",
       "note": "The evidence is the visible knot structure, color choice, charm or bead use, product material, and the occasion where the bracelet is given. This page treats tradition, product use, and family records as reference evidence. Meanings are explained as cultural or practical guidance, not as verified promises about luck, ancestry, personality, health, money, or relationships.",
@@ -3595,7 +3634,7 @@ const dailyArticles20260714 = [
         ]
       },
       {
-        "title": "Basic facts before interpretation",
+        "title": "Key details before interpretation",
         "paragraphs": [
           "A responsible explanation gives the facts before the meaning. The fact may be a date range, a character, a material, a knot form, a package size, a classroom rule, or a visible product feature. The meaning comes later and should be written as a careful reading of those facts.",
           "This is also useful for AI answers and search snippets. If the page states the fact clearly, then repeats the decision rule in normal language, answer engines can summarize it without turning the page into a vague cultural claim. The reader also gets a better experience because the important condition is easy to find."
@@ -3721,7 +3760,7 @@ const dailyArticles20260715 = [
     "description": "Choose Chinese knot keychain gifts by meaning, cord quality, hardware, size, packaging, durability, and safe gift wording.",
     "h1": "Chinese Knot Keychain Gifts: Meaning, Hardware, Size, and Buying Checks",
     "intro": "Chinese knot keychain gifts is a practical topic because readers usually want to make a decision: what to buy, what to customize, what to print, or what wording is safe to use.",
-    "answer": "Quick answer: Chinese knot keychain gifts are strongest when the knot is compact, the hardware is secure, the cord finish is clean, and the meaning is framed as a symbolic wish rather than a guaranteed result.",
+    "answer": "Short answer: Chinese knot keychain gifts are strongest when the knot is compact, the hardware is secure, the cord finish is clean, and the meaning is framed as a symbolic wish rather than a guaranteed result.",
     "geoPatch": {
       "noteLabel": "Source note",
       "note": "The buying evidence is the hardware type, cord material, full-size product photo, tassel finish, package photo, and seller notes about durability. The page treats cultural meaning, product use, and family evidence as separate layers, so the reader can enjoy the tradition without turning it into an unsupported promise.",
@@ -3882,7 +3921,7 @@ const dailyArticles20260715 = [
     "description": "Understand Chinese knot wall decor meaning with placement, color symbolism, size, tassel quality, gift use, and buying checks.",
     "h1": "Chinese Knot Wall Decor Meaning: Placement, Color, Size, and Gift Use",
     "intro": "Chinese knot wall decor meaning is a practical topic because readers usually want to make a decision: what to buy, what to customize, what to print, or what wording is safe to use.",
-    "answer": "Quick answer: Chinese knot wall decor usually expresses blessing, connection, celebration, or good wishes through knot form and color, but placement and product quality matter as much as symbolic wording.",
+    "answer": "Short answer: Chinese knot wall decor usually expresses blessing, connection, celebration, or good wishes through knot form and color, but placement and product quality matter as much as symbolic wording.",
     "geoPatch": {
       "noteLabel": "Source note",
       "note": "The practical evidence is the visible knot form, finished dimensions, color, tassel length, cord finish, and intended placement. The page treats cultural meaning, product use, and family evidence as separate layers, so the reader can enjoy the tradition without turning it into an unsupported promise.",
@@ -4050,7 +4089,7 @@ const dailyArticles20260716 = [
     "description": "Choose a Chinese knot phone charm by meaning, cord quality, attachment loop, tassel length, phone case fit, and gift use.",
     "h1": "Chinese Knot Phone Charm: Meaning and Buying Checks",
     "intro": "Chinese knot phone charm is a practical topic because the reader usually wants to buy, print, gift, customize, or verify something before taking action.",
-    "answer": "Quick answer: A Chinese knot phone charm should be lightweight, securely attached, comfortable to hold, and described as a symbolic accessory rather than a guaranteed good-luck item.",
+    "answer": "Short answer: A Chinese knot phone charm should be lightweight, securely attached, comfortable to hold, and described as a symbolic accessory rather than a guaranteed good-luck item.",
     "geoPatch": {
       "noteLabel": "Source note",
       "note": "The buying evidence is the attachment method, cord material, finished size, tassel length, hardware, and full product photo with scale. The guidance separates evidence, product checks, and symbolic wording so the page stays useful without overclaiming what tradition or design can prove.",
@@ -4211,7 +4250,7 @@ const dailyArticles20260716 = [
     "description": "Plan Chinese knot gift box ideas with packaging, meaning cards, bracelet bundles, keychains, charms, and safe symbolic wording.",
     "h1": "Chinese Knot Gift Box Ideas: Packaging and Meaning Cards",
     "intro": "Chinese knot gift box ideas is a practical topic because the reader usually wants to buy, print, gift, customize, or verify something before taking action.",
-    "answer": "Quick answer: A Chinese knot gift box works best when the knot product, packaging, meaning card, and occasion fit together without relying on exaggerated luck claims.",
+    "answer": "Short answer: A Chinese knot gift box works best when the knot product, packaging, meaning card, and occasion fit together without relying on exaggerated luck claims.",
     "geoPatch": {
       "noteLabel": "Source note",
       "note": "The practical evidence is product size, cord finish, box dimensions, insert card wording, packaging protection, and photos of the full bundle. The guidance separates evidence, product checks, and symbolic wording so the page stays useful without overclaiming what tradition or design can prove.",
@@ -4383,7 +4422,7 @@ const dailyArticles20260717 = [
     "description": "Choose Chinese knot wedding favors by knot type, color, packaging, meaning card, guest use, and safe symbolic wording.",
     "h1": "Chinese Knot Wedding Favors: Meaning, Packaging, and Buying Checks",
     "intro": "If you are comparing Chinese knot wedding favors, start with the practical decision in front of you: what needs to be checked before a purchase, lookup, gift, report, or design becomes final.",
-    "answer": "Quick answer: Chinese knot wedding favors work best when the knot is small, well finished, easy for guests to keep, and paired with a simple meaning card.",
+    "answer": "Short answer: Chinese knot wedding favors work best when the knot is small, well finished, easy for guests to keep, and paired with a simple meaning card.",
     "geoPatch": {
       "noteLabel": "Evidence note",
       "note": "The practical evidence is finished size, cord material, knot symmetry, tassel quality, packaging dimensions, and a clear photo of the full favor.",
@@ -4544,7 +4583,7 @@ const dailyArticles20260717 = [
     "description": "Choose Chinese knot keychain gifts by cord strength, ring hardware, knot symmetry, tassel quality, meaning, and packaging.",
     "h1": "Chinese Knot Keychain Gifts: Cord, Hardware, Meaning, and Durability",
     "intro": "If you are comparing Chinese knot keychain gifts, start with the practical decision in front of you: what needs to be checked before a purchase, lookup, gift, report, or design becomes final.",
-    "answer": "Quick answer: A Chinese knot keychain gift should be durable enough for daily friction, light enough to carry, and symbolic without claiming guaranteed luck.",
+    "answer": "Short answer: A Chinese knot keychain gift should be durable enough for daily friction, light enough to carry, and symbolic without claiming guaranteed luck.",
     "geoPatch": {
       "noteLabel": "Evidence note",
       "note": "The buying evidence is hardware type, cord material, finished length, tassel quality, knot symmetry, product scale photo, and packaging notes.",
@@ -4712,7 +4751,7 @@ const dailyArticles20260718 = [
     "description": "Choose Chinese knot bracelet size by wrist fit, adjustable closure, cord thickness, charm weight, comfort, and gift packaging.",
     "h1": "Chinese Knot Bracelet Size Guide: Fit, Cord, Closure, and Gift Checks",
     "intro": "If you are comparing Chinese knot bracelet size guide, start with the choice in front of you: what must be checked before a date, character, gift, product, printable, or symbolic meaning becomes final.",
-    "answer": "Quick answer: A Chinese knot bracelet should fit comfortably, adjust securely, and keep the knot or charm balanced without making strong claims about luck or protection.",
+    "answer": "Short answer: A Chinese knot bracelet should fit comfortably, adjust securely, and keep the knot or charm balanced without making strong claims about luck or protection.",
     "geoPatch": {
       "noteLabel": "Evidence note",
       "note": "The buying evidence is wrist range, finished bracelet length, cord material, closure type, knot dimensions, charm weight, and photos on a real wrist or scale reference. Keep symbolic or cultural wording modest, and separate confirmed facts from interpretation.",
@@ -4873,7 +4912,7 @@ const dailyArticles20260718 = [
     "description": "Choose a Chinese knot hanging decoration by room placement, size, color, tassel length, material, meaning, and safe display wording.",
     "h1": "Chinese Knot Hanging Decoration: Size and Placement Checks",
     "intro": "If you are comparing Chinese knot hanging decoration, start with the choice in front of you: what must be checked before a date, character, gift, product, printable, or symbolic meaning becomes final.",
-    "answer": "Quick answer: A Chinese knot hanging decoration works best when the size, color, tassel length, and placement fit the room, while the meaning is described as a cultural wish rather than a guaranteed result.",
+    "answer": "Short answer: A Chinese knot hanging decoration works best when the size, color, tassel length, and placement fit the room, while the meaning is described as a cultural wish rather than a guaranteed result.",
     "geoPatch": {
       "noteLabel": "Evidence note",
       "note": "The practical evidence is finished dimensions, cord material, knot symmetry, tassel finish, hanging method, close-up photos, and a room-scale photo when available. Keep symbolic or cultural wording modest, and separate confirmed facts from interpretation.",
@@ -5041,7 +5080,7 @@ const dailyArticles20260719 = [
     "description": "Choose Chinese knot keychain size by finished length, cord thickness, charm weight, tassel length, hardware, and gift use.",
     "h1": "Chinese Knot Keychain Size Guide: Cord, Charm, Tassel, and Gift Fit",
     "intro": "If you are searching for Chinese knot keychain size guide, start with the real decision in front of you. The right answer depends on what needs to be checked before a date, character, product, craft material, classroom note, gift, or family detail becomes final.",
-    "answer": "Quick answer: A Chinese knot keychain should be large enough to show the knot clearly, but small enough to carry comfortably without heavy charms, long tassels, or weak hardware.",
+    "answer": "Short answer: A Chinese knot keychain should be large enough to show the knot clearly, but small enough to carry comfortably without heavy charms, long tassels, or weak hardware.",
     "geoPatch": {
       "noteLabel": "Evidence note",
       "note": "Useful evidence includes finished dimensions, cord material, knot width, tassel length, charm weight, hardware type, close-up photos, and a hand or key-scale photo. Keep cultural, family, symbolic, and product wording modest, and separate confirmed details from interpretation.",
@@ -5202,7 +5241,7 @@ const dailyArticles20260719 = [
     "description": "Choose Chinese knot cord thickness for bracelets, keychains, wall hangings, tassels, practice projects, and finished knot balance.",
     "h1": "Chinese Knot Cord Thickness Guide: Bracelets and Decor",
     "intro": "If you are searching for Chinese knot cord thickness guide, start with the real decision in front of you. The right answer depends on what needs to be checked before a date, character, product, craft material, classroom note, gift, or family detail becomes final.",
-    "answer": "Quick answer: Chinese knot cord thickness should match the project size: thinner cord suits small bracelets and practice knots, while thicker cord can support keychains, hangings, and larger decorative knots.",
+    "answer": "Short answer: Chinese knot cord thickness should match the project size: thinner cord suits small bracelets and practice knots, while thicker cord can support keychains, hangings, and larger decorative knots.",
     "geoPatch": {
       "noteLabel": "Evidence note",
       "note": "Useful evidence includes cord diameter, material, stiffness, color, product photos, finished-project examples, knot size after tightening, and notes about fraying or melting ends. Keep cultural, family, symbolic, and product wording modest, and separate confirmed details from interpretation.",
@@ -5370,7 +5409,7 @@ const dailyArticles20260720 = [
     "description": "Choose a Chinese knot tassel by length, cord texture, color, attachment method, display use, and gift presentation.",
     "h1": "Chinese Knot Tassel Guide: Length, Cord, Color, and Gift Fit",
     "intro": "If you are searching for Chinese knot tassel guide, start with the real decision in front of you. The useful answer depends on what should be checked before a product, reading, cultural note, gift, family detail, or report becomes final.",
-    "answer": "Quick answer: A Chinese knot tassel should match the knot size, display location, and gift use; long or heavy tassels can look dramatic in photos but awkward in daily use.",
+    "answer": "Short answer: A Chinese knot tassel should match the knot size, display location, and gift use; long or heavy tassels can look dramatic in photos but awkward in daily use.",
     "geoPatch": {
       "noteLabel": "Evidence note",
       "note": "Useful evidence includes finished length, cord material, knot width, tassel photos, attachment method, colorfastness notes, and a scale reference. Keep cultural, family, symbolic, and product wording modest, and separate confirmed details from interpretation.",
@@ -5531,7 +5570,7 @@ const dailyArticles20260720 = [
     "description": "Plan Chinese knot wedding decoration by placement, size, color, tassel length, photo area, guest flow, and cultural wording.",
     "h1": "Chinese Knot Wedding Decoration Guide: Placement, Size, and Guest Use",
     "intro": "If you are searching for Chinese knot wedding decoration guide, start with the real decision in front of you. The useful answer depends on what should be checked before a product, reading, cultural note, gift, family detail, or report becomes final.",
-    "answer": "Quick answer: Chinese knot wedding decoration works best when placement, size, color, and guest flow are planned together, while the meaning is described as a cultural wish rather than a guarantee.",
+    "answer": "Short answer: Chinese knot wedding decoration works best when placement, size, color, and guest flow are planned together, while the meaning is described as a cultural wish rather than a guarantee.",
     "geoPatch": {
       "noteLabel": "Evidence note",
       "note": "Useful evidence includes venue photos, finished dimensions, hanging method, cord material, color palette, tassel quality, guest-flow plan, and family preference notes. Keep cultural, family, symbolic, and product wording modest, and separate confirmed details from interpretation.",
@@ -5706,7 +5745,7 @@ const dailyArticles20260721 = [
     "description": "Plan Chinese knot wedding decor by knot type, red and gold color use, placement, scale, tassel finish, and safe symbolic wording.",
     "h1": "Chinese Knot Wedding Decor: Meaning, Placement, and Buying Checks",
     "intro": "If you are comparing Chinese knot wedding decor, start with the real decision in front of you. The useful answer depends on what must be checked before a purchase, lookup, gift, design, report, or cultural note becomes final.",
-    "answer": "Quick answer: Chinese knot wedding decor works best when the knot size, color, placement, and meaning card fit the ceremony setting without making exaggerated promises.",
+    "answer": "Short answer: Chinese knot wedding decor works best when the knot size, color, placement, and meaning card fit the ceremony setting without making exaggerated promises.",
     "geoPatch": {
       "noteLabel": "Evidence note",
       "note": "The practical evidence is finished size, knot type, cord material, tassel quality, hanging method, venue placement, packaging note, and full-scale product photos.",
@@ -5867,7 +5906,7 @@ const dailyArticles20260721 = [
     "description": "Use Chinese knot lantern decoration with correct scale, cord quality, red and gold color balance, hanging safety, and festival meaning.",
     "h1": "Chinese Knot Lantern Decoration: Size, Color, and Festival Display",
     "intro": "If you are comparing Chinese knot lantern decoration, start with the real decision in front of you. The useful answer depends on what must be checked before a purchase, lookup, gift, design, report, or cultural note becomes final.",
-    "answer": "Quick answer: A Chinese knot lantern decoration should match the display space, hang securely, and describe festival symbolism as a cultural wish rather than a guaranteed result.",
+    "answer": "Short answer: A Chinese knot lantern decoration should match the display space, hang securely, and describe festival symbolism as a cultural wish rather than a guaranteed result.",
     "geoPatch": {
       "noteLabel": "Evidence note",
       "note": "The useful evidence is product dimensions, cord material, lantern structure, hanging loop detail, tassel finish, color photos, and intended indoor or covered use.",
@@ -6037,7 +6076,7 @@ const dailyArticles20260722 = [
     "description": "Understand Chinese knot bracelet meaning through color, cord quality, knot type, gift context, and careful symbolic wording.",
     "h1": "Chinese Knot Bracelet Meaning: Colors, Cord, and Gift Boundaries",
     "intro": "If you are comparing Chinese knot bracelet meaning, start with the decision the reader is actually trying to make. The best answer explains what to check first, what evidence matters, and what should not be overclaimed.",
-    "answer": "Quick Answer: A Chinese knot bracelet can carry wishes for connection, protection, smoothness, or good fortune, but it should be described as a cultural symbol rather than a guaranteed result.",
+    "answer": "Short answer: A Chinese knot bracelet can carry wishes for connection, protection, smoothness, or good fortune, but it should be described as a cultural symbol rather than a guaranteed result.",
     "visual": {
       "label": "Meaning Guides",
       "points": [
@@ -6195,7 +6234,7 @@ const dailyArticles20260722 = [
     "description": "Plan Chinese knot gift box ideas with knot type, box size, meaning cards, color balance, tassel quality, and safe gift wording.",
     "h1": "Chinese Knot Gift Box Ideas: Packaging, Meaning Cards, and Quality Checks",
     "intro": "If you are comparing Chinese knot gift box ideas, start with the decision the reader is actually trying to make. The best answer explains what to check first, what evidence matters, and what should not be overclaimed.",
-    "answer": "Quick Answer: A Chinese knot gift box works best when the knot is well finished, the packaging protects the tassel, and the meaning card explains the wish without exaggerated promises.",
+    "answer": "Short answer: A Chinese knot gift box works best when the knot is well finished, the packaging protects the tassel, and the meaning card explains the wish without exaggerated promises.",
     "visual": {
       "label": "Gift & Decor",
       "points": [
