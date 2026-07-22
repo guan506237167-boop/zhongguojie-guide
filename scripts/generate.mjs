@@ -6379,6 +6379,8 @@ body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main{displ
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.content-section{width:100%;max-width:none!important;margin:0!important;padding:34px 40px!important;border-radius:10px;background:rgba(255,255,255,.075)!important;border:1px solid rgba(196,30,58,.24)!important;box-shadow:0 16px 42px rgba(0,0,0,.18)!important}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.article-body{background:rgba(255,255,255,.05)!important}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-body p{max-width:none;margin:0 0 15px;color:#f7e8d2}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.content-section h2,body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-body h2{color:#fff4df!important;text-shadow:0 8px 22px rgba(0,0,0,.24)}
+body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.content-section h3,body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-body h3{color:#ffe8b8!important}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-body p:last-child{margin-bottom:0}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .lead-answer{font-size:17px;line-height:1.78;color:#fff1d8}
 body:not(.page-home):not(.page-guides):not(.seo-report-page) .article-main>.split{padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;gap:18px}
